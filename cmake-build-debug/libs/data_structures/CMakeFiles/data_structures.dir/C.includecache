@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/bitset/bitset.c
+bitset.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/bitset/bitset.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/bitset/bitset.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/ordered_array/orderedArray.c
+orderedArray.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/ordered_array/orderedArray.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/ordered_array/orderedArray.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/unordered_array/unorderedArray.c
+unorderedArray.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/unordered_array/unorderedArray.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/unordered_array/unorderedArray.h
+
