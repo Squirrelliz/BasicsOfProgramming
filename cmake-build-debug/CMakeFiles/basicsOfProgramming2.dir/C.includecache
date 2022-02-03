@@ -13,12 +13,20 @@ malloc.h
 -
 assert.h
 -
+stdbool.h
+-
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector_tests.h
+vector.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector.h
+assert.h
+-
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
 stdio.h
 -
 stdint.h
 -
-libs/data_structures/vector/vector.h
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector.h
+libs/data_structures/vector/vector_tests.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector_tests.h
 

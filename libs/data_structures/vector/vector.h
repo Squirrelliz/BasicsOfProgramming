@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <assert.h>
+#include <stdbool.h>
 
 typedef struct vector {
     int *data; // указатель на элементы вектора
@@ -24,5 +25,15 @@ void clear(vector *v);
 void shrinkToFit(vector *v);
 
 void deleteVector(vector *v);
+
+bool isEmpty(vector *v);
+
+bool isFull(vector *v);
+
+int getVectorValue(vector *v, size_t i);
+
+void pushBack(vector *v, int x);
+
+void popBack(vector *v);
 
 #endif //MAIN_C_VECTOR_H
