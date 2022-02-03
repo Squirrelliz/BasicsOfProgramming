@@ -11,6 +11,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/bitset/bitset.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj"
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/ordered_array/orderedArray.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/ordered_array/orderedArray.c.obj"
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/unordered_array/unorderedArray.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/unordered_array/unorderedArray.c.obj"
+  "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj"
+  "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector_tests.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir/vector/vector_tests.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

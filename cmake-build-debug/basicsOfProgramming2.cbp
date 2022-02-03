@@ -170,6 +170,18 @@
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/unordered_array/unorderedArray.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector_tests.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector_tests.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c">
 			<Option target="basicsOfProgramming2"/>
 		</Unit>

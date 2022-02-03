@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector.h
 stdio.h
 -
-stdlib.h
+malloc.h
+-
+assert.h
 -
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
 stdio.h
 -
-libs/algorithms/array/array.h
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
+stdint.h
+-
+libs/data_structures/vector/vector.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector.h
 
