@@ -3,7 +3,7 @@
 
 int main() {
     size_t n;
-    scanf("%zd", &n);
+    scanf("%lld", &n);
 
     vectorVoid v = createVectorV(0, sizeof(int));
     for (int i = 0; i < n; i++) {
