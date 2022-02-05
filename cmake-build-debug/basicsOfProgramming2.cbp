@@ -176,6 +176,12 @@
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vectorVoid.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vectorVoid.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector_tests.c">
 			<Option target="data_structures"/>
 		</Unit>

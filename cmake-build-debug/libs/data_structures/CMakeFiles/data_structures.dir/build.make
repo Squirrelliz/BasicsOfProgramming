@@ -130,13 +130,27 @@ libs/data_structures/CMakeFiles/data_structures.dir/vector/vector_tests.c.s: cma
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/vector/vector_tests.c.s"
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\vector\vector_tests.c -o CMakeFiles\data_structures.dir\vector\vector_tests.c.s
 
+libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj: libs/data_structures/CMakeFiles/data_structures.dir/flags.make
+libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj: ../libs/data_structures/vector/vectorVoid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj"
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_structures.dir\vector\vectorVoid.c.obj -c C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\vector\vectorVoid.c
+
+libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structures.dir/vector/vectorVoid.c.i"
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\vector\vectorVoid.c > CMakeFiles\data_structures.dir\vector\vectorVoid.c.i
+
+libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structures.dir/vector/vectorVoid.c.s"
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\vector\vectorVoid.c -o CMakeFiles\data_structures.dir\vector\vectorVoid.c.s
+
 # Object files for target data_structures
 data_structures_OBJECTS = \
 "CMakeFiles/data_structures.dir/bitset/bitset.c.obj" \
 "CMakeFiles/data_structures.dir/ordered_array/orderedArray.c.obj" \
 "CMakeFiles/data_structures.dir/unordered_array/unorderedArray.c.obj" \
 "CMakeFiles/data_structures.dir/vector/vector.c.obj" \
-"CMakeFiles/data_structures.dir/vector/vector_tests.c.obj"
+"CMakeFiles/data_structures.dir/vector/vector_tests.c.obj" \
+"CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj"
 
 # External object files for target data_structures
 data_structures_EXTERNAL_OBJECTS =
@@ -146,9 +160,10 @@ libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/unordered_array/unorderedArray.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/vector/vector_tests.c.obj
+libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/build.make
 libs/data_structures/libdata_structures.a: libs/data_structures/CMakeFiles/data_structures.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library libdata_structures.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C static library libdata_structures.a"
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures && $(CMAKE_COMMAND) -P CMakeFiles\data_structures.dir\cmake_clean_target.cmake
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\data_structures.dir\link.txt --verbose=$(VERBOSE)
 

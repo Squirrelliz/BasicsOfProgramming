@@ -1,6 +1,7 @@
-#include "libs/data_structures/vector/vector_tests.h"
+#include "libs/data_structures/vector/vectorVoid.h"
 
 int main() {
-    test();
+    int data[3]={1,2,3};
+    vectorVoid v = {data,3,3, sizeof(int )};
     return 0;
 }
