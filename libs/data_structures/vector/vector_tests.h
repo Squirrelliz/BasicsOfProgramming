@@ -8,6 +8,35 @@
 #include "vector.h"
 #include <assert.h>
 
+void test_createVector_zeroCapacity();
+
+void test_createVector_notZeroCapacity();
+
+void tests_createVector();
+//________________________________________________________________//
+
+void test_reserve_newZeroCapacity();
+
+void test_reserve_newCapacityMoreThenSize();
+
+void test_reserve_newCapacityLessThanSize();
+
+void tests_reserve();
+//________________________________________________________________//
+void test_clear_notEmptyVector();
+
+void tests_clear();
+//________________________________________________________________//
+
+void test_shrinkToFit_notEmptyVectorWithCapacityMoreSize();
+
+void test_shrinkToFit_emptyVector();
+
+void test_shrinkToFit_fullVector();
+
+void tests_shrinkToFit();
+//________________________________________________________________//
+
 void test_pushBack_emptyVector();
 
 void test_pushBack_fullVector();

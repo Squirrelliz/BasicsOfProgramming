@@ -37,7 +37,7 @@ void shrinkToFit(vector *v) {
 }
 
 void deleteVector(vector *v) {
-    free(v->data);
+    reserve(v, 0);
 }
 
 bool isEmpty(vector *v) {
