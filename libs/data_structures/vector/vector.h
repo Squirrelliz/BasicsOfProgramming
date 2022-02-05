@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <stdbool.h>
+#include <assert.h>
 
 typedef struct vector {
     int *data; // указатель на элементы вектора

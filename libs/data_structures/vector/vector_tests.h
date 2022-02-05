@@ -7,6 +7,7 @@
 
 #include "vector.h"
 
+
 void test_createVector_zeroCapacity();
 
 void test_createVector_notZeroCapacity();

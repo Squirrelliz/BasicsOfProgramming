@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector.h
+stdio.h
+-
+malloc.h
+-
+stdbool.h
+-
+assert.h
+-
+
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vectorVoid.h
 limits.h
 -
@@ -15,8 +25,18 @@ malloc.h
 -
 stdbool.h
 -
+assert.h
+-
+memory.h
+-
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector_tests.h
+vector.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector.h
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
 libs/data_structures/vector/vectorVoid.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vectorVoid.h
+libs/data_structures/vector/vector_tests.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vector_tests.h
 
