@@ -12,7 +12,7 @@
 #include <assert.h>
 #include <memory.h>
 
-void badAlloc_();
+void _badAlloc();
 
 typedef struct vectorVoid {
     void *data; // указатель на нулевой элемент вектора
