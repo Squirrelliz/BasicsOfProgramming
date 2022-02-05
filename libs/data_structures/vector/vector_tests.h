@@ -14,6 +14,32 @@ void test_pushBack_fullVector();
 
 void test_pushBack_notEmptyNotFullVector();
 
+void tests_pushBack();
+
+void test_popBack_notEmptyVector();
+
+void tests_popBack();
+
+void test_atVector_notEmptyVector();
+
+void test_atVector_requestToLastElement();
+
+void test_atVector_requestToFirstElement();
+
+void tests_atVector();
+
+void test_back_oneElementInVector();
+
+void test_back_severalElements();
+
+void tests_back();
+
+void test_front_oneElementInVector();
+
+void test_front_severalElements();
+
+void tests_front();
+
 void test();
 
 #endif //MAIN_C_VECTOR_TESTS_H

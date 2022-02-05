@@ -37,6 +37,7 @@ void tests_pushBack() {
     test_pushBack_fullVector();
     test_pushBack_notEmptyNotFullVector();
 }
+//_______________________________________________________________________________________________________________//
 
 void test_popBack_notEmptyVector() {
     vector v = createVector(0);
@@ -51,8 +52,85 @@ void test_popBack_notEmptyVector() {
 void tests_popBack() {
     test_popBack_notEmptyVector();
 }
+//_______________________________________________________________________________________________________________//
+
+void test_atVector_notEmptyVector() {
+    vector v = createVector(0);
+    pushBack(&v, 1);
+    pushBack(&v, 2);
+    pushBack(&v, 3);
+    assert(atVector(&v, 1) == v.data + 1);
+}
+
+void test_atVector_requestToLastElement() {
+    vector v = createVector(0);
+    pushBack(&v, 1);
+    pushBack(&v, 2);
+    pushBack(&v, 3);
+    assert(atVector(&v, v.size - 1) == v.data + v.size - 1);
+}
+
+void test_atVector_requestToFirstElement() {
+    vector v = createVector(0);
+    pushBack(&v, 1);
+    pushBack(&v, 2);
+    pushBack(&v, 3);
+    assert(atVector(&v, 0) == v.data);
+}
+
+void tests_atVector() {
+    test_atVector_notEmptyVector();
+    test_atVector_requestToFirstElement();
+    test_atVector_requestToLastElement();
+}
+//_______________________________________________________________________________________________________________//
+
+void test_back_oneElementInVector() {
+    vector v = createVector(0);
+    pushBack(&v, 1);
+    assert(back(&v) == v.data + v.size - 1);
+}
+
+void test_back_severalElements() {
+    vector v = createVector(0);
+    pushBack(&v, 1);
+    pushBack(&v, 2);
+    pushBack(&v, 3);
+    assert(back(&v) == v.data + v.size - 1);
+}
+
+void tests_back() {
+    test_back_oneElementInVector();
+    test_back_severalElements();
+}
+//_______________________________________________________________________________________________________________//
+
+void test_front_oneElementInVector() {
+    vector v = createVector(0);
+    pushBack(&v, 1);
+    assert(front(&v) == v.data);
+}
+
+void test_front_severalElements() {
+    vector v = createVector(0);
+    pushBack(&v, 1);
+    pushBack(&v, 2);
+    pushBack(&v, 3);
+    assert(front(&v) == v.data);
+}
+
+void tests_front() {
+    test_front_oneElementInVector();
+    test_front_severalElements();
+}
+//_______________________________________________________________________________________________________________//
+
 
 void test() {
     tests_pushBack();
     tests_popBack();
+    tests_atVector();
+    tests_back();
+    tests_front();
 }
+
