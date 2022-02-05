@@ -4,7 +4,7 @@
 
 #include "vectorVoid.h"
 
-void badAlloc_() {
+void _badAlloc() {
     fprintf(stderr, "bad alloc");
     exit(1);
 }
@@ -12,7 +12,7 @@ void badAlloc_() {
 vectorVoid createVectorV(size_t n, size_t baseTypeSize) {
     vectorVoid v = {malloc(sizeof(baseTypeSize * n)), 0, n, baseTypeSize};
     if (v.data == NULL) {
-        badAlloc_();
+        _badAlloc();
     } else
         return v;
 }
@@ -24,7 +24,7 @@ void reserveV(vectorVoid *v, size_t newCapacity) {
     if (newCapacity == 0)
         return;
     if (v->data == NULL) {
-        badAlloc_();
+        _badAlloc();
     }
 }
 
