@@ -5,7 +5,7 @@
 #include "vector.h"
 
 void badAlloc() {
-    fprintf(stderr, "bad alloc ");
+    fprintf(stderr, "bad alloc");
     exit(1);
 }
 
@@ -37,7 +37,7 @@ void shrinkToFit(vector *v) {
 }
 
 void deleteVector(vector *v) {
-    reserve(v, 0);
+    free(v->data);
 }
 
 bool isEmpty(vector *v) {
@@ -73,7 +73,7 @@ int *atVector(vector *v, size_t index) {
     if (index < v->size)
         return v->data + index;
     else {
-        fprintf(stderr, "IndexError: a[%lld] is not exists", index);
+        fprintf(stderr, "IndexError: a[%lld] does not exist", index);
         exit(1);
     }
 }
