@@ -3,6 +3,7 @@
 //
 
 #include "vector.h"
+#include <assert.h>
 
 void badAlloc() {
     fprintf(stderr, "bad alloc");

@@ -6,7 +6,6 @@
 #define MAIN_C_VECTOR_TESTS_H
 
 #include "vector.h"
-#include <assert.h>
 
 void test_createVector_zeroCapacity();
 
