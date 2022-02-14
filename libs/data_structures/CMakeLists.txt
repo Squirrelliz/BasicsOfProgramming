@@ -5,6 +5,6 @@ add_library(data_structures
         vector/vector.c
         vector/vector_tests.c
         vector/vectorVoid.c
-        matrix/matrix.c matrix/matrix.h)
+        matrix/matrix.c matrix/matrix.h matrix/matrix_tests.c matrix/matrix_tests.h)
 
 target_link_libraries(data_structures algorithms)

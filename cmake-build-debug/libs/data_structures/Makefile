@@ -177,6 +177,30 @@ matrix/matrix.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.s
 .PHONY : matrix/matrix.c.s
 
+matrix/matrix_tests.obj: matrix/matrix_tests.c.obj
+.PHONY : matrix/matrix_tests.obj
+
+# target to build an object file
+matrix/matrix_tests.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tests.c.obj
+.PHONY : matrix/matrix_tests.c.obj
+
+matrix/matrix_tests.i: matrix/matrix_tests.c.i
+.PHONY : matrix/matrix_tests.i
+
+# target to preprocess a source file
+matrix/matrix_tests.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tests.c.i
+.PHONY : matrix/matrix_tests.c.i
+
+matrix/matrix_tests.s: matrix/matrix_tests.c.s
+.PHONY : matrix/matrix_tests.s
+
+# target to generate assembly for a file
+matrix/matrix_tests.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tests.c.s
+.PHONY : matrix/matrix_tests.c.s
+
 ordered_array/orderedArray.obj: ordered_array/orderedArray.c.obj
 .PHONY : ordered_array/orderedArray.obj
 
@@ -312,6 +336,9 @@ help:
 	@echo ... matrix/matrix.obj
 	@echo ... matrix/matrix.i
 	@echo ... matrix/matrix.s
+	@echo ... matrix/matrix_tests.obj
+	@echo ... matrix/matrix_tests.i
+	@echo ... matrix/matrix_tests.s
 	@echo ... ordered_array/orderedArray.obj
 	@echo ... ordered_array/orderedArray.i
 	@echo ... ordered_array/orderedArray.s
