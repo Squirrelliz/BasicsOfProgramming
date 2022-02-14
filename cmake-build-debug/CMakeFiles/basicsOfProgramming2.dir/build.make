@@ -89,6 +89,7 @@ basicsOfProgramming2.exe: CMakeFiles/basicsOfProgramming2.dir/main.c.obj
 basicsOfProgramming2.exe: CMakeFiles/basicsOfProgramming2.dir/build.make
 basicsOfProgramming2.exe: libs/algorithms/libalgorithms.a
 basicsOfProgramming2.exe: libs/data_structures/libdata_structures.a
+basicsOfProgramming2.exe: libs/algorithms/libalgorithms.a
 basicsOfProgramming2.exe: CMakeFiles/basicsOfProgramming2.dir/linklibs.rsp
 basicsOfProgramming2.exe: CMakeFiles/basicsOfProgramming2.dir/objects1.rsp
 basicsOfProgramming2.exe: CMakeFiles/basicsOfProgramming2.dir/link.txt
