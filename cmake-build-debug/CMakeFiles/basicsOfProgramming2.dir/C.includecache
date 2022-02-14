@@ -20,23 +20,7 @@ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/ma
 assert.h
 -
 
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vectorVoid.h
-limits.h
--
-stdio.h
--
-malloc.h
--
-stdbool.h
--
-assert.h
--
-memory.h
--
-
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
-libs/data_structures/vector/vectorVoid.h
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/vector/vectorVoid.h
 libs/data_structures/matrix/matrix_tests.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tests.h
 

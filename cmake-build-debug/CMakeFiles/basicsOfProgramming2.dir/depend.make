@@ -4,5 +4,4 @@
 CMakeFiles/basicsOfProgramming2.dir/main.c.obj: \
  ../libs/data_structures/matrix/matrix.h \
  ../libs/data_structures/matrix/matrix_tests.h \
- ../libs/data_structures/vector/vectorVoid.h \
  ../main.c

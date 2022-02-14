@@ -25,6 +25,7 @@ void test_freeMemMatrix_moreZeroElements();
 void tests_freeMemMatrix();
 //_______________________________________________________________________________________________//
 
+
 void test_matrix();
 
 #endif //MAIN_C_MATRIX_TESTS_H

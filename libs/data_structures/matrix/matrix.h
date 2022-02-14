@@ -20,8 +20,6 @@ typedef struct position {
     int colIndex;
 } position;
 
-void badAlloc();
-
 matrix getMemMatrix(int nRows, int nCols);
 
 matrix *getMemArrayOfMatrices(int nMatrices, int nRows, int nCols);
@@ -29,5 +27,13 @@ matrix *getMemArrayOfMatrices(int nMatrices, int nRows, int nCols);
 void freeMemMatrix(matrix *m);
 
 void freeMemMatrices(matrix *ms, int nMatrices);
+
+void inputMatrix(matrix m);
+
+void inputMatrices(matrix *ms, int nMatrices);
+
+void outputMatrix(matrix m);
+
+void outputMatrices(matrix *ms, int nMatrices);
 
 #endif //MAIN_C_MATRIX_H
