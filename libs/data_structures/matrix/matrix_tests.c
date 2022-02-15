@@ -49,6 +49,7 @@ void test_freeMemMatrix_moreZeroElements() {
 void tests_freeMemMatrix() {
     test_freeMemMatrix_moreZeroElements();
 }
+//_______________________________________________________________________________________________//
 
 void test_swapRows_oneCol() {
     matrix m = createMatrixFromArray((int[]) {1, 2, 3, 4}, 4, 1);
@@ -80,8 +81,9 @@ void test_swapRows_rectangularMatrixWithSeveralRows() {
 void tests_swapRows() {
     test_swapRows_oneCol();
     test_swapRows_secondOrderSquareMatrix();
-     test_swapRows_rectangularMatrixWithSeveralRows();
+    test_swapRows_rectangularMatrixWithSeveralRows();
 }
+//_______________________________________________________________________________________________//
 
 void test_swapColumns_oneRow() {
     matrix m = createMatrixFromArray((int[]) {1, 2, 3, 4}, 1, 4);
@@ -112,8 +114,112 @@ void test_swapColumns_rectangularMatrixWithSeveralColumns() {
 
 void tests_swapColumns() {
     test_swapColumns_oneRow();
-   test_swapColumns_secondOrderSquareMatrix();
-   test_swapColumns_rectangularMatrixWithSeveralColumns();
+    test_swapColumns_secondOrderSquareMatrix();
+    test_swapColumns_rectangularMatrixWithSeveralColumns();
+}
+//_______________________________________________________________________________________________//
+
+void test_insertionSortRowsMatrixByRowCriteria_sortSecondOrderSquareMatrixByRowSum() {
+    matrix m = createMatrixFromArray((int[]) {5, 6, 1, 2}, 2, 2);
+    insertionSortRowsMatrixByRowCriteria(m, getSum);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 2, 5, 6}, 2, 2);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void test_insertionSortRowsMatrixByRowCriteria_sortOrderedSecondOrderSquareMatrixByRowSum() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 5, 6}, 2, 2);
+    insertionSortRowsMatrixByRowCriteria(m, getSum);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 2, 5, 6}, 2, 2);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void test_insertionSortRowsMatrixByRowCriteria_sortThirdOrderSquareMatrixByRowSum() {
+    matrix m = createMatrixFromArray((int[]) {7, 7, 7, 1, 1, 1, 2, 2, 2}, 3, 3);
+    insertionSortRowsMatrixByRowCriteria(m, getSum);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 1, 1, 2, 2, 2, 7, 7, 7}, 3, 3);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void tests_insertionSortRowsMatrixByRowCriteria() {
+    test_insertionSortRowsMatrixByRowCriteria_sortOrderedSecondOrderSquareMatrixByRowSum();
+    test_insertionSortRowsMatrixByRowCriteria_sortSecondOrderSquareMatrixByRowSum();
+    test_insertionSortRowsMatrixByRowCriteria_sortThirdOrderSquareMatrixByRowSum();
+}
+
+//_______________________________________________________________________________________________//
+void test_insertionSortColsMatrixByColCriteria_sortSecondOrderSquareMatrixByColSum() {
+    matrix m = createMatrixFromArray((int[]) {5, 6, 8, 2}, 2, 2);
+    insertionSortColsMatrixByColCriteria(m, getSum);
+    matrix expectedResult = createMatrixFromArray((int[]) {6, 5, 2, 8}, 2, 2);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void test_insertionSortColsMatrixByColCriteria_sortOrderedSecondOrderSquareMatrixByColSum() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 5, 6}, 2, 2);
+    insertionSortColsMatrixByColCriteria(m, getSum);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 2, 5, 6}, 2, 2);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void test_insertionSortColsMatrixByColCriteria_sortThirdOrderSquareMatrixByColSum() {
+    matrix m = createMatrixFromArray((int[]) {3, 1, 2, 3, 1, 2, 3, 1, 2}, 3, 3);
+    insertionSortColsMatrixByColCriteria(m, getSum);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 2, 3, 1, 2, 3, 1, 2, 3}, 3, 3);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void tests_insertionSortColsMatrixByColCriteria() {
+    test_insertionSortColsMatrixByColCriteria_sortSecondOrderSquareMatrixByColSum();
+    test_insertionSortColsMatrixByColCriteria_sortOrderedSecondOrderSquareMatrixByColSum();
+    test_insertionSortColsMatrixByColCriteria_sortThirdOrderSquareMatrixByColSum();
+
+}
+//_______________________________________________________________________________________________//
+
+void test_isEMatrix_notEMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1, 0, 0, 3, 1, 2, 3, 1, 2}, 3, 3);
+    assert(isEMatrix(m) == false);
+    freeMemMatrix(&m);
+}
+
+void test_isEMatrix_EMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1, 0, 0, 0, 1, 0, 0, 0, 1}, 3, 3);
+    assert(isEMatrix(m) == true);
+    freeMemMatrix(&m);
+}
+
+void tests_isEMatrix(){
+    test_isEMatrix_notEMatrix();
+    test_isEMatrix_EMatrix();
+}
+//_______________________________________________________________________________________________//
+void test_isSymmetricMatrix_notSymmetricMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1, 0, 0, 3, 1, 2, 3, 1, 2}, 3, 3);
+    assert(isSymmetricMatrix(m) == false);
+    freeMemMatrix(&m);
+}
+
+void test_isSymmetricMatrix_SymmetricMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1,2,2,2,0,2,2,2,1}, 3, 3);
+    assert(isSymmetricMatrix(m) == true);
+    freeMemMatrix(&m);
+}
+
+void tests_isSymmetricMatrix(){
+   test_isSymmetricMatrix_notSymmetricMatrix();
+   test_isSymmetricMatrix_SymmetricMatrix();
 }
 
 void test_matrix() {
@@ -122,6 +228,10 @@ void test_matrix() {
     tests_freeMemMatrix();
     tests_swapRows();
     tests_swapColumns();
+    tests_insertionSortRowsMatrixByRowCriteria();
+    tests_insertionSortColsMatrixByColCriteria();
+    tests_isEMatrix();
+    tests_isSymmetricMatrix();
 }
 //_______________________________________________________________________________________________//
 

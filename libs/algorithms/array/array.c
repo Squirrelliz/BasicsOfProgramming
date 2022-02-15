@@ -4,6 +4,7 @@
 
 #include "array.h"
 #include <assert.h>
+
 void swap(int *a, int *b) {
     int t = *a;
     *a = *b;
@@ -90,14 +91,12 @@ void insertValue(int *const a, size_t *const n, const size_t pos, const int valu
 }
 
 
-
 int isNonDecreasing(const int *a, size_t n) {
     int i = 1;
     while (i < n && a[i - 1] <= a[i])
         i++;
     return i == n;
 }
-
 
 
 int isMore(const int x, const int y) {
@@ -118,7 +117,7 @@ int binarySearchCriteria(const int *a, const int n, int conditionalDigit, int (f
 }
 
 void deleteByPosSaveOrder(int *a, int *n, const size_t position) {
-    for (int i = position; i < *n - 1; i++) {
+    for (size_t i = position; i < *n - 1; i++) {
         a[i] = a[i + 1];
     }
     (*n)--;
@@ -149,4 +148,11 @@ void insertionSort(int *a, const size_t size) {
     }
 }
 
+int getSum(int *a, int n) {
+    int sum = 0;
+    for (int i = 0; i < n; ++i) {
+        sum += a[i];
+    }
+    return sum;
+}
 

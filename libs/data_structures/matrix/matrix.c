@@ -104,7 +104,83 @@ bool areTwoMatricesEqual(matrix m1, matrix m2) {
 }
 
 void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int)) {
+    int *auxiliaryArray = (int *) malloc(sizeof(int) * m.nRows);
+    for (int i = 0; i < m.nRows; ++i) {
+        auxiliaryArray[i] = criteria(m.values[i], m.nCols);
+    }
 
+    for (size_t i = 1; i < m.nRows; i++) {
+        int t = auxiliaryArray[i];
+        int *f = m.values[i];
+        int j = i;
+        while (j > 0 && auxiliaryArray[j - 1] > t) {
+            auxiliaryArray[j] = auxiliaryArray[j - 1];
+            m.values[j] = m.values[j - 1];
+            j--;
+        }
+        auxiliaryArray[j] = t;
+        m.values[j] = f;
+    }
+    free(auxiliaryArray);
+}
+
+
+void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int)) {
+    int *auxiliaryArray = (int *) malloc(sizeof(int) * m.nCols);
+    int *basketForCurrentCol = (int *) malloc(sizeof(int) * m.nRows);
+    for (int i = 0; i < m.nCols; ++i) {
+        for (int j = 0; j < m.nRows; ++j) {
+            basketForCurrentCol[j] = m.values[j][i];
+        }
+        auxiliaryArray[i] = criteria(basketForCurrentCol, m.nRows);
+    }
+    for (size_t i = 1; i < m.nRows; i++) {
+        int t = auxiliaryArray[i];
+        for (int j = 0; j < m.nRows; ++j) {
+            basketForCurrentCol[j] = m.values[j][i];
+        }
+        int j = i;
+        while (j > 0 && auxiliaryArray[j - 1] > t) {
+            auxiliaryArray[j] = auxiliaryArray[j - 1];
+            for (int k = 0; k < m.nRows; ++k) {
+                m.values[k][j] = m.values[k][j - 1];
+            }
+            j--;
+        }
+        auxiliaryArray[j] = t;
+        for (int l = 0; l < m.nRows; ++l) {
+            m.values[l][j] = basketForCurrentCol[l];
+        }
+    }
+}
+
+bool isSquareMatrix(matrix m) {
+    return m.nRows == m.nCols;
+}
+
+bool isEMatrix(matrix m) {
+    if (!isSquareMatrix(m))
+        return false;
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j) {
+            if (i != j && m.values[i][j] != 0 || i == j && m.values[i][j] != 1)
+                return false;
+        }
+    }
+    return true;
+}
+
+bool isSymmetricMatrix(matrix m) {
+    if (!isSquareMatrix(m))
+        return false;
+    for (int i = 0; i < m.nCols; ++i) {
+        for (int j = 1; j + i < m.nRows; ++j) {
+            int k = j + i;
+            if (m.values[k][i] != m.values[i][k])
+                return false;
+        }
+    }
+    return true;
 }
 
 

@@ -41,6 +41,38 @@ void test_swapColumns_secondOrderSquareMatrix();
 void test_swapColumns_rectangularMatrixWithSeveralColumns();
 
 void tests_swapColumns();
+
+//_______________________________________________________________________________________________//
+void test_insertionSortRowsMatrixByRowCriteria_sortSecondOrderSquareMatrixByRowSum();
+
+void test_insertionSortRowsMatrixByRowCriteria_sortOrderedSecondOrderSquareMatrixByRowSum();
+
+void test_insertionSortRowsMatrixByRowCriteria_sortThirdOrderSquareMatrixByRowSum();
+
+void tests_insertionSortRowsMatrixByRowCriteria();
+
+//_______________________________________________________________________________________________//
+void test_insertionSortColsMatrixByColCriteria_sortSecondOrderSquareMatrixByColSum();
+
+void test_insertionSortColsMatrixByColCriteria_sortOrderedSecondOrderSquareMatrixByColSum();
+
+void test_insertionSortColsMatrixByColCriteria_sortThirdOrderSquareMatrixByColSum();
+
+void tests_insertionSortColsMatrixByColCriteria();
+//_______________________________________________________________________________________________//
+
+void test_isEMatrix_notEMatrix();
+
+void test_isEMatrix_EMatrix();
+
+void tests_isEMatrix();
+//_______________________________________________________________________________________________//
+
+void test_isSymmetricMatrix_notSymmetricMatrix();
+
+void test_isSymmetricMatrix_SymmetricMatrix();
+
+void tests_isSymmetricMatrix();
 //_______________________________________________________________________________________________//
 
 void test_matrix();

@@ -39,5 +39,6 @@ int isNonDecreasing(const int *a, size_t n);
 
 void insertionSort(int *a, const size_t size);
 
+int getSum(int *a, int n);
 
 #endif //BASICSOFPROGRAMMING2_ARRAY_H

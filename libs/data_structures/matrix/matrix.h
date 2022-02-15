@@ -45,10 +45,19 @@ void swapRows(matrix m, int i1, int i2);
 
 void swapColumns(matrix m, int j1, int j2);
 
-bool areTwoMatricesEqual(matrix m1, matrix m2);
-
 void insertionSortRowsMatrixByRowCriteria(matrix m,
                                           int (*criteria)(int*, int));
+void insertionSortColsMatrixByColCriteria(matrix m,
+                                          int (*criteria)(int*, int));
+
+bool areTwoMatricesEqual(matrix m1, matrix m2);
+
+bool isSquareMatrix(matrix m);
+
+bool isEMatrix(matrix m);
+
+bool isSymmetricMatrix(matrix m);
+
 
 
 #endif //MAIN_C_MATRIX_H
