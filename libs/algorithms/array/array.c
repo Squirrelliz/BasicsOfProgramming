@@ -4,6 +4,11 @@
 
 #include "array.h"
 #include <assert.h>
+void swap(int *a, int *b) {
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
 
 int compare_ints(const void *a, const void *b) {
     int arg1 = *(const int *) a;
@@ -143,3 +148,5 @@ void insertionSort(int *a, const size_t size) {
         a[j] = t;
     }
 }
+
+

@@ -5,9 +5,11 @@ libs/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj: \
  ../libs/data_structures/bitset/bitset.c \
  ../libs/data_structures/bitset/bitset.h
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj: \
+ ../libs/algorithms/array/array.h \
  ../libs/data_structures/matrix/matrix.c \
  ../libs/data_structures/matrix/matrix.h
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tests.c.obj: \
+ ../libs/algorithms/array/array.h \
  ../libs/data_structures/matrix/matrix.h \
  ../libs/data_structures/matrix/matrix_tests.c \
  ../libs/data_structures/matrix/matrix_tests.h

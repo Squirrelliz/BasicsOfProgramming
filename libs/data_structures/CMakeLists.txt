@@ -7,4 +7,4 @@ add_library(data_structures
         vector/vectorVoid.c
         matrix/matrix.c matrix/matrix.h matrix/matrix_tests.c matrix/matrix_tests.h)
 
-target_link_libraries(data_structures algorithms)
+target_link_libraries( data_structures algorithms)

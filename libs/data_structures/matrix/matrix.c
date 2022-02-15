@@ -37,6 +37,18 @@ void freeMemMatrices(matrix *ms, int nMatrices) {
     free(ms);
 }
 
+matrix createMatrixFromArray(const int *a,
+                             int nRows, int nCols) {
+    matrix m = getMemMatrix(nRows, nCols);
+
+    int k = 0;
+    for (int i = 0; i < nRows; i++)
+        for (int j = 0; j < nCols; j++)
+            m.values[i][j] = a[k++];
+
+    return m;
+}
+
 void inputMatrix(matrix m) {
     for (int i = 0; i < m.nRows; ++i) {
         for (int j = 0; j < m.nCols; ++j) {
@@ -65,6 +77,34 @@ void outputMatrices(matrix *ms, int nMatrices) {
         outputMatrix(ms[i]);
         printf("\n");
     }
+}
+
+void swapRows(matrix m, int i1, int i2) {
+    int *t = m.values[i1];
+    m.values[i1] = m.values[i2];
+    m.values[i2] = t;
+}
+
+void swapColumns(matrix m, int j1, int j2) {
+    for (int i = 0; i < m.nRows; ++i) {
+        swap(&m.values[i][j1], &m.values[i][j2]);
+    }
+}
+
+bool areTwoMatricesEqual(matrix m1, matrix m2) {
+    if (m1.nRows != m2.nRows || m1.nCols != m2.nCols)
+        return false;
+    for (int i = 0; i < m1.nRows; ++i) {
+        for (int j = 0; j < m1.nCols; ++j) {
+            if (m1.values[i][j] != m2.values[i][j])
+                return false;
+        }
+    }
+    return true;
+}
+
+void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int)) {
+
 }
 
 

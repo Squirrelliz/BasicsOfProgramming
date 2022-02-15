@@ -4,8 +4,12 @@
 
 #ifndef BASICSOFPROGRAMMING2_ARRAY_H
 #define BASICSOFPROGRAMMING2_ARRAY_H
+
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+
+void swap(int *a, int *b);
 
 int compare_ints(const void *a, const void *b);
 
