@@ -205,6 +205,7 @@ void tests_isEMatrix(){
     test_isEMatrix_EMatrix();
 }
 //_______________________________________________________________________________________________//
+
 void test_isSymmetricMatrix_notSymmetricMatrix() {
     matrix m = createMatrixFromArray((int[]) {1, 0, 0, 3, 1, 2, 3, 1, 2}, 3, 3);
     assert(isSymmetricMatrix(m) == false);
@@ -221,7 +222,79 @@ void tests_isSymmetricMatrix(){
    test_isSymmetricMatrix_notSymmetricMatrix();
    test_isSymmetricMatrix_SymmetricMatrix();
 }
+//_______________________________________________________________________________________________//
 
+void test_transposeSquareMatrix_secondOrderSquareMatrix(){
+    matrix m = createMatrixFromArray((int[]) {1,2,1,2}, 2, 2);
+    transposeSquareMatrix(m);
+    matrix expectedResult = createMatrixFromArray((int[]) {1,1,2,2}, 2, 2);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+void test_transposeSquareMatrix_thirdOrderSquareMatrix(){
+    matrix m = createMatrixFromArray((int[]) {1,2,3,1,2,3,1,2,3}, 3, 3);
+    transposeSquareMatrix(m);
+    matrix expectedResult = createMatrixFromArray((int[]) {1,1,1,2,2,2,3,3,3}, 3, 3);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void tests_transposeSquareMatrix(){
+    test_transposeSquareMatrix_secondOrderSquareMatrix();
+    test_transposeSquareMatrix_thirdOrderSquareMatrix();
+}
+//_______________________________________________________________________________________________//
+
+
+void test_getMinValuePos_oneMin() {
+    matrix m = createMatrixFromArray((int[]) {5, 9, 3, 4}, 2, 2);
+    position p = getMinValuePos(m);
+    position expectedResult = {1, 0};
+    assert(p.rowIndex == expectedResult.rowIndex);
+    assert(p.colIndex == expectedResult.colIndex);
+    freeMemMatrix(&m);
+}
+
+void test_getMinValuePos_twoMins() {
+    matrix m = createMatrixFromArray((int[]) {5, 9, 3, 3}, 2, 2);
+    position p = getMinValuePos(m);
+    position expectedResult = {1, 0};
+    assert(p.rowIndex == expectedResult.rowIndex);
+    assert(p.colIndex == expectedResult.colIndex);
+    freeMemMatrix(&m);
+}
+
+void tests_getMinValuePos() {
+    test_getMinValuePos_oneMin();
+    test_getMinValuePos_twoMins();
+}
+//_______________________________________________________________________________________________//
+
+void test_getMaxValuePos_oneMax() {
+    matrix m = createMatrixFromArray((int[]) {5, 9, 3, 4}, 2, 2);
+    position p = getMaxValuePos(m);
+    position expectedResult = {0, 1};
+    assert(p.rowIndex == expectedResult.rowIndex);
+    assert(p.colIndex == expectedResult.colIndex);
+    freeMemMatrix(&m);
+}
+
+void test_getMaxValuePos_twoMax() {
+    matrix m = createMatrixFromArray((int[]) {5, 9, 9, 3}, 2, 2);
+    position p = getMaxValuePos(m);
+    position expectedResult = {0, 1};
+    assert(p.rowIndex == expectedResult.rowIndex);
+    assert(p.colIndex == expectedResult.colIndex);
+    freeMemMatrix(&m);
+}
+
+void tests_getMaxValuePos() {
+    test_getMaxValuePos_oneMax();
+    test_getMaxValuePos_twoMax();
+}
+//_______________________________________________________________________________________________//
 void test_matrix() {
     tests_getMemMatrix();
     tests_getMemArrayOfMatrices();
@@ -232,8 +305,7 @@ void test_matrix() {
     tests_insertionSortColsMatrixByColCriteria();
     tests_isEMatrix();
     tests_isSymmetricMatrix();
+    tests_transposeSquareMatrix();
+    tests_getMinValuePos();
+    tests_getMaxValuePos();
 }
-//_______________________________________________________________________________________________//
-
-
-

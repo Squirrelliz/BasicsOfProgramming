@@ -75,6 +75,27 @@ void test_isSymmetricMatrix_SymmetricMatrix();
 void tests_isSymmetricMatrix();
 //_______________________________________________________________________________________________//
 
+void test_transposeSquareMatrix_secondOrderSquareMatrix();
+
+void test_transposeSquareMatrix_thirdOrderSquareMatrix();
+
+void tests_transposeSquareMatrix();
+
+//_______________________________________________________________________________________________//
+void test_getMinValuePos_oneMin();
+
+void test_getMinValuePos_twoMins();
+
+void tests_getMinValuePos();
+//_______________________________________________________________________________________________//
+
+void test_getMaxValuePos_oneMax();
+
+void test_getMaxValuePos_twoMax();
+
+void tests_getMaxValuePos();
+//_______________________________________________________________________________________________//
+
 void test_matrix();
 
 

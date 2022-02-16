@@ -152,6 +152,8 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int))
             m.values[l][j] = basketForCurrentCol[l];
         }
     }
+    free(auxiliaryArray);
+    free(basketForCurrentCol);
 }
 
 bool isSquareMatrix(matrix m) {
@@ -182,6 +184,43 @@ bool isSymmetricMatrix(matrix m) {
     }
     return true;
 }
+
+void transposeSquareMatrix(matrix m) {
+    for (int i = 0; i < m.nCols; ++i) {
+        for (int j = 1; j + i < m.nRows; ++j) {
+            int k = j + i;
+            swap(&m.values[k][i], &m.values[i][k]);
+        }
+    }
+}
+
+position getMinValuePos(matrix m) {
+    position min = {0, 0};
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j) {
+            if (m.values[i][j] < m.values[min.rowIndex][min.colIndex]) {
+                min.rowIndex = i;
+                min.colIndex = j;
+            }
+        }
+    }
+    return min;
+}
+
+position getMaxValuePos(matrix m) {
+    position max = {0, 0};
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j) {
+            if (m.values[i][j] > m.values[max.rowIndex][max.colIndex]) {
+                max.rowIndex = i;
+                max.colIndex = j;
+            }
+        }
+    }
+    return max;
+}
+
+
 
 
 
