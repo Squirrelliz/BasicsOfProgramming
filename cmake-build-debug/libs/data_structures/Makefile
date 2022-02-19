@@ -177,6 +177,54 @@ matrix/matrix.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.s
 .PHONY : matrix/matrix.c.s
 
+matrix/matrix_tasks.obj: matrix/matrix_tasks.c.obj
+.PHONY : matrix/matrix_tasks.obj
+
+# target to build an object file
+matrix/matrix_tasks.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tasks.c.obj
+.PHONY : matrix/matrix_tasks.c.obj
+
+matrix/matrix_tasks.i: matrix/matrix_tasks.c.i
+.PHONY : matrix/matrix_tasks.i
+
+# target to preprocess a source file
+matrix/matrix_tasks.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tasks.c.i
+.PHONY : matrix/matrix_tasks.c.i
+
+matrix/matrix_tasks.s: matrix/matrix_tasks.c.s
+.PHONY : matrix/matrix_tasks.s
+
+# target to generate assembly for a file
+matrix/matrix_tasks.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tasks.c.s
+.PHONY : matrix/matrix_tasks.c.s
+
+matrix/matrix_tasks_tests.obj: matrix/matrix_tasks_tests.c.obj
+.PHONY : matrix/matrix_tasks_tests.obj
+
+# target to build an object file
+matrix/matrix_tasks_tests.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tasks_tests.c.obj
+.PHONY : matrix/matrix_tasks_tests.c.obj
+
+matrix/matrix_tasks_tests.i: matrix/matrix_tasks_tests.c.i
+.PHONY : matrix/matrix_tasks_tests.i
+
+# target to preprocess a source file
+matrix/matrix_tasks_tests.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tasks_tests.c.i
+.PHONY : matrix/matrix_tasks_tests.c.i
+
+matrix/matrix_tasks_tests.s: matrix/matrix_tasks_tests.c.s
+.PHONY : matrix/matrix_tasks_tests.s
+
+# target to generate assembly for a file
+matrix/matrix_tasks_tests.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\CMakeFiles\data_structures.dir\build.make libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tasks_tests.c.s
+.PHONY : matrix/matrix_tasks_tests.c.s
+
 matrix/matrix_tests.obj: matrix/matrix_tests.c.obj
 .PHONY : matrix/matrix_tests.obj
 
@@ -336,6 +384,12 @@ help:
 	@echo ... matrix/matrix.obj
 	@echo ... matrix/matrix.i
 	@echo ... matrix/matrix.s
+	@echo ... matrix/matrix_tasks.obj
+	@echo ... matrix/matrix_tasks.i
+	@echo ... matrix/matrix_tasks.s
+	@echo ... matrix/matrix_tasks_tests.obj
+	@echo ... matrix/matrix_tasks_tests.i
+	@echo ... matrix/matrix_tasks_tests.s
 	@echo ... matrix/matrix_tests.obj
 	@echo ... matrix/matrix_tests.i
 	@echo ... matrix/matrix_tests.s

@@ -4,5 +4,7 @@
 CMakeFiles/basicsOfProgramming2.dir/main.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/matrix/matrix.h \
+ ../libs/data_structures/matrix/matrix_tasks.h \
+ ../libs/data_structures/matrix/matrix_tasks_tests.h \
  ../libs/data_structures/matrix/matrix_tests.h \
  ../main.c

@@ -8,12 +8,10 @@
 #include "matrix.h"
 //task 1
 
-void swapRowsContainingMaxAndMin(matrix m) {
-    position minPos, maxPos;
-    minPos = getMinValuePos(m);
-    maxPos = getMaxValuePos(m);
+void swapRowsContainingMaxAndMin(matrix m);
 
-    swapRows(m, minPos.rowIndex, maxPos.rowIndex);
-}
+//task 2
+
+void sortRowsByNonDecreasingMaximums(matrix m);
 
 #endif //MAIN_C_MATRIX_TASKS_H

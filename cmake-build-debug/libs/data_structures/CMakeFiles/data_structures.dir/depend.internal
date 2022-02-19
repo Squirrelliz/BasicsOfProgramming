@@ -8,6 +8,17 @@ libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.c
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
+libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tasks.c.obj
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks.c
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks.h
+libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tasks_tests.c.obj
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks_tests.c
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks_tests.h
 libs/data_structures/CMakeFiles/data_structures.dir/matrix/matrix_tests.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h

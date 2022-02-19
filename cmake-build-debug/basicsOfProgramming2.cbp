@@ -164,6 +164,18 @@
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h">
 			<Option target="data_structures"/>
 		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks.h">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks_tests.c">
+			<Option target="data_structures"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks_tests.h">
+			<Option target="data_structures"/>
+		</Unit>
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tests.c">
 			<Option target="data_structures"/>
 		</Unit>
