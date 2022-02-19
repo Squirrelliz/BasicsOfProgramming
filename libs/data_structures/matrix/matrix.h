@@ -68,5 +68,7 @@ position getMaxValuePos(matrix m);
 matrix *createArrayOfMatrixFromArray(const int *values,
                                      size_t nMatrices, size_t nRows, size_t nCols);
 
+matrix mulMatrices(matrix m1, matrix m2);
+
 
 #endif //MAIN_C_MATRIX_H

@@ -233,6 +233,24 @@ matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices, size_t
     return ms;
 }
 
+matrix mulMatrices(matrix m1, matrix m2) {
+    if (m1.nCols != m2.nRows) {
+        fprintf(stderr, "the number of columns of the first matrix is not equal to the number of rows of the second");
+        exit(1);
+    }
+    matrix resultMatrix = getMemMatrix(m1.nRows, m2.nCols);
+    for (int i = 0; i < m1.nRows; ++i) {
+        for (int j = 0; j < m2.nCols; ++j) {
+            resultMatrix.values[i][j] = 0;
+            for (int k = 0; k < m1.nCols; ++k) {
+                resultMatrix.values[i][j] += m1.values[i][k] * m2.values[k][j];
+            }
+        }
+    }
+
+    return resultMatrix;
+}
+
 
 
 

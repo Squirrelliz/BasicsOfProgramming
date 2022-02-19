@@ -97,9 +97,33 @@ void tests_sortColsByNonDecreasingMaximums() {
 }
 //________________________________________________________________________________________________//
 
+void test_getSquareOfMatrixIfSymmetric_symmetricMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 2, 2, 0, 2, 2, 2, 1}, 3, 3);
+    getSquareOfMatrixIfSymmetric(&m);
+    matrix expectedResult = createMatrixFromArray((int[]) {9, 6, 8, 6, 8, 6, 8, 6, 9}, 3, 3);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void test_getSquareOfMatrixIfSymmetric_notSymmetricMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1, 4, 2, 2, 0, 2, 2, 2, 1}, 3, 3);
+    getSquareOfMatrixIfSymmetric(&m);
+    matrix expectedResult = createMatrixFromArray((int[]) {9, 6, 8, 6, 8, 6, 8, 6, 9}, 3, 3);
+    assert(!areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void tests_getSquareOfMatrixIfSymmetric() {
+    test_getSquareOfMatrixIfSymmetric_symmetricMatrix();
+    test_getSquareOfMatrixIfSymmetric_notSymmetricMatrix();
+}
+//________________________________________________________________________________________________//
 
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
     tests_sortRowsByNonDecreasingMaximums();
     tests_sortColsByNonDecreasingMaximums();
+    tests_getSquareOfMatrixIfSymmetric();
 }

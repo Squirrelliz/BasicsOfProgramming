@@ -96,6 +96,13 @@ void test_getMaxValuePos_twoMax();
 void tests_getMaxValuePos();
 //_______________________________________________________________________________________________//
 
+void test_mulMatrices_twoSquareMatrices();
+
+void test_mulMatrices_twoRectangularMatrices();
+
+void tests_mulMatrices();
+
+//_______________________________________________________________________________________________//
 void test_matrix();
 
 

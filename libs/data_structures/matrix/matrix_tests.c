@@ -138,9 +138,9 @@ void test_insertionSortRowsMatrixByRowCriteria_sortOrderedSecondOrderSquareMatri
 }
 
 void test_insertionSortRowsMatrixByRowCriteria_rectangularMatrix() {
-    matrix m = createMatrixFromArray((int[]) {6,4,1,2,4,3}, 3, 2);
+    matrix m = createMatrixFromArray((int[]) {6, 4, 1, 2, 4, 3}, 3, 2);
     insertionSortRowsMatrixByRowCriteria(m, getSum);
-    matrix expectedResult = createMatrixFromArray((int[]) {1,2,4,3,6,4}, 3, 2);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 2, 4, 3, 6, 4}, 3, 2);
     assert(areTwoMatricesEqual(m, expectedResult));
     freeMemMatrix(&m);
     freeMemMatrix(&expectedResult);
@@ -172,9 +172,9 @@ void test_insertionSortColsMatrixByColCriteria_sortOrderedSecondOrderSquareMatri
 }
 
 void test_insertionSortColsMatrixByColCriteria_rectangularMatrix() {
-    matrix m = createMatrixFromArray((int[]) {0, 9,0,3,0,8}, 2, 3);
+    matrix m = createMatrixFromArray((int[]) {0, 9, 0, 3, 0, 8}, 2, 3);
     insertionSortColsMatrixByColCriteria(m, getSum);
-    matrix expectedResult = createMatrixFromArray((int[]) {0,0,9,3,8,0}, 2, 3);
+    matrix expectedResult = createMatrixFromArray((int[]) {0, 0, 9, 3, 8, 0}, 2, 3);
     assert(areTwoMatricesEqual(m, expectedResult));
     freeMemMatrix(&m);
     freeMemMatrix(&expectedResult);
@@ -200,7 +200,7 @@ void test_isEMatrix_EMatrix() {
     freeMemMatrix(&m);
 }
 
-void tests_isEMatrix(){
+void tests_isEMatrix() {
     test_isEMatrix_notEMatrix();
     test_isEMatrix_EMatrix();
 }
@@ -213,35 +213,36 @@ void test_isSymmetricMatrix_notSymmetricMatrix() {
 }
 
 void test_isSymmetricMatrix_SymmetricMatrix() {
-    matrix m = createMatrixFromArray((int[]) {1,2,2,2,0,2,2,2,1}, 3, 3);
+    matrix m = createMatrixFromArray((int[]) {1, 2, 2, 2, 0, 2, 2, 2, 1}, 3, 3);
     assert(isSymmetricMatrix(m) == true);
     freeMemMatrix(&m);
 }
 
-void tests_isSymmetricMatrix(){
-   test_isSymmetricMatrix_notSymmetricMatrix();
-   test_isSymmetricMatrix_SymmetricMatrix();
+void tests_isSymmetricMatrix() {
+    test_isSymmetricMatrix_notSymmetricMatrix();
+    test_isSymmetricMatrix_SymmetricMatrix();
 }
 //_______________________________________________________________________________________________//
 
-void test_transposeSquareMatrix_secondOrderSquareMatrix(){
-    matrix m = createMatrixFromArray((int[]) {1,2,1,2}, 2, 2);
+void test_transposeSquareMatrix_secondOrderSquareMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 1, 2}, 2, 2);
     transposeSquareMatrix(m);
-    matrix expectedResult = createMatrixFromArray((int[]) {1,1,2,2}, 2, 2);
-    assert(areTwoMatricesEqual(m, expectedResult));
-    freeMemMatrix(&m);
-    freeMemMatrix(&expectedResult);
-}
-void test_transposeSquareMatrix_thirdOrderSquareMatrix(){
-    matrix m = createMatrixFromArray((int[]) {1,2,3,1,2,3,1,2,3}, 3, 3);
-    transposeSquareMatrix(m);
-    matrix expectedResult = createMatrixFromArray((int[]) {1,1,1,2,2,2,3,3,3}, 3, 3);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 1, 2, 2}, 2, 2);
     assert(areTwoMatricesEqual(m, expectedResult));
     freeMemMatrix(&m);
     freeMemMatrix(&expectedResult);
 }
 
-void tests_transposeSquareMatrix(){
+void test_transposeSquareMatrix_thirdOrderSquareMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 3, 1, 2, 3, 1, 2, 3}, 3, 3);
+    transposeSquareMatrix(m);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 1, 1, 2, 2, 2, 3, 3, 3}, 3, 3);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void tests_transposeSquareMatrix() {
     test_transposeSquareMatrix_secondOrderSquareMatrix();
     test_transposeSquareMatrix_thirdOrderSquareMatrix();
 }
@@ -294,7 +295,36 @@ void tests_getMaxValuePos() {
     test_getMaxValuePos_oneMax();
     test_getMaxValuePos_twoMax();
 }
+
 //_______________________________________________________________________________________________//
+
+void test_mulMatrices_twoSquareMatrices() {
+    matrix m1 = createMatrixFromArray((int[]) {3, 6, 0, 2}, 2, 2);
+    matrix m2 = createMatrixFromArray((int[]) {1, 2, 1, 1}, 2, 2);
+    matrix expectedResult = createMatrixFromArray((int[]) {9, 12, 2, 2}, 2, 2);
+    assert(areTwoMatricesEqual(mulMatrices(m1, m2), expectedResult));
+    freeMemMatrix(&m1);
+    freeMemMatrix(&m2);
+    freeMemMatrix(&expectedResult);
+}
+
+void test_mulMatrices_twoRectangularMatrices() {
+    matrix m1 = createMatrixFromArray((int[]) {1, 2, 1, 0, 1, 2}, 2, 3);
+    matrix m2 = createMatrixFromArray((int[]) {1, 0, 0, 1, 1, 1}, 3, 2);
+    matrix expectedResult = createMatrixFromArray((int[]) {2, 3, 2, 3}, 2, 2);
+    assert(areTwoMatricesEqual(mulMatrices(m1, m2), expectedResult));
+    freeMemMatrix(&m1);
+    freeMemMatrix(&m2);
+    freeMemMatrix(&expectedResult);
+}
+
+void tests_mulMatrices() {
+    test_mulMatrices_twoSquareMatrices();
+    test_mulMatrices_twoRectangularMatrices();
+}
+
+//_______________________________________________________________________________________________//
+
 void test_matrix() {
     tests_getMemMatrix();
     tests_getMemArrayOfMatrices();
@@ -308,4 +338,5 @@ void test_matrix() {
     tests_transposeSquareMatrix();
     tests_getMinValuePos();
     tests_getMaxValuePos();
+    tests_mulMatrices();
 }

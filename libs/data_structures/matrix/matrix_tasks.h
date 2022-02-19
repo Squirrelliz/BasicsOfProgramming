@@ -18,4 +18,8 @@ void sortRowsByNonDecreasingMaximums(matrix m);
 
 void sortColsByMinElement(matrix m);
 
+//task 4
+
+void getSquareOfMatrixIfSymmetric(matrix *m);
+
 #endif //MAIN_C_MATRIX_TASKS_H

@@ -31,6 +31,15 @@ void test_sortColsByNonDecreasingMaximums_allMinimumsAreTheSame();
 
 void tests_sortColsByNonDecreasingMaximums();
 
+//_________________________________________________________________________________//
+
+void test_getSquareOfMatrixIfSymmetric_symmetricMatrix();
+
+void test_getSquareOfMatrixIfSymmetric_notSymmetricMatrix();
+
+void tests_getSquareOfMatrixIfSymmetric();
+//_________________________________________________________________________________//
+
 void tests_matrix_tasks();
 
 #endif //MAIN_C_MATRIX_TASKS_TESTS_H

@@ -26,5 +26,12 @@ void sortColsByMinElement(matrix m) {
     insertionSortColsMatrixByColCriteria(m, getMin);
 }
 
+//task 4
+
+void getSquareOfMatrixIfSymmetric(matrix *m) {
+    if (isSymmetricMatrix(*m))
+        *m = mulMatrices(*m, *m);
+}
+
 
 
