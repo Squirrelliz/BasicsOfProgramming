@@ -47,7 +47,7 @@ void test_insertionSortRowsMatrixByRowCriteria_sortSecondOrderSquareMatrixByRowS
 
 void test_insertionSortRowsMatrixByRowCriteria_sortOrderedSecondOrderSquareMatrixByRowSum();
 
-void test_insertionSortRowsMatrixByRowCriteria_sortThirdOrderSquareMatrixByRowSum();
+void test_insertionSortRowsMatrixByRowCriteria_rectangularMatrix();
 
 void tests_insertionSortRowsMatrixByRowCriteria();
 
@@ -56,7 +56,7 @@ void test_insertionSortColsMatrixByColCriteria_sortSecondOrderSquareMatrixByColS
 
 void test_insertionSortColsMatrixByColCriteria_sortOrderedSecondOrderSquareMatrixByColSum();
 
-void test_insertionSortColsMatrixByColCriteria_sortThirdOrderSquareMatrixByColSum();
+void test_insertionSortColsMatrixByColCriteria_rectangularMatrix();
 
 void tests_insertionSortColsMatrixByColCriteria();
 //_______________________________________________________________________________________________//

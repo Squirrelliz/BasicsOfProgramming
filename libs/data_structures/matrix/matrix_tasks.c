@@ -20,3 +20,11 @@ void sortRowsByNonDecreasingMaximums(matrix m) {
     insertionSortRowsMatrixByRowCriteria(m,getMax);
 }
 
+//task 3
+
+void sortColsByMinElement(matrix m) {
+    insertionSortColsMatrixByColCriteria(m, getMin);
+}
+
+
+

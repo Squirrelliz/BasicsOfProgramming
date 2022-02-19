@@ -134,7 +134,7 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int))
         }
         auxiliaryArray[i] = criteria(basketForCurrentCol, m.nRows);
     }
-    for (size_t i = 1; i < m.nRows; i++) {
+    for (size_t i = 1; i < m.nCols; i++) {
         int t = auxiliaryArray[i];
         for (int j = 0; j < m.nRows; ++j) {
             basketForCurrentCol[j] = m.values[j][i];

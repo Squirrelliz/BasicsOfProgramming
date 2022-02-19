@@ -137,10 +137,10 @@ void test_insertionSortRowsMatrixByRowCriteria_sortOrderedSecondOrderSquareMatri
     freeMemMatrix(&expectedResult);
 }
 
-void test_insertionSortRowsMatrixByRowCriteria_sortThirdOrderSquareMatrixByRowSum() {
-    matrix m = createMatrixFromArray((int[]) {7, 7, 7, 1, 1, 1, 2, 2, 2}, 3, 3);
+void test_insertionSortRowsMatrixByRowCriteria_rectangularMatrix() {
+    matrix m = createMatrixFromArray((int[]) {6,4,1,2,4,3}, 3, 2);
     insertionSortRowsMatrixByRowCriteria(m, getSum);
-    matrix expectedResult = createMatrixFromArray((int[]) {1, 1, 1, 2, 2, 2, 7, 7, 7}, 3, 3);
+    matrix expectedResult = createMatrixFromArray((int[]) {1,2,4,3,6,4}, 3, 2);
     assert(areTwoMatricesEqual(m, expectedResult));
     freeMemMatrix(&m);
     freeMemMatrix(&expectedResult);
@@ -149,7 +149,7 @@ void test_insertionSortRowsMatrixByRowCriteria_sortThirdOrderSquareMatrixByRowSu
 void tests_insertionSortRowsMatrixByRowCriteria() {
     test_insertionSortRowsMatrixByRowCriteria_sortOrderedSecondOrderSquareMatrixByRowSum();
     test_insertionSortRowsMatrixByRowCriteria_sortSecondOrderSquareMatrixByRowSum();
-    test_insertionSortRowsMatrixByRowCriteria_sortThirdOrderSquareMatrixByRowSum();
+    test_insertionSortRowsMatrixByRowCriteria_rectangularMatrix();
 }
 
 //_______________________________________________________________________________________________//
@@ -171,10 +171,10 @@ void test_insertionSortColsMatrixByColCriteria_sortOrderedSecondOrderSquareMatri
     freeMemMatrix(&expectedResult);
 }
 
-void test_insertionSortColsMatrixByColCriteria_sortThirdOrderSquareMatrixByColSum() {
-    matrix m = createMatrixFromArray((int[]) {3, 1, 2, 3, 1, 2, 3, 1, 2}, 3, 3);
+void test_insertionSortColsMatrixByColCriteria_rectangularMatrix() {
+    matrix m = createMatrixFromArray((int[]) {0, 9,0,3,0,8}, 2, 3);
     insertionSortColsMatrixByColCriteria(m, getSum);
-    matrix expectedResult = createMatrixFromArray((int[]) {1, 2, 3, 1, 2, 3, 1, 2, 3}, 3, 3);
+    matrix expectedResult = createMatrixFromArray((int[]) {0,0,9,3,8,0}, 2, 3);
     assert(areTwoMatricesEqual(m, expectedResult));
     freeMemMatrix(&m);
     freeMemMatrix(&expectedResult);
@@ -183,7 +183,7 @@ void test_insertionSortColsMatrixByColCriteria_sortThirdOrderSquareMatrixByColSu
 void tests_insertionSortColsMatrixByColCriteria() {
     test_insertionSortColsMatrixByColCriteria_sortSecondOrderSquareMatrixByColSum();
     test_insertionSortColsMatrixByColCriteria_sortOrderedSecondOrderSquareMatrixByColSum();
-    test_insertionSortColsMatrixByColCriteria_sortThirdOrderSquareMatrixByColSum();
+    test_insertionSortColsMatrixByColCriteria_rectangularMatrix();
 
 }
 //_______________________________________________________________________________________________//

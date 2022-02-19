@@ -43,4 +43,6 @@ int getSum(int *a, int n);
 
 int getMax(int *a, int n);
 
+int getMin(int *a, int n);
+
 #endif //BASICSOFPROGRAMMING2_ARRAY_H

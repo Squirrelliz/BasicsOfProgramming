@@ -23,6 +23,14 @@ void test_sortRowsByNonDecreasingMaximums_allMaximumsAreTheSame();
 void tests_sortRowsByNonDecreasingMaximums();
 //_________________________________________________________________________________//
 
+void test_sortColsByNonDecreasingMaximums_differentMinimums();
+
+void test_sortColsByNonDecreasingMaximums_twoIdenticalMinimums();
+
+void test_sortColsByNonDecreasingMaximums_allMinimumsAreTheSame();
+
+void tests_sortColsByNonDecreasingMaximums();
+
 void tests_matrix_tasks();
 
 #endif //MAIN_C_MATRIX_TASKS_TESTS_H

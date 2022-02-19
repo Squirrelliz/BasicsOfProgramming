@@ -14,4 +14,8 @@ void swapRowsContainingMaxAndMin(matrix m);
 
 void sortRowsByNonDecreasingMaximums(matrix m);
 
+//task 3
+
+void sortColsByMinElement(matrix m);
+
 #endif //MAIN_C_MATRIX_TASKS_H
