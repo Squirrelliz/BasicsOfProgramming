@@ -30,6 +30,10 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m);
 
 bool isMutuallyInverseMatrices(matrix m1, matrix m2);
 
+//task 7
 
+long long findSumOfMaxesOfPseudoDiagonal(matrix m);
+
+long long findSumOfMaxesOfPseudoDiagonal2(matrix m);
 
 #endif //MAIN_C_MATRIX_TASKS_H

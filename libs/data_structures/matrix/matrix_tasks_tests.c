@@ -161,10 +161,69 @@ void test_isMutuallyInverseMatrices_notMutuallyInverseMatrices() {
     freeMemMatrix(&m2);
 }
 
-void tests_isMutuallyInverseMatrices(){
+void tests_isMutuallyInverseMatrices() {
     test_isMutuallyInverseMatrices_mutuallyInverseMatrices();
     test_isMutuallyInverseMatrices_notMutuallyInverseMatrices();
 }
+//________________________________________________________________________________________________//
+
+void test_findSumOfMaxesOfPseudoDiagonal_rectangularMatrix() {
+    matrix m = createMatrixFromArray((int[]) {3, 2, 5, 4, 1, 3, 6, 3, 3, 2, 1, 2}, 3, 4);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 20);
+    freeMemMatrix(&m);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal_oneRow() {
+    matrix m = createMatrixFromArray((int[]) {3, 2, 5, 4}, 1, 4);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 11);
+    freeMemMatrix(&m);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal_oneCol() {
+    matrix m = createMatrixFromArray((int[]) {3, 2, 5, 4}, 4, 1);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 11);
+    freeMemMatrix(&m);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal_secondOrderSquareMatrix() {
+    matrix m = createMatrixFromArray((int[]) {3, 2, 5, 4}, 2, 2);
+    assert(findSumOfMaxesOfPseudoDiagonal(m) == 7);
+    freeMemMatrix(&m);
+}
+void test_findSumOfMaxesOfPseudoDiagonal2_rectangularMatrix() {
+    matrix m = createMatrixFromArray((int[]) {3, 2, 5, 4, 1, 3, 6, 3, 3, 2, 1, 2}, 3, 4);
+    assert(findSumOfMaxesOfPseudoDiagonal2(m) == 20);
+    freeMemMatrix(&m);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal2_oneRow() {
+    matrix m = createMatrixFromArray((int[]) {3, 2, 5, 4}, 1, 4);
+    assert(findSumOfMaxesOfPseudoDiagonal2(m) == 11);
+    freeMemMatrix(&m);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal2_oneCol() {
+    matrix m = createMatrixFromArray((int[]) {3, 2, 5, 4}, 4, 1);
+    assert(findSumOfMaxesOfPseudoDiagonal2(m) == 11);
+    freeMemMatrix(&m);
+}
+
+void test_findSumOfMaxesOfPseudoDiagonal2_secondOrderSquareMatrix() {
+    matrix m = createMatrixFromArray((int[]) {3, 2, 5, 4}, 2, 2);
+    assert(findSumOfMaxesOfPseudoDiagonal2(m) == 7);
+    freeMemMatrix(&m);
+}
+void tests_findSumOfMaxesOfPseudoDiagonal() {
+    test_findSumOfMaxesOfPseudoDiagonal_rectangularMatrix();
+    test_findSumOfMaxesOfPseudoDiagonal_oneRow();
+    test_findSumOfMaxesOfPseudoDiagonal_oneCol();
+    test_findSumOfMaxesOfPseudoDiagonal_secondOrderSquareMatrix();
+    test_findSumOfMaxesOfPseudoDiagonal2_rectangularMatrix();
+    test_findSumOfMaxesOfPseudoDiagonal2_oneRow();
+    test_findSumOfMaxesOfPseudoDiagonal2_oneCol();
+    test_findSumOfMaxesOfPseudoDiagonal2_secondOrderSquareMatrix();
+}
+//________________________________________________________________________________________________//
 
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
@@ -173,4 +232,5 @@ void tests_matrix_tasks() {
     tests_getSquareOfMatrixIfSymmetric();
     tests_transposeIfMatrixHasNotEqualSumOfRows();
     tests_isMutuallyInverseMatrices();
+    tests_findSumOfMaxesOfPseudoDiagonal();
 }

@@ -56,4 +56,15 @@ void tests_isMutuallyInverseMatrices();
 
 void tests_matrix_tasks();
 
+void tests_findSumOfMaxesOfPseudoDiagonal();
+//_________________________________________________________________________________//
+
+void test_findSumOfMaxesOfPseudoDiagonal_rectangularMatrix();
+
+void test_findSumOfMaxesOfPseudoDiagonal_oneRow();
+
+void test_findSumOfMaxesOfPseudoDiagonal_oneCol();
+
+void test_findSumOfMaxesOfPseudoDiagonal_secondOrderSquareMatrix();
+
 #endif //MAIN_C_MATRIX_TASKS_TESTS_H

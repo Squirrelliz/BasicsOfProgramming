@@ -44,9 +44,54 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
 }
 
 //task 6
+
 bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
     return isEMatrix(mulMatrices(m1, m2));
 }
+
+//task 7
+
+long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
+    position start = {m.nRows - 1, -1};//{0,0}
+    int s = 0;//s=3
+    while (start.rowIndex >= 0) {
+        while (start.colIndex < m.nCols - 1) {
+            start.colIndex++;
+            if (start.colIndex == start.rowIndex)
+                continue;
+            int maximum = m.values[start.rowIndex][start.colIndex];
+            for (int j = start.rowIndex, k = start.colIndex; j >= 0 && k >= 0; --j, --k) {
+                maximum = max(maximum, m.values[j][k]);
+            }
+            s += maximum;
+        }
+        start.rowIndex--;
+        start.colIndex--;
+    }
+    return s;
+}
+
+long long findSumOfMaxesOfPseudoDiagonal2(matrix m) {
+    int n_diagonals = m.nRows + m.nCols - 1;
+    int *arrayOfMaximums = (int *) malloc(sizeof(int) * n_diagonals);
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j) {
+            int diagonal_index = j - i - 1 + m.nRows;
+            if (j == 0 || i == 0)
+                arrayOfMaximums[diagonal_index] = m.values[i][j];
+            else
+                arrayOfMaximums[diagonal_index] = max(arrayOfMaximums[diagonal_index], m.values[i][j]);
+
+        }
+    }
+
+    swap(&arrayOfMaximums[0 - 1 + m.nRows], &arrayOfMaximums[0]);
+    long long s = getSum(arrayOfMaximums + 1, n_diagonals - 1);
+    free(arrayOfMaximums);
+    return s;
+}
+
+//task 8
 
 
 

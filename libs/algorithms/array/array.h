@@ -47,5 +47,7 @@ int getMin(int *a, int n);
 
 bool isUnique(long long *a, int n);
 
+int max(int a, int b);
+
 
 #endif //BASICSOFPROGRAMMING2_ARRAY_H

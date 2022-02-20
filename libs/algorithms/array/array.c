@@ -185,3 +185,8 @@ bool isUnique(long long int *a, int n) {
     }
     return 1;
 }
+
+int max(int a, int b) {
+    int m = a > b ? a : b;
+    return m;
+}
