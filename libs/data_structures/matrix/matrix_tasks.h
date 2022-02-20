@@ -22,4 +22,8 @@ void sortColsByMinElement(matrix m);
 
 void getSquareOfMatrixIfSymmetric(matrix *m);
 
+//task 5
+
+void transposeIfMatrixHasNotEqualSumOfRows(matrix m);
+
 #endif //MAIN_C_MATRIX_TASKS_H

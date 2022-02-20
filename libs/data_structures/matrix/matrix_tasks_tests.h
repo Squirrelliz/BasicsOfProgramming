@@ -38,7 +38,14 @@ void test_getSquareOfMatrixIfSymmetric_symmetricMatrix();
 void test_getSquareOfMatrixIfSymmetric_notSymmetricMatrix();
 
 void tests_getSquareOfMatrixIfSymmetric();
+
 //_________________________________________________________________________________//
+
+void test_transposeIfMatrixHasNotEqualSumOfRows_hasNoEqualSumOfRows();
+
+void test_transposeIfMatrixHasNotEqualSumOfRows_hasEqualSumOfRows();
+
+void tests_transposeIfMatrixHasNotEqualSumOfRows();
 
 void tests_matrix_tasks();
 

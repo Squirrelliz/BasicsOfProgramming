@@ -39,10 +39,13 @@ int isNonDecreasing(const int *a, size_t n);
 
 void insertionSort(int *a, const size_t size);
 
-int getSum(int *a, int n);
+long long getSum(int *a, int n);
 
 int getMax(int *a, int n);
 
 int getMin(int *a, int n);
+
+bool isUnique(long long *a, int n);
+
 
 #endif //BASICSOFPROGRAMMING2_ARRAY_H

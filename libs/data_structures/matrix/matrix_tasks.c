@@ -32,6 +32,16 @@ void getSquareOfMatrixIfSymmetric(matrix *m) {
     if (isSymmetricMatrix(*m))
         *m = mulMatrices(*m, *m);
 }
+//task 5
+void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
+    long long *arraySumsOfRowElements = (long long *) malloc(sizeof(long long) * m.nRows);
+    for (int i = 0; i < m.nRows; ++i) {
+        arraySumsOfRowElements[i] = getSum(m.values[i], m.nCols);
+    }
+    if (isUnique(arraySumsOfRowElements, m.nRows))
+        transposeSquareMatrix(m);
+}
+
 
 
 

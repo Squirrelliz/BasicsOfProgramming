@@ -148,8 +148,8 @@ void insertionSort(int *a, const size_t size) {
     }
 }
 
-int getSum(int *a, int n) {
-    int sum = 0;
+long long getSum(int *a, int n) {
+    long long sum = 0;
     for (int i = 0; i < n; ++i) {
         sum += a[i];
     }
@@ -174,4 +174,14 @@ int getMin(int *a, int n) {
     }
 
     return min;
+}
+
+bool isUnique(long long int *a, int n) {
+    for (int i = 0; i < n; ++i) {
+        for (int j = i + 1; j < n; ++j) {
+            if (a[i] == a[j])
+                return 0;
+        }
+    }
+    return 1;
 }
