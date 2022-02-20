@@ -46,6 +46,13 @@ void test_transposeIfMatrixHasNotEqualSumOfRows_hasNoEqualSumOfRows();
 void test_transposeIfMatrixHasNotEqualSumOfRows_hasEqualSumOfRows();
 
 void tests_transposeIfMatrixHasNotEqualSumOfRows();
+//_________________________________________________________________________________//
+
+void test_isMutuallyInverseMatrices_mutuallyInverseMatrices();
+
+void test_isMutuallyInverseMatrices_notMutuallyInverseMatrices();
+
+void tests_isMutuallyInverseMatrices();
 
 void tests_matrix_tasks();
 

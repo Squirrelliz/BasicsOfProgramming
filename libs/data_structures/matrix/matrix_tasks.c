@@ -17,7 +17,7 @@ void swapRowsContainingMaxAndMin(matrix m) {
 //task 2
 
 void sortRowsByNonDecreasingMaximums(matrix m) {
-    insertionSortRowsMatrixByRowCriteria(m,getMax);
+    insertionSortRowsMatrixByRowCriteria(m, getMax);
 }
 
 //task 3
@@ -32,6 +32,7 @@ void getSquareOfMatrixIfSymmetric(matrix *m) {
     if (isSymmetricMatrix(*m))
         *m = mulMatrices(*m, *m);
 }
+
 //task 5
 void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
     long long *arraySumsOfRowElements = (long long *) malloc(sizeof(long long) * m.nRows);
@@ -40,6 +41,11 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
     }
     if (isUnique(arraySumsOfRowElements, m.nRows))
         transposeSquareMatrix(m);
+}
+
+//task 6
+bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
+    return isEMatrix(mulMatrices(m1, m2));
 }
 
 

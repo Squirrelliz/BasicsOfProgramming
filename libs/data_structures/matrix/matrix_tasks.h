@@ -26,4 +26,10 @@ void getSquareOfMatrixIfSymmetric(matrix *m);
 
 void transposeIfMatrixHasNotEqualSumOfRows(matrix m);
 
+//task 6
+
+bool isMutuallyInverseMatrices(matrix m1, matrix m2);
+
+
+
 #endif //MAIN_C_MATRIX_TASKS_H
