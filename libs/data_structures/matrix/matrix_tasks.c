@@ -91,6 +91,20 @@ long long findSumOfMaxesOfPseudoDiagonal2(matrix m) {
     return s;
 }
 
+int getMinInArea(matrix m) {
+    position maxPos = getMaxValuePos(m);
+    int min = m.values[maxPos.rowIndex][maxPos.colIndex];
+    int rightElementColIndex = maxPos.colIndex;
+    int length = 1;
+    for (int i = maxPos.rowIndex; i >= 0; --i) {
+        for (int j = rightElementColIndex; (j - rightElementColIndex) < length && j < m.nCols; ++j) {
+            min = min2(min, m.values[i][j]);
+        }
+        length+=2;
+    }
+    return min;
+}
+
 //task 8
 
 

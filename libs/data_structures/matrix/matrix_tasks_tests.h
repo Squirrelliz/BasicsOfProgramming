@@ -54,11 +54,6 @@ void test_isMutuallyInverseMatrices_notMutuallyInverseMatrices();
 
 void tests_isMutuallyInverseMatrices();
 
-void tests_matrix_tasks();
-
-void tests_findSumOfMaxesOfPseudoDiagonal();
-//_________________________________________________________________________________//
-
 void test_findSumOfMaxesOfPseudoDiagonal_rectangularMatrix();
 
 void test_findSumOfMaxesOfPseudoDiagonal_oneRow();
@@ -66,5 +61,19 @@ void test_findSumOfMaxesOfPseudoDiagonal_oneRow();
 void test_findSumOfMaxesOfPseudoDiagonal_oneCol();
 
 void test_findSumOfMaxesOfPseudoDiagonal_secondOrderSquareMatrix();
+
+void tests_findSumOfMaxesOfPseudoDiagonal();
+
+//_________________________________________________________________________________//
+void tests_getMinInArea();
+
+void test_getMinInArea_rectangularMatrix();
+
+void test_getMinInArea_oneRow();
+
+void test_getMinInArea_oneCol();
+
+//_________________________________________________________________________________//
+void tests_matrix_tasks();
 
 #endif //MAIN_C_MATRIX_TASKS_TESTS_H

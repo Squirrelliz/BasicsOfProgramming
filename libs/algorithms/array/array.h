@@ -49,5 +49,6 @@ bool isUnique(long long *a, int n);
 
 int max(int a, int b);
 
+int min2(int a, int b);
 
 #endif //BASICSOFPROGRAMMING2_ARRAY_H

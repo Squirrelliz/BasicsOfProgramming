@@ -190,6 +190,7 @@ void test_findSumOfMaxesOfPseudoDiagonal_secondOrderSquareMatrix() {
     assert(findSumOfMaxesOfPseudoDiagonal(m) == 7);
     freeMemMatrix(&m);
 }
+
 void test_findSumOfMaxesOfPseudoDiagonal2_rectangularMatrix() {
     matrix m = createMatrixFromArray((int[]) {3, 2, 5, 4, 1, 3, 6, 3, 3, 2, 1, 2}, 3, 4);
     assert(findSumOfMaxesOfPseudoDiagonal2(m) == 20);
@@ -213,6 +214,7 @@ void test_findSumOfMaxesOfPseudoDiagonal2_secondOrderSquareMatrix() {
     assert(findSumOfMaxesOfPseudoDiagonal2(m) == 7);
     freeMemMatrix(&m);
 }
+
 void tests_findSumOfMaxesOfPseudoDiagonal() {
     test_findSumOfMaxesOfPseudoDiagonal_rectangularMatrix();
     test_findSumOfMaxesOfPseudoDiagonal_oneRow();
@@ -225,6 +227,27 @@ void tests_findSumOfMaxesOfPseudoDiagonal() {
 }
 //________________________________________________________________________________________________//
 
+void test_getMinInArea_rectangularMatrix() {
+    matrix m = createMatrixFromArray((int[]) {10, 7, 5, 6, 3, 11, 8, 9, 4, 1, 12, 2}, 3, 4);
+    assert(getMinInArea(m) == 5);
+}
+
+void test_getMinInArea_oneRow() {
+    matrix m = createMatrixFromArray((int[]) {11, 8, 9, 4, 1, 12, 2}, 1, 7);
+    assert(getMinInArea(m) == 12);
+}
+
+void test_getMinInArea_oneCol() {
+    matrix m = createMatrixFromArray((int[]) {8, 9, 4, 1, 12, 2}, 6, 1);
+    assert(getMinInArea(m) == 1);
+}
+
+void tests_getMinInArea() {
+    test_getMinInArea_rectangularMatrix();
+    test_getMinInArea_oneRow();
+    test_getMinInArea_oneCol();
+}
+
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
     tests_sortRowsByNonDecreasingMaximums();
@@ -233,4 +256,5 @@ void tests_matrix_tasks() {
     tests_transposeIfMatrixHasNotEqualSumOfRows();
     tests_isMutuallyInverseMatrices();
     tests_findSumOfMaxesOfPseudoDiagonal();
+    tests_getMinInArea();
 }

@@ -36,4 +36,7 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m);
 
 long long findSumOfMaxesOfPseudoDiagonal2(matrix m);
 
+//task 8
+int getMinInArea(matrix m);
+
 #endif //MAIN_C_MATRIX_TASKS_H
