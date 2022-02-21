@@ -13,6 +13,8 @@ stdlib.h
 -
 stdbool.h
 -
+math.h
+-
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
 stdio.h

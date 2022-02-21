@@ -105,6 +105,10 @@ int getMinInArea(matrix m) {
     return min;
 }
 
+void sortByDistances(matrix m) {
+    insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
+}
+
 //task 8
 
 

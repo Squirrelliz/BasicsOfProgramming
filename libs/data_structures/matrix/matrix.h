@@ -22,6 +22,7 @@ typedef struct position {
     int colIndex;
 } position;
 
+
 matrix createMatrixFromArray(const int *a,
                              int nRows, int nCols);
 
@@ -69,6 +70,9 @@ matrix *createArrayOfMatrixFromArray(const int *values,
                                      size_t nMatrices, size_t nRows, size_t nCols);
 
 matrix mulMatrices(matrix m1, matrix m2);
+
+void insertionSortRowsMatrixByRowCriteriaF(matrix m,
+                                           float (*criteria)(int *, int));
 
 
 #endif //MAIN_C_MATRIX_H

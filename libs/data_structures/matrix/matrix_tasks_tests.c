@@ -248,6 +248,30 @@ void tests_getMinInArea() {
     test_getMinInArea_oneCol();
 }
 
+//________________________________________________________________________________________________//
+void test_sortByDistances_differentDistances() {
+    matrix m = createMatrixFromArray((int[]) {8, 6, 1, 1, 3, 4}, 3, 2);
+    sortByDistances(m);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 1, 3, 4, 8, 6}, 3, 2);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void test_sortByDistances_twoIdenticalDistances() {
+    matrix m = createMatrixFromArray((int[]) {8, 6, 1, 1, 6, 8}, 3, 2);
+    sortByDistances(m);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 1, 8, 6, 6, 8}, 3, 2);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void tests_sortByDistances() {
+    test_sortByDistances_differentDistances();
+    test_sortByDistances_twoIdenticalDistances();
+}
+
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
     tests_sortRowsByNonDecreasingMaximums();
@@ -257,4 +281,5 @@ void tests_matrix_tasks() {
     tests_isMutuallyInverseMatrices();
     tests_findSumOfMaxesOfPseudoDiagonal();
     tests_getMinInArea();
+    tests_sortByDistances();
 }

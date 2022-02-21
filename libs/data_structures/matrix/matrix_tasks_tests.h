@@ -74,6 +74,14 @@ void test_getMinInArea_oneRow();
 void test_getMinInArea_oneCol();
 
 //_________________________________________________________________________________//
+
+void test_sortByDistances_differentDistances();
+
+void test_sortByDistances_twoIdenticalDistances();
+
+void tests_sortByDistances();
+
+//_________________________________________________________________________________//
 void tests_matrix_tasks();
 
 #endif //MAIN_C_MATRIX_TASKS_TESTS_H

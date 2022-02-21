@@ -251,6 +251,27 @@ matrix mulMatrices(matrix m1, matrix m2) {
     return resultMatrix;
 }
 
+void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, int)) {
+    float *auxiliaryArray = (float *) malloc(sizeof(float) * m.nRows);
+    for (int i = 0; i < m.nRows; ++i) {
+        auxiliaryArray[i] = criteria(m.values[i], m.nCols);
+    }
+
+    for (size_t i = 1; i < m.nRows; i++) {
+        float t = auxiliaryArray[i];
+        int *f = m.values[i];
+        int j = i;
+        while (j > 0 && auxiliaryArray[j - 1] > t) {
+            auxiliaryArray[j] = auxiliaryArray[j - 1];
+            m.values[j] = m.values[j - 1];
+            j--;
+        }
+        auxiliaryArray[j] = t;
+        m.values[j] = f;
+    }
+    free(auxiliaryArray);
+}
+
 
 
 

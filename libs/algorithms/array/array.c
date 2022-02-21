@@ -195,3 +195,12 @@ int min2(int a, int b) {
     int m = a < b ? a : b;
     return m;
 }
+
+float getDistance(int *a, int n) {
+    float distance = 0;
+    for (int i = 0; i < n; ++i) {
+        distance += a[i] * a[i];
+    }
+
+    return sqrt(distance);
+}

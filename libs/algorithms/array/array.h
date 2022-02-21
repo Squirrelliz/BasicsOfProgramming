@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <math.h>
 
 void swap(int *a, int *b);
 
@@ -50,5 +51,7 @@ bool isUnique(long long *a, int n);
 int max(int a, int b);
 
 int min2(int a, int b);
+
+float getDistance(int *a, int n);
 
 #endif //BASICSOFPROGRAMMING2_ARRAY_H

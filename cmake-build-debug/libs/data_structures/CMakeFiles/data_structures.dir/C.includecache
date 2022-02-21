@@ -13,6 +13,12 @@ stdlib.h
 -
 stdbool.h
 -
+math.h
+-
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.c
+matrix.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
 stdio.h
@@ -33,4 +39,22 @@ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/ma
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks.h
 matrix.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks_tests.c
+matrix_tasks_tests.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks_tests.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks_tests.h
+matrix_tasks.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tests.c
+matrix_tests.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tests.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tests.h
+matrix.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
+assert.h
+-
 
