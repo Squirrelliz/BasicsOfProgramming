@@ -122,6 +122,36 @@ int countEqClassesByRowsSum(matrix m) {
     return countNUnique(rowSumArray, m.nRows);
 }
 
+int getNSpecialElement(matrix m) {
+    int *maxPosInCol = (int *) malloc(sizeof(int) * m.nCols);
+    int *maxOfCols = (int *) malloc(sizeof(int) * m.nCols);
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j) {
+            if (i == 0) {
+                maxOfCols[j] = m.values[i][j];
+                maxPosInCol[j] = 0;
+            } else if (maxOfCols[j] < m.values[i][j]) {
+                maxOfCols[j] = m.values[i][j];
+                maxPosInCol[j] = i;
+            }
+        }
+    }
+    int countSpecialEl = m.nCols;
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j) {
+            if (maxPosInCol[j] == i)
+                continue;
+            maxOfCols[j] -= m.values[i][j];
+            if (maxOfCols[j] <= 0)
+                countSpecialEl--;
+        }
+    }
+
+    free(maxPosInCol);
+    free(maxOfCols);
+    return countSpecialEl;
+}
+
 //task 11
 
 

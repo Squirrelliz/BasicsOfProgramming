@@ -293,7 +293,29 @@ void tests_countEqClassesByRowsSum() {
     test_countEqClassesByRowsSum_oneRow();
     test_countEqClassesByRowsSum_oneCol();
 }
+
 //________________________________________________________________________________________________//
+void test_getNSpecialElement_rectangularMatrix() {
+    matrix m = createMatrixFromArray((int[]) {3, 5, 5, 4, 2, 3, 6, 7, 12, 2, 1, 2}, 3, 4);
+    assert(getNSpecialElement(m) == 2);
+}
+
+void test_getNSpecialElement_oneRow() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 3}, 1, 3);
+    assert(getNSpecialElement(m) == 3);
+}
+
+void test_getNSpecialElement_oneCol() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 3}, 3, 1);
+    assert(getNSpecialElement(m) == 0);
+}
+
+void tests_getNSpecialElement() {
+    test_getNSpecialElement_rectangularMatrix();
+    test_getNSpecialElement_oneRow();
+    test_getNSpecialElement_oneCol();
+}
+
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
     tests_sortRowsByNonDecreasingMaximums();
@@ -305,4 +327,5 @@ void tests_matrix_tasks() {
     tests_getMinInArea();
     tests_sortByDistances();
     tests_countEqClassesByRowsSum();
+    tests_getNSpecialElement();
 }

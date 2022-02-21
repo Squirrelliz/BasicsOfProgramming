@@ -92,6 +92,16 @@ void test_countEqClassesByRowsSum_oneRow();
 void test_countEqClassesByRowsSum_oneCol();
 
 //_________________________________________________________________________________//
+
+void test_getNSpecialElement_rectangularMatrix();
+
+void test_getNSpecialElement_oneRow();
+
+void test_getNSpecialElement_oneCol();
+
+void tests_getNSpecialElement();
+//_________________________________________________________________________________//
+
 void tests_matrix_tasks();
 
 #endif //MAIN_C_MATRIX_TASKS_TESTS_H
