@@ -82,6 +82,16 @@ void test_sortByDistances_twoIdenticalDistances();
 void tests_sortByDistances();
 
 //_________________________________________________________________________________//
+
+void tests_countEqClassesByRowsSum();
+
+void test_countEqClassesByRowsSum_rectangularMatrix();
+
+void test_countEqClassesByRowsSum_oneRow();
+
+void test_countEqClassesByRowsSum_oneCol();
+
+//_________________________________________________________________________________//
 void tests_matrix_tasks();
 
 #endif //MAIN_C_MATRIX_TASKS_TESTS_H

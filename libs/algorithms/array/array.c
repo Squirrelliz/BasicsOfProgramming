@@ -204,3 +204,24 @@ float getDistance(int *a, int n) {
 
     return sqrt(distance);
 }
+
+int cmp_long_long(const void *pa, const void *pb) {
+    long long arg1 = *(const long long *) pa;
+    long long arg2 = *(const long long *) pb;
+
+    if (arg1 < arg2) return -1;
+    if (arg1 > arg2) return 1;
+    return 0;
+
+}
+
+int countNUnique(long long int *a, int n) {
+    qsort(a, n, sizeof(long long), cmp_long_long);
+
+    int nUniqueElements = 1;
+    for (int i = 0; i < n-1; ++i) {
+        if (a[i] != a[i + 1])
+            nUniqueElements++;
+    }
+    return nUniqueElements;
+}

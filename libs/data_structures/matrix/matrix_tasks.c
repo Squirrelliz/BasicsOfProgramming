@@ -91,6 +91,7 @@ long long findSumOfMaxesOfPseudoDiagonal2(matrix m) {
     return s;
 }
 
+//task 8
 int getMinInArea(matrix m) {
     position maxPos = getMaxValuePos(m);
     int min = m.values[maxPos.rowIndex][maxPos.colIndex];
@@ -100,16 +101,30 @@ int getMinInArea(matrix m) {
         for (int j = rightElementColIndex; (j - rightElementColIndex) < length && j < m.nCols; ++j) {
             min = min2(min, m.values[i][j]);
         }
-        length+=2;
+        length += 2;
     }
     return min;
 }
 
+//task 9
 void sortByDistances(matrix m) {
     insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
 }
 
-//task 8
+//task 10
+
+int countEqClassesByRowsSum(matrix m) {
+    long long *rowSumArray = (long long *) malloc(sizeof(long long)*m.nRows);
+    for (int i = 0; i < m.nRows; ++i) {
+        rowSumArray[i] = getSum(m.values[i], m.nCols);
+    }
+
+    return countNUnique(rowSumArray, m.nRows);
+}
+
+//task 11
+
+
 
 
 

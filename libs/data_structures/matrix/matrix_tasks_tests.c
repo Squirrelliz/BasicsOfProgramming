@@ -272,6 +272,28 @@ void tests_sortByDistances() {
     test_sortByDistances_twoIdenticalDistances();
 }
 
+//________________________________________________________________________________________________//
+void test_countEqClassesByRowsSum_rectangularMatrix() {
+    matrix m = createMatrixFromArray((int[]) {7, 1, 2, 7, 4, 5, 4, 3, 1, 6, 8, 0}, 6, 2);
+    assert(countEqClassesByRowsSum(m) == 3);
+}
+
+void test_countEqClassesByRowsSum_oneRow() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 3}, 1, 3);
+    assert(countEqClassesByRowsSum(m) == 1);
+}
+
+void test_countEqClassesByRowsSum_oneCol() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 3}, 3, 1);
+    assert(countEqClassesByRowsSum(m) == 3);
+}
+
+void tests_countEqClassesByRowsSum() {
+    test_countEqClassesByRowsSum_rectangularMatrix();
+    test_countEqClassesByRowsSum_oneRow();
+    test_countEqClassesByRowsSum_oneCol();
+}
+//________________________________________________________________________________________________//
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
     tests_sortRowsByNonDecreasingMaximums();
@@ -282,4 +304,5 @@ void tests_matrix_tasks() {
     tests_findSumOfMaxesOfPseudoDiagonal();
     tests_getMinInArea();
     tests_sortByDistances();
+    tests_countEqClassesByRowsSum();
 }

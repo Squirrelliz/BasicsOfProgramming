@@ -42,4 +42,8 @@ int getMinInArea(matrix m);
 //task 9
 void sortByDistances(matrix m);
 
+//task 10
+
+int countEqClassesByRowsSum(matrix m);
+
 #endif //MAIN_C_MATRIX_TASKS_H

@@ -54,4 +54,8 @@ int min2(int a, int b);
 
 float getDistance(int *a, int n);
 
+int cmp_long_long(const void *pa, const void *pb);
+
+int countNUnique(long long *a, int n);
+
 #endif //BASICSOFPROGRAMMING2_ARRAY_H
