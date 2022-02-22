@@ -171,6 +171,30 @@ int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
     return countMatricesWithNonDecRows;
 }
 
+void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
+    int *matricesMaxNZeroRows = (int *) malloc(sizeof(int) * nMatrix);
+    int nMatricesMaxNZeroRows = 0;
+    int maxNZeroRows = 0;
+    for (int i = 0; i < nMatrix; ++i) {
+        int currentNZeroRows = countZeroRows(ms[i]);
+        if (currentNZeroRows > maxNZeroRows) {
+            maxNZeroRows = currentNZeroRows;
+            nMatricesMaxNZeroRows = 0;
+            matricesMaxNZeroRows[nMatricesMaxNZeroRows] = i;
+            nMatricesMaxNZeroRows++;
+        } else if (currentNZeroRows == maxNZeroRows) {
+            matricesMaxNZeroRows[nMatricesMaxNZeroRows] = i;
+            nMatricesMaxNZeroRows++;
+        }
+    }
+    for (int i = 0; i < nMatricesMaxNZeroRows; ++i) {
+        outputMatrix(ms[matricesMaxNZeroRows[i]]);
+        printf("\n");
+    }
+}
+
+//task 14
+
 
 
 

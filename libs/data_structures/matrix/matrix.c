@@ -296,6 +296,16 @@ bool hasAllNonDescendingRows(matrix m) {
     return true;
 }
 
+int countZeroRows(matrix m) {
+    int nZeroRows = 0;
+    for (int i = 0; i < m.nRows; ++i) {
+        if (countValues(m.values[i], m.nCols, 0) == m.nCols)
+            nZeroRows++;
+    }
+
+    return nZeroRows;
+}
+
 
 
 

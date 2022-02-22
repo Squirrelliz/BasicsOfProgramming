@@ -373,6 +373,24 @@ void tests_hasAllNonDescendingRows() {
     test_hasAllNonDescendingRows_allRowsAreNonDecreasing();
     test_hasAllNonDescendingRows_aPartOfRowsAreNotNonDecreasing();
 }
+
+//_______________________________________________________________________________________________//
+void test_countZeroRows_noZeroRows() {
+    matrix m = createMatrixFromArray((int[]) {7, 1, 1, 1, 1, 6}, 4, 2);
+    assert(countZeroRows(m) == 0);
+    freeMemMatrix(&m);
+}
+
+void test_countZeroRows_severalZeroRows() {
+    matrix m = createMatrixFromArray((int[]) {7, 1, 0, 0, 0, 0}, 4, 2);
+    assert(countZeroRows(m) == 2);
+    freeMemMatrix(&m);
+}
+
+void tests_countZeroRows() {
+    test_countZeroRows_noZeroRows();
+    test_countZeroRows_severalZeroRows();
+}
 //_______________________________________________________________________________________________//
 
 void test_matrix() {
@@ -391,4 +409,5 @@ void test_matrix() {
     tests_mulMatrices();
     tests_getLeftMin();
     tests_hasAllNonDescendingRows();
+    tests_countZeroRows();
 }

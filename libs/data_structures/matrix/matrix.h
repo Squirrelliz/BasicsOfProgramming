@@ -78,5 +78,7 @@ position getLeftMin(matrix m);
 
 bool hasAllNonDescendingRows(matrix m);
 
+int countZeroRows(matrix m);
+
 
 #endif //MAIN_C_MATRIX_H

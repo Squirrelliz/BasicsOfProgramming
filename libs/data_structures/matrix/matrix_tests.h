@@ -127,6 +127,13 @@ void test_hasAllNonDescendingRows_allRowsAreNonDecreasing();
 
 void test_hasAllNonDescendingRows_aPartOfRowsAreNotNonDecreasing();
 //_______________________________________________________________________________________________//
+
+void tests_countZeroRows();
+
+void test_countZeroRows_noZeroRows();
+
+void test_countZeroRows_severalZeroRows();
+//_______________________________________________________________________________________________//
 void test_matrix();
 
 

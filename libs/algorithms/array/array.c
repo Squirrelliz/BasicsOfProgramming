@@ -225,3 +225,12 @@ int countNUnique(long long int *a, int n) {
     }
     return nUniqueElements;
 }
+
+int countValues(const int *a, int n, int value) {
+    int count = 0;
+    for (int i = 0; i < n; ++i) {
+        if (a[i] == value)
+            count++;
+    }
+    return count;
+}
