@@ -393,6 +393,24 @@ void tests_countZeroRows() {
 }
 //_______________________________________________________________________________________________//
 
+void test_getMatrixNorm_minNegativeModuleIsNorm() {
+    matrix m = createMatrixFromArray((int[]) {7, 1, -3, 9, 0, -10}, 4, 2);
+    assert(getMatrixNorm(m) == 10);
+    freeMemMatrix(&m);
+}
+
+void test_getMatrixNorm_maxPositiveIsNorm() {
+    matrix m = createMatrixFromArray((int[]) {-7, 1, -3, 9, 0, 10}, 4, 2);
+    assert(getMatrixNorm(m) == 10);
+    freeMemMatrix(&m);
+}
+
+void tests_getMatrixNorm(){
+    test_getMatrixNorm_minNegativeModuleIsNorm();
+    test_getMatrixNorm_maxPositiveIsNorm();
+}
+//_______________________________________________________________________________________________//
+
 void test_matrix() {
     tests_getMemMatrix();
     tests_getMemArrayOfMatrices();
@@ -410,4 +428,5 @@ void test_matrix() {
     tests_getLeftMin();
     tests_hasAllNonDescendingRows();
     tests_countZeroRows();
+    tests_getMatrixNorm();
 }

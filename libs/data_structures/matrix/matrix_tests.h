@@ -134,6 +134,14 @@ void test_countZeroRows_noZeroRows();
 
 void test_countZeroRows_severalZeroRows();
 //_______________________________________________________________________________________________//
+
+void tests_getMatrixNorm();
+
+void test_getMatrixNorm_minNegativeModuleIsNorm();
+
+void test_getMatrixNorm_maxPositiveIsNorm();
+//_______________________________________________________________________________________________//
+
 void test_matrix();
 
 

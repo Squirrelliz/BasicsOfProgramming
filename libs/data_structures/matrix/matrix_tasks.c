@@ -171,6 +171,8 @@ int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
     return countMatricesWithNonDecRows;
 }
 
+//task 14
+
 void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
     int *matricesMaxNZeroRows = (int *) malloc(sizeof(int) * nMatrix);
     int nMatricesMaxNZeroRows = 0;
@@ -193,7 +195,30 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
     }
 }
 
-//task 14
+//task 15
+void printMatrixWithMinNorm(matrix *ms, int nMatrix) {
+    int *matricesMinNorm = (int *) malloc(sizeof(int) * nMatrix);
+    int nMatricesMinNorm = 0;
+    int minNorm = getMatrixNorm(ms[0]);
+    for (int i = 0; i < nMatrix; ++i) {
+        int currentNorm = getMatrixNorm(ms[i]);
+        if (currentNorm < minNorm) {
+            minNorm = currentNorm;
+            nMatricesMinNorm = 0;
+            matricesMinNorm[nMatricesMinNorm] = i;
+            nMatricesMinNorm++;
+        } else if (currentNorm == minNorm) {
+            matricesMinNorm[nMatricesMinNorm] = i;
+            nMatricesMinNorm++;
+        }
+    }
+    for (int i = 0; i < nMatricesMinNorm; ++i) {
+        outputMatrix(ms[matricesMinNorm[i]]);
+        printf("\n");
+    }
+}
+
+//task 16
 
 
 

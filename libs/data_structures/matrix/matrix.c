@@ -306,6 +306,19 @@ int countZeroRows(matrix m) {
     return nZeroRows;
 }
 
+int getMatrixNorm(matrix m) {
+    int absMax = abs(m.values[0][0]);
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j) {
+            int currentEl = abs(m.values[i][j]);
+            if (currentEl > absMax)
+                absMax = currentEl;
+        }
+    }
+
+    return  absMax;
+}
+
 
 
 

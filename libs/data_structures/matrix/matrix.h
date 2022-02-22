@@ -80,5 +80,6 @@ bool hasAllNonDescendingRows(matrix m);
 
 int countZeroRows(matrix m);
 
+int getMatrixNorm(matrix m);
 
 #endif //MAIN_C_MATRIX_H
