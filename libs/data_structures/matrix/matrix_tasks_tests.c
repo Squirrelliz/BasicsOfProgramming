@@ -368,6 +368,25 @@ void tests_countNonDescendingRowsMatrices() {
     test_countNonDescendingRowsMatrices_severalSuitableMatrices();
 }
 
+//________________________________________________________________________________________________//
+
+void test_getNSpecialElement2_noSpecialElements() {
+    matrix m = createMatrixFromArray((int[]) {12, 2, 13, 1}, 2, 2);
+    assert(getNSpecialElement2(m) == 0);
+    freeMemMatrix(&m);
+}
+
+void test_getNSpecialElement2_severalSpecialElements() {
+    matrix m = createMatrixFromArray((int[]) {2, 3, 5, 5, 4, 6, 2, 3, 8, 12, 12, 12, 2, 1, 2}, 3, 5);
+    assert(getNSpecialElement2(m) == 4);
+    freeMemMatrix(&m);
+}
+
+void tests_getNSpecialElement2() {
+    test_getNSpecialElement2_noSpecialElements();
+    test_getNSpecialElement2_severalSpecialElements();
+}
+
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
     tests_sortRowsByNonDecreasingMaximums();
@@ -382,4 +401,5 @@ void tests_matrix_tasks() {
     tests_getNSpecialElement();
     tests_swapPenultimateRow();
     tests_countNonDescendingRowsMatrices();
+    tests_getNSpecialElement2();
 }

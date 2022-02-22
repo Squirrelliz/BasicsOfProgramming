@@ -221,6 +221,22 @@ void printMatrixWithMinNorm(matrix *ms, int nMatrix) {
 //task 16
 
 
+int getNSpecialElement2(matrix m) {
+    int countSpecialEl = 0;
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j) {
+            if (!isEqualOrMore(m.values[i], j, m.values[i][j]) &&
+                !isEqualOrLess(m.values[i] + j + 1, m.nCols - j - 1, m.values[i][j]))
+                countSpecialEl++;
+        }
+    }
+    return countSpecialEl;
+}
+
+
+//task 17
+
+
 
 
 

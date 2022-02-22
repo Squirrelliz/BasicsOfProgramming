@@ -66,4 +66,8 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix);
 
 void printMatrixWithMinNorm(matrix *ms, int nMatrix);
 
+//task 16
+
+int getNSpecialElement2(matrix m);
+
 #endif //MAIN_C_MATRIX_TASKS_H

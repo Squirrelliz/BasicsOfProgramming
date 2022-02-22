@@ -109,7 +109,11 @@ void test_countNonDescendingRowsMatrices_severalSuitableMatrices();
 void tests_countNonDescendingRowsMatrices();
 
 //_________________________________________________________________________________//
+void test_getNSpecialElement2_noSpecialElements();
 
+void test_getNSpecialElement2_severalSpecialElements();
+
+void tests_getNSpecialElement2();
 
 void tests_matrix_tasks();
 

@@ -405,7 +405,7 @@ void test_getMatrixNorm_maxPositiveIsNorm() {
     freeMemMatrix(&m);
 }
 
-void tests_getMatrixNorm(){
+void tests_getMatrixNorm() {
     test_getMatrixNorm_minNegativeModuleIsNorm();
     test_getMatrixNorm_maxPositiveIsNorm();
 }

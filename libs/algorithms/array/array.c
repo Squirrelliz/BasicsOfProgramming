@@ -219,7 +219,7 @@ int countNUnique(long long int *a, int n) {
     qsort(a, n, sizeof(long long), cmp_long_long);
 
     int nUniqueElements = 1;
-    for (int i = 0; i < n-1; ++i) {
+    for (int i = 0; i < n - 1; ++i) {
         if (a[i] != a[i + 1])
             nUniqueElements++;
     }
@@ -233,4 +233,20 @@ int countValues(const int *a, int n, int value) {
             count++;
     }
     return count;
+}
+
+bool isEqualOrMore(const int *a, const size_t n, const int x) {
+    for (int i = 0; i < n; i++) {
+        if (a[i] >= x)
+            return true;
+    }
+    return false;
+}
+
+bool isEqualOrLess(const int *a, const size_t n, const int x) {
+    for (int i = 0; i < n; i++) {
+        if (a[i] <= x)
+            return true;
+    }
+    return false;
 }

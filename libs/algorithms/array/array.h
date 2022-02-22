@@ -60,4 +60,8 @@ int countNUnique(long long *a, int n);
 
 int countValues(const int *a, int n, int value);
 
+bool isEqualOrMore(const int *a, const size_t n, const int x);
+
+bool isEqualOrLess(const int *a, const size_t n, const int x);
+
 #endif //BASICSOFPROGRAMMING2_ARRAY_H
