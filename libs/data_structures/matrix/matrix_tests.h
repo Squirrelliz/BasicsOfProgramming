@@ -119,7 +119,14 @@ void test_swapPenultimateRow_secondOrderSquareMatrix();
 void test_swapPenultimateRow_thirdOrderSquareMatrix();
 
 void tests_swapPenultimateRow();
+//_______________________________________________________________________________________________//
 
+void tests_hasAllNonDescendingRows();
+
+void test_hasAllNonDescendingRows_allRowsAreNonDecreasing();
+
+void test_hasAllNonDescendingRows_aPartOfRowsAreNotNonDecreasing();
+//_______________________________________________________________________________________________//
 void test_matrix();
 
 

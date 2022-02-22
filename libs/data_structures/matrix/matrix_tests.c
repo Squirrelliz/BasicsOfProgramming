@@ -355,6 +355,26 @@ void tests_getLeftMin() {
     test_getLeftMin_twoMinInOneCol();
 }
 
+//_______________________________________________________________________________________________//
+void test_hasAllNonDescendingRows_allRowsAreNonDecreasing() {
+    matrix m = createMatrixFromArray((int[]) {1, 6, 6, 4, 5, 7, 1, 2, 3}, 3, 3);
+    assert(hasAllNonDescendingRows(m) == true);
+    freeMemMatrix(&m);
+}
+
+void test_hasAllNonDescendingRows_aPartOfRowsAreNotNonDecreasing() {
+    matrix m = createMatrixFromArray((int[]) {3, 6, 6, 4, 5, 7, 10, 2, 3}, 3, 3);
+    position minPos = getLeftMin(m);
+    assert(hasAllNonDescendingRows(m) == false);
+    freeMemMatrix(&m);
+}
+
+void tests_hasAllNonDescendingRows() {
+    test_hasAllNonDescendingRows_allRowsAreNonDecreasing();
+    test_hasAllNonDescendingRows_aPartOfRowsAreNotNonDecreasing();
+}
+//_______________________________________________________________________________________________//
+
 void test_matrix() {
     tests_getMemMatrix();
     tests_getMemArrayOfMatrices();
@@ -370,4 +390,5 @@ void test_matrix() {
     tests_getMaxValuePos();
     tests_mulMatrices();
     tests_getLeftMin();
+    tests_hasAllNonDescendingRows();
 }

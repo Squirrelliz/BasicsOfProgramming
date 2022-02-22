@@ -91,7 +91,7 @@ void insertValue(int *const a, size_t *const n, const size_t pos, const int valu
 }
 
 
-int isNonDecreasing(const int *a, size_t n) {
+bool isNonDecreasing(const int *a, size_t n) {
     int i = 1;
     while (i < n && a[i - 1] <= a[i])
         i++;

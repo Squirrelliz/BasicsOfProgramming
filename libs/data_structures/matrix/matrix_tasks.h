@@ -54,4 +54,8 @@ int getNSpecialElement(matrix m);
 
 void swapPenultimateRow(matrix m);
 
+//task 13
+
+int countNonDescendingRowsMatrices(matrix *ms, int nMatrix);
+
 #endif //MAIN_C_MATRIX_TASKS_H

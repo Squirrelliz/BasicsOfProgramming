@@ -102,6 +102,15 @@ void test_getNSpecialElement_oneCol();
 void tests_getNSpecialElement();
 //_________________________________________________________________________________//
 
+void test_countNonDescendingRowsMatrices_noSuitableMatrices();
+
+void test_countNonDescendingRowsMatrices_severalSuitableMatrices();
+
+void tests_countNonDescendingRowsMatrices();
+
+//_________________________________________________________________________________//
+
+
 void tests_matrix_tasks();
 
 #endif //MAIN_C_MATRIX_TASKS_TESTS_H

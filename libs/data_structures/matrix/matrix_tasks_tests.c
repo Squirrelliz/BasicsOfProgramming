@@ -230,16 +230,19 @@ void tests_findSumOfMaxesOfPseudoDiagonal() {
 void test_getMinInArea_rectangularMatrix() {
     matrix m = createMatrixFromArray((int[]) {10, 7, 5, 6, 3, 11, 8, 9, 4, 1, 12, 2}, 3, 4);
     assert(getMinInArea(m) == 5);
+    freeMemMatrix(&m);
 }
 
 void test_getMinInArea_oneRow() {
     matrix m = createMatrixFromArray((int[]) {11, 8, 9, 4, 1, 12, 2}, 1, 7);
     assert(getMinInArea(m) == 12);
+    freeMemMatrix(&m);
 }
 
 void test_getMinInArea_oneCol() {
     matrix m = createMatrixFromArray((int[]) {8, 9, 4, 1, 12, 2}, 6, 1);
     assert(getMinInArea(m) == 1);
+    freeMemMatrix(&m);
 }
 
 void tests_getMinInArea() {
@@ -276,16 +279,19 @@ void tests_sortByDistances() {
 void test_countEqClassesByRowsSum_rectangularMatrix() {
     matrix m = createMatrixFromArray((int[]) {7, 1, 2, 7, 4, 5, 4, 3, 1, 6, 8, 0}, 6, 2);
     assert(countEqClassesByRowsSum(m) == 3);
+    freeMemMatrix(&m);
 }
 
 void test_countEqClassesByRowsSum_oneRow() {
     matrix m = createMatrixFromArray((int[]) {1, 2, 3}, 1, 3);
     assert(countEqClassesByRowsSum(m) == 1);
+    freeMemMatrix(&m);
 }
 
 void test_countEqClassesByRowsSum_oneCol() {
     matrix m = createMatrixFromArray((int[]) {1, 2, 3}, 3, 1);
     assert(countEqClassesByRowsSum(m) == 3);
+    freeMemMatrix(&m);
 }
 
 void tests_countEqClassesByRowsSum() {
@@ -298,16 +304,19 @@ void tests_countEqClassesByRowsSum() {
 void test_getNSpecialElement_rectangularMatrix() {
     matrix m = createMatrixFromArray((int[]) {3, 5, 5, 4, 2, 3, 6, 7, 12, 2, 1, 2}, 3, 4);
     assert(getNSpecialElement(m) == 2);
+    freeMemMatrix(&m);
 }
 
 void test_getNSpecialElement_oneRow() {
     matrix m = createMatrixFromArray((int[]) {1, 2, 3}, 1, 3);
     assert(getNSpecialElement(m) == 3);
+    freeMemMatrix(&m);
 }
 
 void test_getNSpecialElement_oneCol() {
     matrix m = createMatrixFromArray((int[]) {1, 2, 3}, 3, 1);
     assert(getNSpecialElement(m) == 0);
+    freeMemMatrix(&m);
 }
 
 void tests_getNSpecialElement() {
@@ -342,6 +351,23 @@ void tests_swapPenultimateRow() {
 
 //________________________________________________________________________________________________//
 
+void test_countNonDescendingRowsMatrices_noSuitableMatrices() {
+    matrix *ms = createArrayOfMatrixFromArray((int[]) {2, 3, 6, 1, 5, 4, 3, 3, 2, 2, 7, 1, 1, 1, 3, 0}, 4, 2, 2);
+    assert(countNonDescendingRowsMatrices(ms, 4) == 0);
+    freeMemMatrices(ms, 4);
+}
+
+void test_countNonDescendingRowsMatrices_severalSuitableMatrices() {
+    matrix *ms = createArrayOfMatrixFromArray((int[]) {7, 1, 1, 1, 1, 6, 2, 2, 5, 4, 2, 3, 1, 3, 7, 9}, 4, 2, 2);
+    assert(countNonDescendingRowsMatrices(ms, 4) == 2);
+    freeMemMatrices(ms, 4);
+}
+
+void tests_countNonDescendingRowsMatrices() {
+    test_countNonDescendingRowsMatrices_noSuitableMatrices();
+    test_countNonDescendingRowsMatrices_severalSuitableMatrices();
+}
+
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
     tests_sortRowsByNonDecreasingMaximums();
@@ -355,4 +381,5 @@ void tests_matrix_tasks() {
     tests_countEqClassesByRowsSum();
     tests_getNSpecialElement();
     tests_swapPenultimateRow();
+    tests_countNonDescendingRowsMatrices();
 }

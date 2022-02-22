@@ -36,7 +36,7 @@ void deleteByPosSaveOrder(int *a, int *n, const size_t position);
 
 int binarySearchEqualOrMore(const int *a, const int n, const int x);
 
-int isNonDecreasing(const int *a, size_t n);
+bool isNonDecreasing(const int *a, size_t n);
 
 void insertionSort(int *a, const size_t size);
 

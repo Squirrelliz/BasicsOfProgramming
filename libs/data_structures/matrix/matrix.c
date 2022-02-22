@@ -288,6 +288,14 @@ position getLeftMin(matrix m) {
     return min;
 }
 
+bool hasAllNonDescendingRows(matrix m) {
+    for (int i = 0; i < m.nRows; ++i) {
+        if (!isNonDecreasing(m.values[i], m.nCols))
+            return false;
+    }
+    return true;
+}
+
 
 
 

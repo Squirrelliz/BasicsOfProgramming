@@ -76,4 +76,7 @@ void insertionSortRowsMatrixByRowCriteriaF(matrix m,
 
 position getLeftMin(matrix m);
 
+bool hasAllNonDescendingRows(matrix m);
+
+
 #endif //MAIN_C_MATRIX_H

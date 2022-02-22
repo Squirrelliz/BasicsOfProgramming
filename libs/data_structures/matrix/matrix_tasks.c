@@ -161,6 +161,17 @@ void swapPenultimateRow(matrix m) {
     }
 }
 
+//task 13
+int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
+    int countMatricesWithNonDecRows = 0;
+    for (int i = 0; i < nMatrix; ++i) {
+        if (hasAllNonDescendingRows(ms[i]))
+            countMatricesWithNonDecRows++;
+    }
+    return countMatricesWithNonDecRows;
+}
+
+
 
 
 
