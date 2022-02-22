@@ -315,6 +315,32 @@ void tests_getNSpecialElement() {
     test_getNSpecialElement_oneRow();
     test_getNSpecialElement_oneCol();
 }
+//________________________________________________________________________________________________//
+
+void test_swapPenultimateRow_secondOrderSquareMatrix() {
+    matrix m = createMatrixFromArray((int[]) {8, 6, 9, 7}, 2, 2);
+    swapPenultimateRow(m);
+    matrix expectedResult = createMatrixFromArray((int[]) {6, 7, 9, 7}, 2, 2);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void test_swapPenultimateRow_thirdOrderSquareMatrix() {
+    matrix m = createMatrixFromArray((int[]) {1, 2, 3, 6, 0, 4, 2, 5, 0}, 3, 3);
+    swapPenultimateRow(m);
+    matrix expectedResult = createMatrixFromArray((int[]) {1, 2, 3, 2, 0, 5, 2, 5, 0}, 3, 3);
+    assert(areTwoMatricesEqual(m, expectedResult));
+    freeMemMatrix(&m);
+    freeMemMatrix(&expectedResult);
+}
+
+void tests_swapPenultimateRow() {
+    test_swapPenultimateRow_secondOrderSquareMatrix();
+    test_swapPenultimateRow_thirdOrderSquareMatrix();
+}
+
+//________________________________________________________________________________________________//
 
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
@@ -328,4 +354,5 @@ void tests_matrix_tasks() {
     tests_sortByDistances();
     tests_countEqClassesByRowsSum();
     tests_getNSpecialElement();
+    tests_swapPenultimateRow();
 }

@@ -272,6 +272,22 @@ void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, in
     free(auxiliaryArray);
 }
 
+position getLeftMin(matrix m) {
+    position min = {0, 0};
+    for (int i = 0; i < m.nRows; ++i) {
+        for (int j = 0; j < m.nCols; ++j) {
+            if (m.values[i][j] < m.values[min.rowIndex][min.colIndex]) {
+                min.rowIndex = i;
+                min.colIndex = j;
+            } else if (m.values[i][j] == m.values[min.rowIndex][min.colIndex] && j < min.colIndex) {
+                min.rowIndex = i;
+                min.colIndex = j;
+            }
+        }
+    }
+    return min;
+}
+
 
 
 

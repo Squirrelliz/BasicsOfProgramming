@@ -114,7 +114,7 @@ void sortByDistances(matrix m) {
 //task 10
 
 int countEqClassesByRowsSum(matrix m) {
-    long long *rowSumArray = (long long *) malloc(sizeof(long long)*m.nRows);
+    long long *rowSumArray = (long long *) malloc(sizeof(long long) * m.nRows);
     for (int i = 0; i < m.nRows; ++i) {
         rowSumArray[i] = getSum(m.values[i], m.nCols);
     }
@@ -122,6 +122,7 @@ int countEqClassesByRowsSum(matrix m) {
     return countNUnique(rowSumArray, m.nRows);
 }
 
+//task 11
 int getNSpecialElement(matrix m) {
     int *maxPosInCol = (int *) malloc(sizeof(int) * m.nCols);
     int *maxOfCols = (int *) malloc(sizeof(int) * m.nCols);
@@ -152,7 +153,17 @@ int getNSpecialElement(matrix m) {
     return countSpecialEl;
 }
 
-//task 11
+//task 12
+void swapPenultimateRow(matrix m) {
+    position colOfFirstMin = getLeftMin(m);
+    for (int j = 0; j < m.nCols; ++j) {
+        m.values[m.nRows - 2][j] = m.values[j][colOfFirstMin.colIndex];
+    }
+}
+
+
+
+
 
 
 

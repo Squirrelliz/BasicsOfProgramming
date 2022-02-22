@@ -325,6 +325,36 @@ void tests_mulMatrices() {
 
 //_______________________________________________________________________________________________//
 
+void test_getLeftMin_oneMinInMatrix() {
+    matrix m = createMatrixFromArray((int[]) {5, 1, 9, 3, 2, 0, 6, 7, 3}, 3, 3);
+    position minPos = getLeftMin(m);
+    assert(minPos.rowIndex == 1);
+    assert(minPos.colIndex == 2);
+    freeMemMatrix(&m);
+}
+
+void test_getLeftMin_twoMinInMatrix() {
+    matrix m = createMatrixFromArray((int[]) {5, 1, 9, 3, 2, 0, 0, 7, 3}, 3, 3);
+    position minPos = getLeftMin(m);
+    assert(minPos.rowIndex == 2);
+    assert(minPos.colIndex == 0);
+    freeMemMatrix(&m);
+}
+
+void test_getLeftMin_twoMinInOneCol() {
+    matrix m = createMatrixFromArray((int[]) {0, 1, 9, 3, 2, 0, 0, 7, 3}, 3, 3);
+    position minPos = getLeftMin(m);
+    assert(minPos.rowIndex == 0);
+    assert(minPos.colIndex == 0);
+    freeMemMatrix(&m);
+}
+
+void tests_getLeftMin() {
+    test_getLeftMin_oneMinInMatrix();
+    test_getLeftMin_twoMinInMatrix();
+    test_getLeftMin_twoMinInOneCol();
+}
+
 void test_matrix() {
     tests_getMemMatrix();
     tests_getMemArrayOfMatrices();
@@ -339,4 +369,5 @@ void test_matrix() {
     tests_getMinValuePos();
     tests_getMaxValuePos();
     tests_mulMatrices();
+    tests_getLeftMin();
 }

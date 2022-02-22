@@ -74,5 +74,6 @@ matrix mulMatrices(matrix m1, matrix m2);
 void insertionSortRowsMatrixByRowCriteriaF(matrix m,
                                            float (*criteria)(int *, int));
 
+position getLeftMin(matrix m);
 
 #endif //MAIN_C_MATRIX_H

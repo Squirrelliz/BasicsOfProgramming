@@ -50,4 +50,8 @@ int countEqClassesByRowsSum(matrix m);
 
 int getNSpecialElement(matrix m);
 
+//task 12
+
+void swapPenultimateRow(matrix m);
+
 #endif //MAIN_C_MATRIX_TASKS_H

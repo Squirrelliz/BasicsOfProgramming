@@ -103,6 +103,23 @@ void test_mulMatrices_twoRectangularMatrices();
 void tests_mulMatrices();
 
 //_______________________________________________________________________________________________//
+
+void test_getLeftMin_oneMinInMatrix();
+
+void test_getLeftMin_twoMinInMatrix();
+
+void test_getLeftMin_twoMinInOneCol();
+
+void tests_getLeftMin();
+
+//_______________________________________________________________________________________________//
+
+void test_swapPenultimateRow_secondOrderSquareMatrix();
+
+void test_swapPenultimateRow_thirdOrderSquareMatrix();
+
+void tests_swapPenultimateRow();
+
 void test_matrix();
 
 
