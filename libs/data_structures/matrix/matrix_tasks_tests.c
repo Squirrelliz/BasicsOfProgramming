@@ -389,14 +389,31 @@ void tests_getNSpecialElement2() {
 //________________________________________________________________________________________________//
 
 void test_getSpecialScalarProduct_thirdOrderSquareMatrix() {
-    matrix m = createMatrixFromArray((int[]) {2,3,6,2,1,0,1,4,5}, 3, 3);
+    matrix m = createMatrixFromArray((int[]) {2, 3, 6, 2, 1, 0, 1, 4, 5}, 3, 3);
     assert(getSpecialScalarProduct(m) == 42);
     freeMemMatrix(&m);
 }
 
-void tests_getSpecialScalarProduct(){
+void tests_getSpecialScalarProduct() {
     test_getSpecialScalarProduct_thirdOrderSquareMatrix();
 }
+
+//________________________________________________________________________________________________//
+
+void test_getVectorIndexWithMaxAngle_twoCol() {
+    int *b = (int *) malloc(sizeof(int) * 2);
+    b[0] = 3;
+    b[1] = 4;
+    matrix m = createMatrixFromArray((int[]) {8, 0, 0, 3, -1, -5, 1, -5}, 4, 2);
+    assert(getVectorIndexWithMaxAngle(m, b) == 2);
+    freeMemMatrix(&m);
+    free(b);
+}
+
+void tests_getVectorIndexWithMaxAngle() {
+    test_getVectorIndexWithMaxAngle_twoCol();
+}
+//________________________________________________________________________________________________//
 
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
@@ -414,4 +431,5 @@ void tests_matrix_tasks() {
     tests_countNonDescendingRowsMatrices();
     tests_getNSpecialElement2();
     tests_getSpecialScalarProduct();
+    tests_getVectorIndexWithMaxAngle();
 }

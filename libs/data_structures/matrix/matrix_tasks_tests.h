@@ -115,11 +115,17 @@ void test_getNSpecialElement2_severalSpecialElements();
 
 void tests_getNSpecialElement2();
 
+//_________________________________________________________________________________//
 void test_getSpecialScalarProduct_thirdOrderSquareMatrix();
 
 void tests_getSpecialScalarProduct();
 
 //_________________________________________________________________________________//
+void test_getVectorIndexWithMaxAngle_twoCol();
+
+void tests_getVectorIndexWithMaxAngle();
+//_________________________________________________________________________________//
+
 void tests_matrix_tasks();
 
 #endif //MAIN_C_MATRIX_TASKS_TESTS_H

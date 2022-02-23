@@ -84,4 +84,10 @@ int getMatrixNorm(matrix m);
 
 long long getScalarProductRowAndCol(matrix m, int i, int j);
 
+double getScalarProduct(int *a, int *b, int n);
+
+double getVectorLength(int *a, int n);
+
+double getCosine(int *a, int *b, int n);
+
 #endif //MAIN_C_MATRIX_H

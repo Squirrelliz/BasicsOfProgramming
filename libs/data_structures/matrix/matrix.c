@@ -328,6 +328,22 @@ long long getScalarProductRowAndCol(matrix m, int i, int j) {
     return product;
 }
 
+double getScalarProduct(int *a, int *b, int n) {
+    double product = 0;
+    for (int k = 0; k < n; ++k) {
+        product += a[k] * b[k];
+    }
+    return product;
+}
+
+double getVectorLength(int *a, int n) {
+    return sqrt(getScalarProduct(a,a,n));
+}
+
+double getCosine(int *a, int *b, int n) {
+    return getScalarProduct(a, b, n) / getVectorLength(a, n) / getVectorLength(b, n);
+}
+
 
 
 

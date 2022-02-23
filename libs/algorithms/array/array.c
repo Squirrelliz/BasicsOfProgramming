@@ -250,3 +250,4 @@ bool isEqualOrLess(const int *a, const size_t n, const int x) {
     }
     return false;
 }
+

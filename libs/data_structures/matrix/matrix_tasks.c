@@ -233,6 +233,21 @@ int getNSpecialElement2(matrix m) {
     return countSpecialEl;
 }
 
+//task 17
+int getVectorIndexWithMaxAngle(matrix m, int *b) {
+    int maxAngleIndex = 0;
+    double maxAngleCosine = getCosine(m.values[0], b, m.nCols);
+
+    for (int i = 1; i < m.nRows; ++i) {
+        double currentAngleCosine = getCosine(m.values[i], b, m.nCols);
+        if (currentAngleCosine < maxAngleCosine) {
+            maxAngleCosine = currentAngleCosine;
+            maxAngleIndex = i;
+        }
+    }
+    return maxAngleIndex;
+}
+
 //task 18
 long long getSpecialScalarProduct(matrix m) {
     position max = getMaxValuePos(m);
@@ -240,8 +255,6 @@ long long getSpecialScalarProduct(matrix m) {
 
     return getScalarProductRowAndCol(m, max.rowIndex, min.colIndex);
 }
-
-
 
 
 

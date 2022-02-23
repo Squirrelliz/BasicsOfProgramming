@@ -70,6 +70,11 @@ void printMatrixWithMinNorm(matrix *ms, int nMatrix);
 
 int getNSpecialElement2(matrix m);
 
+//task 17
+
+int getVectorIndexWithMaxAngle(matrix m, int *b);
+
 //task 18
 long long getSpecialScalarProduct(matrix m);
+
 #endif //MAIN_C_MATRIX_TASKS_H
