@@ -9,6 +9,7 @@ matrix getMemMatrix(int nRows, int nCols) {
     for (int i = 0; i < nRows; ++i) {
         values[i] = (int *) malloc(sizeof(int) * nCols);
     }
+
     return (matrix) {values, nRows, nCols};
 }
 
@@ -17,6 +18,7 @@ matrix *getMemArrayOfMatrices(int nMatrices, int nRows, int nCols) {
     for (int i = 0; i < nMatrices; ++i) {
         ms[i] = getMemMatrix(nRows, nCols);
     }
+
     return ms;
 }
 
@@ -24,6 +26,7 @@ void freeMemMatrix(matrix *m) {
     for (int i = 0; i < m->nRows; ++i) {
         free(m->values[i]);
     }
+
     free(m->values);
     m->nRows = 0;
     m->nCols = 0;
@@ -34,13 +37,13 @@ void freeMemMatrices(matrix *ms, int nMatrices) {
     for (int i = 0; i < nMatrices; ++i) {
         freeMemMatrix(&ms[i]);
     }
+
     free(ms);
 }
 
 matrix createMatrixFromArray(const int *a,
                              int nRows, int nCols) {
     matrix m = getMemMatrix(nRows, nCols);
-
     int k = 0;
     for (int i = 0; i < nRows; i++)
         for (int j = 0; j < nCols; j++)
@@ -75,6 +78,7 @@ void outputMatrix(matrix m) {
 void outputMatrices(matrix *ms, int nMatrices) {
     for (int i = 0; i < nMatrices; ++i) {
         outputMatrix(ms[i]);
+
         printf("\n");
     }
 }
@@ -100,6 +104,7 @@ bool areTwoMatricesEqual(matrix m1, matrix m2) {
                 return false;
         }
     }
+
     return true;
 }
 
@@ -121,6 +126,7 @@ void insertionSortRowsMatrixByRowCriteria(matrix m, int (*criteria)(int *, int))
         auxiliaryArray[j] = t;
         m.values[j] = f;
     }
+
     free(auxiliaryArray);
 }
 
@@ -134,6 +140,7 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int))
         }
         auxiliaryArray[i] = criteria(basketForCurrentCol, m.nRows);
     }
+
     for (size_t i = 1; i < m.nCols; i++) {
         int t = auxiliaryArray[i];
         for (int j = 0; j < m.nRows; ++j) {
@@ -152,6 +159,7 @@ void insertionSortColsMatrixByColCriteria(matrix m, int (*criteria)(int *, int))
             m.values[l][j] = basketForCurrentCol[l];
         }
     }
+
     free(auxiliaryArray);
     free(basketForCurrentCol);
 }
@@ -169,6 +177,7 @@ bool isEMatrix(matrix m) {
                 return false;
         }
     }
+
     return true;
 }
 
@@ -182,6 +191,7 @@ bool isSymmetricMatrix(matrix m) {
                 return false;
         }
     }
+
     return true;
 }
 
@@ -204,6 +214,7 @@ position getMinValuePos(matrix m) {
             }
         }
     }
+
     return min;
 }
 
@@ -217,13 +228,13 @@ position getMaxValuePos(matrix m) {
             }
         }
     }
+
     return max;
 }
 
 matrix *createArrayOfMatrixFromArray(const int *values, size_t nMatrices, size_t nRows, size_t nCols) {
 
     matrix *ms = getMemArrayOfMatrices(nMatrices, nRows, nCols);
-
     int l = 0;
     for (int k = 0; k < nMatrices; k++)
         for (int i = 0; i < nRows; i++)
@@ -238,6 +249,7 @@ matrix mulMatrices(matrix m1, matrix m2) {
         fprintf(stderr, "the number of columns of the first matrix is not equal to the number of rows of the second");
         exit(1);
     }
+
     matrix resultMatrix = getMemMatrix(m1.nRows, m2.nCols);
     for (int i = 0; i < m1.nRows; ++i) {
         for (int j = 0; j < m2.nCols; ++j) {
@@ -269,6 +281,7 @@ void insertionSortRowsMatrixByRowCriteriaF(matrix m, float (*criteria)(int *, in
         auxiliaryArray[j] = t;
         m.values[j] = f;
     }
+
     free(auxiliaryArray);
 }
 
@@ -285,6 +298,7 @@ position getLeftMin(matrix m) {
             }
         }
     }
+
     return min;
 }
 
@@ -293,6 +307,7 @@ bool hasAllNonDescendingRows(matrix m) {
         if (!isNonDecreasing(m.values[i], m.nCols))
             return false;
     }
+
     return true;
 }
 
@@ -316,7 +331,7 @@ int getMatrixNorm(matrix m) {
         }
     }
 
-    return  absMax;
+    return absMax;
 }
 
 long long getScalarProductRowAndCol(matrix m, int i, int j) {
@@ -333,11 +348,12 @@ double getScalarProduct(int *a, int *b, int n) {
     for (int k = 0; k < n; ++k) {
         product += a[k] * b[k];
     }
+
     return product;
 }
 
 double getVectorLength(int *a, int n) {
-    return sqrt(getScalarProduct(a,a,n));
+    return sqrt(getScalarProduct(a, a, n));
 }
 
 double getCosine(int *a, int *b, int n) {

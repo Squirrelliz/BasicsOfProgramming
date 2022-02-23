@@ -68,6 +68,7 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m) {
         start.rowIndex--;
         start.colIndex--;
     }
+
     return s;
 }
 
@@ -88,10 +89,12 @@ long long findSumOfMaxesOfPseudoDiagonal2(matrix m) {
     swap(&arrayOfMaximums[0 - 1 + m.nRows], &arrayOfMaximums[0]);
     long long s = getSum(arrayOfMaximums + 1, n_diagonals - 1);
     free(arrayOfMaximums);
+
     return s;
 }
 
 //task 8
+
 int getMinInArea(matrix m) {
     position maxPos = getMaxValuePos(m);
     int min = m.values[maxPos.rowIndex][maxPos.colIndex];
@@ -103,10 +106,12 @@ int getMinInArea(matrix m) {
         }
         length += 2;
     }
+
     return min;
 }
 
 //task 9
+
 void sortByDistances(matrix m) {
     insertionSortRowsMatrixByRowCriteriaF(m, getDistance);
 }
@@ -123,6 +128,7 @@ int countEqClassesByRowsSum(matrix m) {
 }
 
 //task 11
+
 int getNSpecialElement(matrix m) {
     int *maxPosInCol = (int *) malloc(sizeof(int) * m.nCols);
     int *maxOfCols = (int *) malloc(sizeof(int) * m.nCols);
@@ -137,6 +143,7 @@ int getNSpecialElement(matrix m) {
             }
         }
     }
+
     int countSpecialEl = m.nCols;
     for (int i = 0; i < m.nRows; ++i) {
         for (int j = 0; j < m.nCols; ++j) {
@@ -154,6 +161,7 @@ int getNSpecialElement(matrix m) {
 }
 
 //task 12
+
 void swapPenultimateRow(matrix m) {
     position colOfFirstMin = getLeftMin(m);
     for (int j = 0; j < m.nCols; ++j) {
@@ -162,12 +170,14 @@ void swapPenultimateRow(matrix m) {
 }
 
 //task 13
+
 int countNonDescendingRowsMatrices(matrix *ms, int nMatrix) {
     int countMatricesWithNonDecRows = 0;
     for (int i = 0; i < nMatrix; ++i) {
         if (hasAllNonDescendingRows(ms[i]))
             countMatricesWithNonDecRows++;
     }
+
     return countMatricesWithNonDecRows;
 }
 
@@ -189,6 +199,7 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
             nMatricesMaxNZeroRows++;
         }
     }
+
     for (int i = 0; i < nMatricesMaxNZeroRows; ++i) {
         outputMatrix(ms[matricesMaxNZeroRows[i]]);
         printf("\n");
@@ -196,6 +207,7 @@ void printMatrixWithMaxZeroRows(matrix *ms, int nMatrix) {
 }
 
 //task 15
+
 void printMatrixWithMinNorm(matrix *ms, int nMatrix) {
     int *matricesMinNorm = (int *) malloc(sizeof(int) * nMatrix);
     int nMatricesMinNorm = 0;
@@ -212,6 +224,7 @@ void printMatrixWithMinNorm(matrix *ms, int nMatrix) {
             nMatricesMinNorm++;
         }
     }
+
     for (int i = 0; i < nMatricesMinNorm; ++i) {
         outputMatrix(ms[matricesMinNorm[i]]);
         printf("\n");
@@ -219,7 +232,6 @@ void printMatrixWithMinNorm(matrix *ms, int nMatrix) {
 }
 
 //task 16
-
 
 int getNSpecialElement2(matrix m) {
     int countSpecialEl = 0;
@@ -230,10 +242,12 @@ int getNSpecialElement2(matrix m) {
                 countSpecialEl++;
         }
     }
+
     return countSpecialEl;
 }
 
 //task 17
+
 int getVectorIndexWithMaxAngle(matrix m, int *b) {
     int maxAngleIndex = 0;
     double maxAngleCosine = getCosine(m.values[0], b, m.nCols);
@@ -245,10 +259,12 @@ int getVectorIndexWithMaxAngle(matrix m, int *b) {
             maxAngleIndex = i;
         }
     }
+
     return maxAngleIndex;
 }
 
 //task 18
+
 long long getSpecialScalarProduct(matrix m) {
     position max = getMaxValuePos(m);
     position min = getMinValuePos(m);

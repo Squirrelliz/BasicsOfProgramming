@@ -37,9 +37,11 @@ long long findSumOfMaxesOfPseudoDiagonal(matrix m);
 long long findSumOfMaxesOfPseudoDiagonal2(matrix m);
 
 //task 8
+
 int getMinInArea(matrix m);
 
 //task 9
+
 void sortByDistances(matrix m);
 
 //task 10
@@ -75,6 +77,7 @@ int getNSpecialElement2(matrix m);
 int getVectorIndexWithMaxAngle(matrix m, int *b);
 
 //task 18
+
 long long getSpecialScalarProduct(matrix m);
 
 #endif //MAIN_C_MATRIX_TASKS_H
