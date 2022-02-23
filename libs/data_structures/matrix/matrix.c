@@ -319,6 +319,15 @@ int getMatrixNorm(matrix m) {
     return  absMax;
 }
 
+long long getScalarProductRowAndCol(matrix m, int i, int j) {
+    long long product = 0;
+    for (int k = 0; k < m.nCols; ++k) {
+        product += m.values[i][k] * m.values[k][j];
+    }
+
+    return product;
+}
+
 
 
 

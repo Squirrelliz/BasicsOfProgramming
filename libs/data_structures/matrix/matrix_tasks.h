@@ -70,4 +70,6 @@ void printMatrixWithMinNorm(matrix *ms, int nMatrix);
 
 int getNSpecialElement2(matrix m);
 
+//task 18
+long long getSpecialScalarProduct(matrix m);
 #endif //MAIN_C_MATRIX_TASKS_H

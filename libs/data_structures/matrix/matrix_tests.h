@@ -140,8 +140,13 @@ void tests_getMatrixNorm();
 void test_getMatrixNorm_minNegativeModuleIsNorm();
 
 void test_getMatrixNorm_maxPositiveIsNorm();
+
 //_______________________________________________________________________________________________//
 
+void test_getScalarProductRowAndCol_secondOrderSquareMatrix();
+
+void tests_getScalarProductRowAndCol();
+//_______________________________________________________________________________________________//
 void test_matrix();
 
 

@@ -82,4 +82,6 @@ int countZeroRows(matrix m);
 
 int getMatrixNorm(matrix m);
 
+long long getScalarProductRowAndCol(matrix m, int i, int j);
+
 #endif //MAIN_C_MATRIX_H

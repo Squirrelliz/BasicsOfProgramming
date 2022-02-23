@@ -409,6 +409,17 @@ void tests_getMatrixNorm() {
     test_getMatrixNorm_minNegativeModuleIsNorm();
     test_getMatrixNorm_maxPositiveIsNorm();
 }
+
+//_______________________________________________________________________________________________//
+void test_getScalarProductRowAndCol_secondOrderSquareMatrix() {
+    matrix m = createMatrixFromArray((int[]) {2, 3, 2, 1}, 2, 2);
+    assert(getScalarProductRowAndCol(m, 1, 1) == 7);
+    freeMemMatrix(&m);
+}
+
+void tests_getScalarProductRowAndCol() {
+    test_getScalarProductRowAndCol_secondOrderSquareMatrix();
+}
 //_______________________________________________________________________________________________//
 
 void test_matrix() {
@@ -429,4 +440,5 @@ void test_matrix() {
     tests_hasAllNonDescendingRows();
     tests_countZeroRows();
     tests_getMatrixNorm();
+    tests_getScalarProductRowAndCol();
 }

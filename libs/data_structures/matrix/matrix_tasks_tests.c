@@ -386,6 +386,17 @@ void tests_getNSpecialElement2() {
     test_getNSpecialElement2_noSpecialElements();
     test_getNSpecialElement2_severalSpecialElements();
 }
+//________________________________________________________________________________________________//
+
+void test_getSpecialScalarProduct_thirdOrderSquareMatrix() {
+    matrix m = createMatrixFromArray((int[]) {2,3,6,2,1,0,1,4,5}, 3, 3);
+    assert(getSpecialScalarProduct(m) == 42);
+    freeMemMatrix(&m);
+}
+
+void tests_getSpecialScalarProduct(){
+    test_getSpecialScalarProduct_thirdOrderSquareMatrix();
+}
 
 void tests_matrix_tasks() {
     tests_swapRowsContainingMaxAndMin();
@@ -402,4 +413,5 @@ void tests_matrix_tasks() {
     tests_swapPenultimateRow();
     tests_countNonDescendingRowsMatrices();
     tests_getNSpecialElement2();
+    tests_getSpecialScalarProduct();
 }

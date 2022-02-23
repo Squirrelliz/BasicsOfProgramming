@@ -115,6 +115,11 @@ void test_getNSpecialElement2_severalSpecialElements();
 
 void tests_getNSpecialElement2();
 
+void test_getSpecialScalarProduct_thirdOrderSquareMatrix();
+
+void tests_getSpecialScalarProduct();
+
+//_________________________________________________________________________________//
 void tests_matrix_tasks();
 
 #endif //MAIN_C_MATRIX_TASKS_TESTS_H

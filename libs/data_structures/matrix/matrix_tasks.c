@@ -233,9 +233,13 @@ int getNSpecialElement2(matrix m) {
     return countSpecialEl;
 }
 
+//task 18
+long long getSpecialScalarProduct(matrix m) {
+    position max = getMaxValuePos(m);
+    position min = getMinValuePos(m);
 
-//task 17
-
+    return getScalarProductRowAndCol(m, max.rowIndex, min.colIndex);
+}
 
 
 
