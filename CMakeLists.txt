@@ -8,4 +8,4 @@ add_executable(basicsOfProgramming2 main.c)
 add_subdirectory(libs)
 target_link_libraries(basicsOfProgramming2 algorithms)
 target_link_libraries(basicsOfProgramming2 data_structures)
-
+target_link_libraries(basicsOfProgramming2 string)

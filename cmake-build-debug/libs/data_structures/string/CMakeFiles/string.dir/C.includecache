@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+stdio.h
+-
+ctype.h
+-
+memory.h
+-
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeNonLetters.h
+../string_.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tests_string.c
+tests_string.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tests_string.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tests_string.h
+tasks/removeNonLetters.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeNonLetters.h
+

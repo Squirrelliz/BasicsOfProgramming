@@ -1,8 +1,8 @@
-#include "libs/data_structures/matrix/matrix_tests.h"
-#include "libs/data_structures/matrix/matrix_tasks_tests.h"
+#include <stdio.h>
+#include "libs/data_structures/string/tests_string.h"
 
 int main() {
-    test_matrix();
-    tests_matrix_tasks();
+    tests_tasks();
+
     return 0;
 }

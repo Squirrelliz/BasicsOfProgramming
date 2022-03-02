@@ -6,45 +6,25 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
 stdio.h
 -
-stdlib.h
+ctype.h
 -
-stdbool.h
--
-math.h
+memory.h
 -
 
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
-stdio.h
--
-malloc.h
--
-assert.h
--
-stdbool.h
--
-../../algorithms/array/array.h
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeNonLetters.h
+../string_.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
 
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks.h
-matrix.h
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
-
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks_tests.h
-matrix_tasks.h
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks.h
-
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tests.h
-matrix.h
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix.h
-assert.h
--
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tests_string.h
+tasks/removeNonLetters.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeNonLetters.h
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
-libs/data_structures/matrix/matrix_tests.h
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tests.h
-libs/data_structures/matrix/matrix_tasks_tests.h
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/matrix/matrix_tasks_tests.h
+stdio.h
+-
+libs/data_structures/string/tests_string.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tests_string.h
 

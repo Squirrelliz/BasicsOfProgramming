@@ -9,3 +9,6 @@ C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/algorit
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/CMakeFiles/data_structures.dir
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/CMakeFiles/edit_cache.dir
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/CMakeFiles/rebuild_cache.dir
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/edit_cache.dir
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/rebuild_cache.dir

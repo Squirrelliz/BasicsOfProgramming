@@ -29,8 +29,13 @@ void sortColsByMinElement(matrix m) {
 //task 4
 
 void getSquareOfMatrixIfSymmetric(matrix *m) {
-    if (isSymmetricMatrix(*m))
-        *m = mulMatrices(*m, *m);
+    if (isSymmetricMatrix(*m)) {
+        matrix square = mulMatrices(*m, *m);
+
+        freeMemMatrix(m);
+
+        *m = square;
+    }
 }
 
 //task 5
@@ -46,7 +51,10 @@ void transposeIfMatrixHasNotEqualSumOfRows(matrix m) {
 //task 6
 
 bool isMutuallyInverseMatrices(matrix m1, matrix m2) {
-    return isEMatrix(mulMatrices(m1, m2));
+    matrix multiplicationM1M2 = mulMatrices(m1, m2);
+    bool isEM = isEMatrix(mulMatrices(m1, m2));
+    freeMemMatrix(&multiplicationM1M2);
+    return isEM;
 }
 
 //task 7

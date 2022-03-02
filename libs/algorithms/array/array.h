@@ -64,5 +64,5 @@ bool isEqualOrMore(const int *a, const size_t n, const int x);
 
 bool isEqualOrLess(const int *a, const size_t n, const int x);
 
-
+void inputArray(int *a, const size_t n);
 #endif //BASICSOFPROGRAMMING2_ARRAY_H
