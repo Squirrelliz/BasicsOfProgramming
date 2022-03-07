@@ -153,6 +153,30 @@ string_.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/string_.c.s
 .PHONY : string_.c.s
 
+tasks/removeAdjacentEqualLetters.obj: tasks/removeAdjacentEqualLetters.c.obj
+.PHONY : tasks/removeAdjacentEqualLetters.obj
+
+# target to build an object file
+tasks/removeAdjacentEqualLetters.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/removeAdjacentEqualLetters.c.obj
+.PHONY : tasks/removeAdjacentEqualLetters.c.obj
+
+tasks/removeAdjacentEqualLetters.i: tasks/removeAdjacentEqualLetters.c.i
+.PHONY : tasks/removeAdjacentEqualLetters.i
+
+# target to preprocess a source file
+tasks/removeAdjacentEqualLetters.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/removeAdjacentEqualLetters.c.i
+.PHONY : tasks/removeAdjacentEqualLetters.c.i
+
+tasks/removeAdjacentEqualLetters.s: tasks/removeAdjacentEqualLetters.c.s
+.PHONY : tasks/removeAdjacentEqualLetters.s
+
+# target to generate assembly for a file
+tasks/removeAdjacentEqualLetters.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/removeAdjacentEqualLetters.c.s
+.PHONY : tasks/removeAdjacentEqualLetters.c.s
+
 tasks/removeNonLetters.obj: tasks/removeNonLetters.c.obj
 .PHONY : tasks/removeNonLetters.obj
 
@@ -213,6 +237,9 @@ help:
 	@echo ... string_.obj
 	@echo ... string_.i
 	@echo ... string_.s
+	@echo ... tasks/removeAdjacentEqualLetters.obj
+	@echo ... tasks/removeAdjacentEqualLetters.i
+	@echo ... tasks/removeAdjacentEqualLetters.s
 	@echo ... tasks/removeNonLetters.obj
 	@echo ... tasks/removeNonLetters.i
 	@echo ... tasks/removeNonLetters.s

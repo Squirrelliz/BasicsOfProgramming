@@ -9,6 +9,11 @@
 #include<ctype.h>
 #include <memory.h>
 
+typedef struct WordDescriptor {
+    char *begin; // позиция начала слова
+    char *end; // позиция первого символа, после последнего символа слова
+} WordDescriptor;
+
 size_t strlen_(const char *begin);
 
 char *find(char *begin, char *end, int ch);
@@ -29,4 +34,7 @@ char *copyIf_(char *beginSource, const char *endSource, char *beginDestination, 
 
 char *getEndOfString(char *begin);
 
+int getWord ( char * beginSearch , WordDescriptor * word ) {
+
+}
 #endif //MAIN_C_STRING__H

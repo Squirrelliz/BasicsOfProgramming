@@ -4,12 +4,17 @@
 libs/data_structures/string/CMakeFiles/string.dir/string_.c.obj: \
  ../libs/data_structures/string/string_.c \
  ../libs/data_structures/string/string_.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/removeAdjacentEqualLetters.c.obj: \
+ ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.c \
+ ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/removeNonLetters.c.obj: \
  ../libs/data_structures/string/string_.h \
  ../libs/data_structures/string/tasks/removeNonLetters.c \
  ../libs/data_structures/string/tasks/removeNonLetters.h
 libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj: \
  ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \
  ../libs/data_structures/string/tasks/removeNonLetters.h \
  ../libs/data_structures/string/tests_string.c \
  ../libs/data_structures/string/tests_string.h

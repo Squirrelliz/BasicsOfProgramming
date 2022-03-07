@@ -3,6 +3,8 @@
 //
 
 #include "tests_string.h"
+#define ASSERT_STRING(got,expected) assertString ( expected , got , \
+__FILE__ , __FUNCTION__ , __LINE__ )
 
 void assertString(const char *expected, char *got, const char *fileName, const char *funcName, int line) {
     if (strcmp(expected, got)) {
@@ -16,25 +18,68 @@ void assertString(const char *expected, char *got, const char *fileName, const c
 
 //_____________________tests_tasks_________________________________//
 
+//_____________________________//
 void test_removeNonLetters_noSpace() {
     char s1[10]="hello";
     removeNonLetters(s1);
     char s2[10]="hello";
-    assertString(s1,s2,"removeNonLetters.h", "test_removeNonLetters_noSpace",27);
+    ASSERT_STRING(s1,s2);
 }
 
 void test_removeNonLetters_withSpace() {
     char s1[]="hello, it's me";
     removeNonLetters(s1);
     char s2[]="hello,it'sme";
-    assertString(s1,s2,"removeNonLetters.h", "test_removeNonLetters_noSpace",33);
+    ASSERT_STRING(s1,s2);
 }
 
 void tests_removeNonLetters() {
     test_removeNonLetters_noSpace();
     test_removeNonLetters_withSpace();
 }
+//_____________________________//
 
+void test_removeAdjacentEqualLetters_stringWithSequences(){
+    char s1[]="I wass woooondering    if after all these yearssss";
+    removeAdjacentEqualLetters(s1);
+    char s2[]="I was wondering if after al these years";
+    ASSERT_STRING(s1,s2);
+}
+
+void test_removeAdjacentEqualLetters_emptyString(){
+    char s1[]="";
+    removeAdjacentEqualLetters(s1);
+    char s2[]="";
+    ASSERT_STRING(s1,s2);
+}
+
+void test_removeAdjacentEqualLetters_oneSymbol(){
+    char s1[]=",";
+    removeAdjacentEqualLetters(s1);
+    char s2[]=",";
+    ASSERT_STRING(s1,s2);
+}
+
+void test_removeAdjacentEqualLetters_stringWithoutSequences(){
+    char s1[]="You'd like to me'et";
+    removeAdjacentEqualLetters(s1);
+    char s2[]="You'd like to me'et";
+    ASSERT_STRING(s1,s2);
+}
+
+void tests_removeAdjacentEqualLetters(){
+    test_removeAdjacentEqualLetters_stringWithSequences();
+    test_removeAdjacentEqualLetters_oneSymbol();
+    test_removeAdjacentEqualLetters_emptyString();
+    test_removeAdjacentEqualLetters_stringWithoutSequences();
+}
+//_____________________________//
+
+//_____________________________//
+
+//_____________________________//
 void tests_tasks() {
     tests_removeNonLetters();
+    tests_removeAdjacentEqualLetters();
 }
+

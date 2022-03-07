@@ -14,6 +14,10 @@ ctype.h
 memory.h
 -
 
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
+../string_.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeNonLetters.h
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
@@ -21,6 +25,8 @@ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/st
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tests_string.h
 tasks/removeNonLetters.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeNonLetters.h
+tasks/removeAdjacentEqualLetters.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
 stdio.h
