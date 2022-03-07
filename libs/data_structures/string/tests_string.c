@@ -74,12 +74,39 @@ void tests_removeAdjacentEqualLetters(){
     test_removeAdjacentEqualLetters_stringWithoutSequences();
 }
 //_____________________________//
+void test_digitsToStartLettersToEnd_wordsWithDigits(){
+    char s1[]="T0o g0o o2ver1 eve5rything33";
+    digitsToStartLettersToEnd(s1);
+    char s2[]="0To 0go 12over 335everything";
+    ASSERT_STRING(s1,s2);
+}
 
+void test_digitsToStartLettersToEnd_emptyString(){
+    char s1[]="";
+    digitsToStartLettersToEnd(s1);
+    char s2[]="";
+    ASSERT_STRING(s1,s2);
+}
+
+
+void test_digitsToStartLettersToEnd_justLettersInWords(){
+    char s1[]="But I aint done much healing";
+    digitsToStartLettersToEnd(s1);
+    char s2[]="But I aint done much healing";
+    ASSERT_STRING(s1,s2);
+}
+
+void tests_digitsToStartLettersToEnd(){
+    test_digitsToStartLettersToEnd_wordsWithDigits();
+    test_digitsToStartLettersToEnd_emptyString();
+    test_digitsToStartLettersToEnd_justLettersInWords();
+}
 //_____________________________//
 
 //_____________________________//
 void tests_tasks() {
     tests_removeNonLetters();
     tests_removeAdjacentEqualLetters();
+    tests_digitsToStartLettersToEnd();
 }
 

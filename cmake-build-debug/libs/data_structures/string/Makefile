@@ -153,6 +153,30 @@ string_.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/string_.c.s
 .PHONY : string_.c.s
 
+tasks/digitToStartLetterToEnd.obj: tasks/digitToStartLetterToEnd.c.obj
+.PHONY : tasks/digitToStartLetterToEnd.obj
+
+# target to build an object file
+tasks/digitToStartLetterToEnd.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.obj
+.PHONY : tasks/digitToStartLetterToEnd.c.obj
+
+tasks/digitToStartLetterToEnd.i: tasks/digitToStartLetterToEnd.c.i
+.PHONY : tasks/digitToStartLetterToEnd.i
+
+# target to preprocess a source file
+tasks/digitToStartLetterToEnd.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.i
+.PHONY : tasks/digitToStartLetterToEnd.c.i
+
+tasks/digitToStartLetterToEnd.s: tasks/digitToStartLetterToEnd.c.s
+.PHONY : tasks/digitToStartLetterToEnd.s
+
+# target to generate assembly for a file
+tasks/digitToStartLetterToEnd.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.s
+.PHONY : tasks/digitToStartLetterToEnd.c.s
+
 tasks/removeAdjacentEqualLetters.obj: tasks/removeAdjacentEqualLetters.c.obj
 .PHONY : tasks/removeAdjacentEqualLetters.obj
 
@@ -237,6 +261,9 @@ help:
 	@echo ... string_.obj
 	@echo ... string_.i
 	@echo ... string_.s
+	@echo ... tasks/digitToStartLetterToEnd.obj
+	@echo ... tasks/digitToStartLetterToEnd.i
+	@echo ... tasks/digitToStartLetterToEnd.s
 	@echo ... tasks/removeAdjacentEqualLetters.obj
 	@echo ... tasks/removeAdjacentEqualLetters.i
 	@echo ... tasks/removeAdjacentEqualLetters.s

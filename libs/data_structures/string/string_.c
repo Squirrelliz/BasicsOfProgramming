@@ -48,7 +48,7 @@ char *findSpaceReverse(char *rbegin, const char *rend) {
 }
 
 int strcmp(const char *lhs, const char *rhs) {
-    while (*lhs != '\0' && *lhs++ == *rhs++) { }
+    while (*lhs != '\0' && *lhs++ == *rhs++) {}
     return *lhs - *rhs;
 }
 
@@ -73,10 +73,42 @@ char *copyIf_(char *beginSource, const char *endSource, char *beginDestination, 
     return beginDestination;
 }
 
+char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDestination, int (*f)(int)) {
+    while (rbeginSource > rendSource) {
+        if (f(*rbeginSource))
+            *beginDestination++ = *rbeginSource;
+        rbeginSource--;
+    }
+
+    return beginDestination;
+}
+
 char *getEndOfString(char *begin) {
     while (*begin != '\0')
         begin++;
 
     return begin;
 }
+
+int getWord(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findSpace(word->begin);
+
+    return 1;
+}
+
+
+void digitToStart(WordDescriptor word) {
+    char *endStringBuffer = copy(word.begin, word.end,
+                                 _stringBuffer);
+    char *recPosition = copyIfReverse(endStringBuffer - 1,
+                                      _stringBuffer - 1,
+                                      word.begin, isdigit);
+    copyIf_(_stringBuffer, endStringBuffer, recPosition, isalpha);
+}
+
+
 
