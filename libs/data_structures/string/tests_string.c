@@ -238,6 +238,43 @@ void tests_countWordsPalindromes() {
 }
 
 //_____________________________//
+void test_getStringFromTheOtherTwo_differentSizesOfStrings() {
+    char s1[] = "When collide, days dark...";
+    char s2[] = "worlds and are";
+    char sGotRes[MAX_STRING_SIZE];
+    getStringFromTheOtherTwo(sGotRes, s1, s2);
+    char sExpectedRes[] = "When worlds collide, and days are dark...";
+    ASSERT_STRING(sGotRes, sExpectedRes);
+}
+
+void test_getStringFromTheOtherTwo_identicalSizesOfStrings() {
+    char s1[] = "Let sky";
+    char s2[] = "the fall.";
+    char sGotRes[MAX_STRING_SIZE];
+    getStringFromTheOtherTwo(sGotRes, s1, s2);
+    char sExpectedRes[] = "Let the sky fall.";
+    ASSERT_STRING(sGotRes, sExpectedRes);
+}
+
+void test_getStringFromTheOtherTwo_emptyStrings() {
+    char s1[] = "";
+    char s2[] = "";
+    char sGotRes[MAX_STRING_SIZE];
+    getStringFromTheOtherTwo(sGotRes, s1, s2);
+    char sExpectedRes[] = "";
+    ASSERT_STRING(sGotRes, sExpectedRes);
+}
+
+void tests_getStringFromTheOtherTwo() {
+    test_getStringFromTheOtherTwo_differentSizesOfStrings();
+    test_getStringFromTheOtherTwo_identicalSizesOfStrings();
+    test_getStringFromTheOtherTwo_emptyStrings();
+}
+
+//_____________________________//
+//_____________________________//
+//_____________________________//
+//_____________________________//
 //_____________________________//
 void tests_tasks() {
     tests_removeNonLetters();
@@ -249,5 +286,6 @@ void tests_tasks() {
     tests_isAlphabeticalOrder();
     tests_printWordsOnePerLineInReversedOrder();
     tests_countWordsPalindromes();
+    tests_getStringFromTheOtherTwo();
 }
 

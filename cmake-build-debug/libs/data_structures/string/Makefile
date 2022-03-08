@@ -201,6 +201,30 @@ tasks/digitToStartLetterToEnd.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.s
 .PHONY : tasks/digitToStartLetterToEnd.c.s
 
+tasks/getStringFromTheOtherTwo.obj: tasks/getStringFromTheOtherTwo.c.obj
+.PHONY : tasks/getStringFromTheOtherTwo.obj
+
+# target to build an object file
+tasks/getStringFromTheOtherTwo.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringFromTheOtherTwo.c.obj
+.PHONY : tasks/getStringFromTheOtherTwo.c.obj
+
+tasks/getStringFromTheOtherTwo.i: tasks/getStringFromTheOtherTwo.c.i
+.PHONY : tasks/getStringFromTheOtherTwo.i
+
+# target to preprocess a source file
+tasks/getStringFromTheOtherTwo.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringFromTheOtherTwo.c.i
+.PHONY : tasks/getStringFromTheOtherTwo.c.i
+
+tasks/getStringFromTheOtherTwo.s: tasks/getStringFromTheOtherTwo.c.s
+.PHONY : tasks/getStringFromTheOtherTwo.s
+
+# target to generate assembly for a file
+tasks/getStringFromTheOtherTwo.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringFromTheOtherTwo.c.s
+.PHONY : tasks/getStringFromTheOtherTwo.c.s
+
 tasks/isAlphabeticalOrder.obj: tasks/isAlphabeticalOrder.c.obj
 .PHONY : tasks/isAlphabeticalOrder.obj
 
@@ -411,6 +435,9 @@ help:
 	@echo ... tasks/digitToStartLetterToEnd.obj
 	@echo ... tasks/digitToStartLetterToEnd.i
 	@echo ... tasks/digitToStartLetterToEnd.s
+	@echo ... tasks/getStringFromTheOtherTwo.obj
+	@echo ... tasks/getStringFromTheOtherTwo.i
+	@echo ... tasks/getStringFromTheOtherTwo.s
 	@echo ... tasks/isAlphabeticalOrder.obj
 	@echo ... tasks/isAlphabeticalOrder.i
 	@echo ... tasks/isAlphabeticalOrder.s

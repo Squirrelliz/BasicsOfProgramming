@@ -15,6 +15,8 @@
 #include "tasks/isAlphabeticalOrder.h"
 #include "tasks/printWordsOnePerLineInReversedOrder.h"
 #include "tasks/countWordsPalindromes.h"
+#include "tasks/getStringFromTheOtherTwo.h"
+
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
 
@@ -91,6 +93,28 @@ void test_printWordsOnePerLineInReversedOrder_emptyString();
 
 void tests_printWordsOnePerLineInReversedOrder();
 
+//_____________________________//
+
+void test_countWordsPalindromes_severalPalindromes();
+
+void test_countWordsPalindromes_noPalindromes();
+
+void tests_countWordsPalindromes();
+
+//_____________________________//
+
+void test_getStringFromTheOtherTwo_differentSizesOfStrings();
+
+void test_getStringFromTheOtherTwo_identicalSizesOfStrings();
+
+void test_getStringFromTheOtherTwo_emptyStrings();
+
+void tests_getStringFromTheOtherTwo();
+
+//_____________________________//
+//_____________________________//
+//_____________________________//
+//_____________________________//
 //_____________________________//
 void tests_tasks();
 

@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/string.dir/string_.c.obj"
   "CMakeFiles/string.dir/tasks/countWordsPalindromes.c.obj"
   "CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.obj"
+  "CMakeFiles/string.dir/tasks/getStringFromTheOtherTwo.c.obj"
   "CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.obj"
   "CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj"
   "CMakeFiles/string.dir/tasks/removeAdjacentEqualLetters.c.obj"

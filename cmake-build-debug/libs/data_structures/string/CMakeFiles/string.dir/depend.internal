@@ -12,6 +12,11 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.c
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringFromTheOtherTwo.c.obj
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.c
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.c
@@ -41,9 +46,11 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.ob
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/turnDigitIntoSpaces.c
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/turnDigitIntoSpaces.h
 libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
