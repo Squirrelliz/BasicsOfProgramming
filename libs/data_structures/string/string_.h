@@ -73,4 +73,6 @@ int getCommaSeparatedWord(char *beginSearch, WordDescriptor *word);
 
 bool isPalindrome(WordDescriptor word);
 
+int rGetWord(char *rBeginSearch, char *rEndSearch, WordDescriptor *word);
+
 #endif //MAIN_C_STRING__H

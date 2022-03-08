@@ -272,6 +272,26 @@ void tests_getStringFromTheOtherTwo() {
 }
 
 //_____________________________//
+void test_reverseString_notEmptyString() {
+    char s1[] = "crumbles it When";
+    reverseString(s1);
+    char s2[] = "When it crumbles";
+    ASSERT_STRING(s1, s2);
+}
+
+void test_reverseString_emptyString() {
+    char s1[] = "";
+    reverseString(s1);
+    char s2[] = "";
+    ASSERT_STRING(s1, s2);
+}
+
+
+void tests_reverseString() {
+    test_reverseString_notEmptyString();
+    test_reverseString_emptyString();
+}
+
 //_____________________________//
 //_____________________________//
 //_____________________________//
@@ -287,5 +307,6 @@ void tests_tasks() {
     tests_printWordsOnePerLineInReversedOrder();
     tests_countWordsPalindromes();
     tests_getStringFromTheOtherTwo();
+    tests_reverseString();
 }
 

@@ -116,6 +116,18 @@ int getWord(char *beginSearch, WordDescriptor *word) {
     return 1;
 }
 
+int rGetWord(char *rBeginSearch, char *rEndSearch, WordDescriptor *word) {
+    word->end = findNonSpaceReverse(rBeginSearch, rEndSearch);
+
+    if (word->end == rEndSearch)
+        return 0;
+
+    word->begin = findSpaceReverse(word->end, rEndSearch) + 1;
+    word->end = word->end + 1;
+
+    return 1;
+
+}
 
 int getCommaSeparatedWord(char *beginSearch, WordDescriptor *word) {
     char *endString = getEndOfString(beginSearch);

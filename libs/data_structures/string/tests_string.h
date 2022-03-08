@@ -16,6 +16,7 @@
 #include "tasks/printWordsOnePerLineInReversedOrder.h"
 #include "tasks/countWordsPalindromes.h"
 #include "tasks/getStringFromTheOtherTwo.h"
+#include "tasks/reverseString.h"
 
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
@@ -112,6 +113,13 @@ void test_getStringFromTheOtherTwo_emptyStrings();
 void tests_getStringFromTheOtherTwo();
 
 //_____________________________//
+
+void test_reverseString_notEmptyString();
+
+void test_reverseString_emptyString();
+
+void tests_reverseString();
+
 //_____________________________//
 //_____________________________//
 //_____________________________//

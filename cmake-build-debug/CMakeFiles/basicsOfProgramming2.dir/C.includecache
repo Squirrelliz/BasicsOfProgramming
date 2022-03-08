@@ -60,6 +60,10 @@ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/ta
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
 
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/reverseString.h
+../string_.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/reverseWords.h
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
@@ -91,6 +95,8 @@ tasks/countWordsPalindromes.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.h
 tasks/getStringFromTheOtherTwo.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.h
+tasks/reverseString.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/reverseString.h
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
 stdio.h

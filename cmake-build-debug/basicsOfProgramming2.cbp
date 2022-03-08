@@ -278,6 +278,12 @@
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/replaceWords.h">
 			<Option target="string"/>
 		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/reverseString.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/reverseString.h">
+			<Option target="string"/>
+		</Unit>
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/reverseWords.c">
 			<Option target="string"/>
 		</Unit>
