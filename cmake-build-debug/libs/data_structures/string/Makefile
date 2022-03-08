@@ -225,6 +225,30 @@ tasks/removeNonLetters.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/removeNonLetters.c.s
 .PHONY : tasks/removeNonLetters.c.s
 
+tasks/replaceWords.obj: tasks/replaceWords.c.obj
+.PHONY : tasks/replaceWords.obj
+
+# target to build an object file
+tasks/replaceWords.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/replaceWords.c.obj
+.PHONY : tasks/replaceWords.c.obj
+
+tasks/replaceWords.i: tasks/replaceWords.c.i
+.PHONY : tasks/replaceWords.i
+
+# target to preprocess a source file
+tasks/replaceWords.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/replaceWords.c.i
+.PHONY : tasks/replaceWords.c.i
+
+tasks/replaceWords.s: tasks/replaceWords.c.s
+.PHONY : tasks/replaceWords.s
+
+# target to generate assembly for a file
+tasks/replaceWords.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/replaceWords.c.s
+.PHONY : tasks/replaceWords.c.s
+
 tasks/reverseWords.obj: tasks/reverseWords.c.obj
 .PHONY : tasks/reverseWords.obj
 
@@ -318,6 +342,9 @@ help:
 	@echo ... tasks/removeNonLetters.obj
 	@echo ... tasks/removeNonLetters.i
 	@echo ... tasks/removeNonLetters.s
+	@echo ... tasks/replaceWords.obj
+	@echo ... tasks/replaceWords.i
+	@echo ... tasks/replaceWords.s
 	@echo ... tasks/reverseWords.obj
 	@echo ... tasks/reverseWords.i
 	@echo ... tasks/reverseWords.s

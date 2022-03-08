@@ -10,6 +10,7 @@
 #include "tasks/digitToStartLetterToEnd.h"
 #include "tasks/reverseWords.h"
 #include "tasks/turnDigitIntoSpaces.h"
+#include "tasks/replaceWords.h"
 
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )

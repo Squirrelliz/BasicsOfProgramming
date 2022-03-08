@@ -120,10 +120,32 @@ void digitToStart(WordDescriptor word) {
 }
 
 void reverseWord(WordDescriptor word) {
-    char *endStringBuffer = copyReverse(word.end-1, word.begin-1,
+    char *endStringBuffer = copyReverse(word.end - 1, word.begin - 1,
                                         _stringBuffer);
-    copy(_stringBuffer,endStringBuffer, word.begin);
+    copy(_stringBuffer, endStringBuffer, word.begin);
 }
 
+bool isIdenticalWords(WordDescriptor w1, WordDescriptor w2) {
+    if (w1.end - w1.begin != w2.end - w2.begin)
+        return 0;
+    while (w1.begin != w1.end) {
+        if (*w1.begin != *w2.begin)
+            return 0;
+        w1.begin++;
+        w2.begin++;
+    }
+    return 1;
+}
+
+int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wordToFind) {
+    while (getWord(beginSearch, word)) {
+        if (isIdenticalWords(*word, wordToFind)) {
+            return 1;
+        } else {
+            beginSearch = word->end;
+        }
+    }
+    return 0;
+}
 
 

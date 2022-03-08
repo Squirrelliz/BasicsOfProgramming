@@ -50,4 +50,8 @@ char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestina
 
 void reverseWord(WordDescriptor word);
 
+bool isIdenticalWords(WordDescriptor w1, WordDescriptor w2);
+
+int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wordToFind);
+
 #endif //MAIN_C_STRING__H

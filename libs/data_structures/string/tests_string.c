@@ -153,6 +153,30 @@ void tests_turnDigitIntoSpaces() {
 }
 
 //_____________________________//
+void test_replaceWords_replacementIsSmallerOriginal() {
+    char s1[] = "This is the enderman . For this is the enderman .";
+    char w1[] = "enderman";
+    char w2[] = "end";
+    replaceWords(s1, w1, w2);
+    char s2[] = "This is the end . For this is the end .";
+    ASSERT_STRING(s1, s2);
+}
+
+void test_replaceWords_replacementIsLargerOriginal() {
+    char s1[] = "At Sky , at Sky . Sky is where we start...";
+    char w1[] = "Sky";
+    char w2[] = "Skyfall";
+    replaceWords(s1, w1, w2);
+    char s2[] = "At Skyfall , at Skyfall . Skyfall is where we start...";
+    ASSERT_STRING(s1, s2);
+}
+
+
+void tests_replaceWordsSpaces() {
+    test_replaceWords_replacementIsSmallerOriginal();
+    test_replaceWords_replacementIsLargerOriginal();
+}
+
 //_____________________________//
 //_____________________________//
 //_____________________________//
@@ -162,5 +186,6 @@ void tests_tasks() {
     tests_digitsToStartLettersToEnd();
     tests_reverseWords();
     tests_turnDigitIntoSpaces();
+    tests_replaceWordsSpaces();
 }
 
