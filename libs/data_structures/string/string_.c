@@ -137,6 +137,15 @@ bool isIdenticalWords(WordDescriptor w1, WordDescriptor w2) {
     return 1;
 }
 
+int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
+    while (w1.begin != w1.end && w2.begin != w2.end && *w1.begin == *w2.begin) {
+        w1.begin++;
+        w2.begin++;
+    }
+
+    return *w1.begin - *w2.begin;
+}
+
 int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wordToFind) {
     while (getWord(beginSearch, word)) {
         if (isIdenticalWords(*word, wordToFind)) {
@@ -146,6 +155,16 @@ int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wor
         }
     }
     return 0;
+}
+
+void getBagOfWords(BagOfWords *bag, char *s) {
+    bag->size = 0;
+
+    WordDescriptor word;
+    while (getWord(s, &word)) {
+        bag->words[bag->size++] = word;
+        s = word.end;
+    }
 }
 
 

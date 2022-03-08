@@ -177,6 +177,30 @@ tasks/digitToStartLetterToEnd.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.s
 .PHONY : tasks/digitToStartLetterToEnd.c.s
 
+tasks/isAlphabeticalOrder.obj: tasks/isAlphabeticalOrder.c.obj
+.PHONY : tasks/isAlphabeticalOrder.obj
+
+# target to build an object file
+tasks/isAlphabeticalOrder.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.obj
+.PHONY : tasks/isAlphabeticalOrder.c.obj
+
+tasks/isAlphabeticalOrder.i: tasks/isAlphabeticalOrder.c.i
+.PHONY : tasks/isAlphabeticalOrder.i
+
+# target to preprocess a source file
+tasks/isAlphabeticalOrder.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.i
+.PHONY : tasks/isAlphabeticalOrder.c.i
+
+tasks/isAlphabeticalOrder.s: tasks/isAlphabeticalOrder.c.s
+.PHONY : tasks/isAlphabeticalOrder.s
+
+# target to generate assembly for a file
+tasks/isAlphabeticalOrder.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.s
+.PHONY : tasks/isAlphabeticalOrder.c.s
+
 tasks/removeAdjacentEqualLetters.obj: tasks/removeAdjacentEqualLetters.c.obj
 .PHONY : tasks/removeAdjacentEqualLetters.obj
 
@@ -336,6 +360,9 @@ help:
 	@echo ... tasks/digitToStartLetterToEnd.obj
 	@echo ... tasks/digitToStartLetterToEnd.i
 	@echo ... tasks/digitToStartLetterToEnd.s
+	@echo ... tasks/isAlphabeticalOrder.obj
+	@echo ... tasks/isAlphabeticalOrder.i
+	@echo ... tasks/isAlphabeticalOrder.s
 	@echo ... tasks/removeAdjacentEqualLetters.obj
 	@echo ... tasks/removeAdjacentEqualLetters.i
 	@echo ... tasks/removeAdjacentEqualLetters.s

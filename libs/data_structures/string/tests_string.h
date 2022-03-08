@@ -5,12 +5,14 @@
 #ifndef MAIN_C_TESTS_STRING_H
 #define MAIN_C_TESTS_STRING_H
 
+#include <assert.h>
 #include "tasks/removeNonLetters.h"
 #include "tasks/removeAdjacentEqualLetters.h"
 #include "tasks/digitToStartLetterToEnd.h"
 #include "tasks/reverseWords.h"
 #include "tasks/turnDigitIntoSpaces.h"
 #include "tasks/replaceWords.h"
+#include "tasks/isAlphabeticalOrder.h"
 
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
@@ -65,7 +67,21 @@ void test_turnDigitIntoSpaces_stringContainOnlyDigits();
 
 void tests_turnDigitIntoSpaces();
 //_____________________________//
+
+void test_replaceWords_replacementIsSmallerOriginal();
+
+void test_replaceWords_replacementIsLargerOriginal();
+
+void tests_replaceWordsSpaces();
+
 //_____________________________//
+
+void test_isAlphabeticalOrder_ordered();
+
+void test_isAlphabeticalOrder_notOrdered();
+
+void tests_isAlphabeticalOrder();
+
 //_____________________________//
 //_____________________________//
 void tests_tasks();

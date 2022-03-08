@@ -178,6 +178,27 @@ void tests_replaceWordsSpaces() {
 }
 
 //_____________________________//
+void test_isAlphabeticalOrder_ordered() {
+    char s[] = "abs dasr dfwd zz";
+
+    assert(isAlphabeticalOrder(s) == true);
+
+    printf("test_isAlphabeticalOrder_ordered - OK\n");
+}
+
+void test_isAlphabeticalOrder_notOrdered() {
+    char s[] = "bnkdk akfv";
+
+    assert(isAlphabeticalOrder(s) == false);
+
+    printf("test_isAlphabeticalOrder_notOrdered - OK\n");
+}
+
+void tests_isAlphabeticalOrder() {
+    test_isAlphabeticalOrder_ordered();
+    test_isAlphabeticalOrder_notOrdered();
+}
+
 //_____________________________//
 //_____________________________//
 void tests_tasks() {
@@ -187,5 +208,6 @@ void tests_tasks() {
     tests_reverseWords();
     tests_turnDigitIntoSpaces();
     tests_replaceWordsSpaces();
+    tests_isAlphabeticalOrder();
 }
 

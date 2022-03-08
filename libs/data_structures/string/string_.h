@@ -13,12 +13,19 @@
 #include <memory.h>
 #include <stdbool.h>
 
-static char _stringBuffer[MAX_STRING_SIZE + 1];
 
 typedef struct WordDescriptor {
     char *begin; // позиция начала слова
     char *end; // позиция первого символа, после последнего символа слова
 } WordDescriptor;
+
+typedef struct BagOfWords {
+    WordDescriptor words[MAX_N_WORDS_IN_STRING];
+    size_t size;
+} BagOfWords;
+static char _stringBuffer[MAX_STRING_SIZE + 1];
+static BagOfWords _bag;
+static BagOfWords _bag2;
 
 size_t strlen_(const char *begin);
 
@@ -53,5 +60,9 @@ void reverseWord(WordDescriptor word);
 bool isIdenticalWords(WordDescriptor w1, WordDescriptor w2);
 
 int getIdenticalWord(char *beginSearch, WordDescriptor *word, WordDescriptor wordToFind);
+
+int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
+
+void getBagOfWords(BagOfWords *bag, char *s);
 
 #endif //MAIN_C_STRING__H

@@ -5,4 +5,5 @@ add_library(string string_.c
       tasks/digitToStartLetterToEnd.c
         tasks/reverseWords.c
         tasks/turnDigitIntoSpaces.c
-        tasks/replaceWords.c)
+        tasks/replaceWords.c
+        tasks/isAlphabeticalOrder.c)
