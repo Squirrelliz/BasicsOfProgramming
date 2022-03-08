@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/string_.c.obj"
+  "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/tasks/countWordsPalindromes.c.obj"
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.obj"
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.obj"
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj"

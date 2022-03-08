@@ -216,7 +216,29 @@ void tests_printWordsOnePerLineInReversedOrder() {
 }
 
 //_____________________________//
+void test_countWordsPalindromes_severalPalindromes() {
+    char s[] = "abs,dfd,uuuu,hgf";
 
+    assert(countWordsPalindromes(s) == 2);
+
+    printf("test_countWordsPalindromes_severalPalindromes - OK\n");
+}
+
+void test_countWordsPalindromes_noPalindromes() {
+    char s[] = "bnkdk akfv";
+
+    assert(countWordsPalindromes(s) == 0);
+
+    printf("test_countWordsPalindromes_noPalindromes - OK\n");
+}
+
+void tests_countWordsPalindromes() {
+    test_countWordsPalindromes_severalPalindromes();
+    test_countWordsPalindromes_noPalindromes();
+}
+
+//_____________________________//
+//_____________________________//
 void tests_tasks() {
     tests_removeNonLetters();
     tests_removeAdjacentEqualLetters();
@@ -226,5 +248,6 @@ void tests_tasks() {
     tests_replaceWordsSpaces();
     tests_isAlphabeticalOrder();
     tests_printWordsOnePerLineInReversedOrder();
+    tests_countWordsPalindromes();
 }
 

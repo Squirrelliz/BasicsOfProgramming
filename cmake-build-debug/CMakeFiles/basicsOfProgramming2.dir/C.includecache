@@ -16,6 +16,10 @@ memory.h
 stdbool.h
 -
 
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.h
+../string_.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.h
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
@@ -67,6 +71,8 @@ tasks/isAlphabeticalOrder.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.h
 tasks/printWordsOnePerLineInReversedOrder.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h
+tasks/countWordsPalindromes.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.h
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
 stdio.h

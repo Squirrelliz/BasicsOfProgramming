@@ -19,6 +19,13 @@ char *find(char *begin, char *end, int ch) {
     return begin;
 }
 
+char *findIf(char *begin, char *end, int (*f)(int)) {
+    while (begin != end && !f(*begin))
+        begin++;
+
+    return begin;
+}
+
 char *findNonSpace(char *begin) {
     while (*begin != '\0' && isspace(*begin))
         begin++;
@@ -110,6 +117,18 @@ int getWord(char *beginSearch, WordDescriptor *word) {
 }
 
 
+int getCommaSeparatedWord(char *beginSearch, WordDescriptor *word) {
+    char *endString = getEndOfString(beginSearch);
+    word->begin = findNonSpace(beginSearch);
+
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = find(word->begin, endString, ',');
+
+    return 1;
+}
+
 void digitToStart(WordDescriptor word) {
     char *endStringBuffer = copy(word.begin, word.end,
                                  _stringBuffer);
@@ -173,6 +192,21 @@ void printWord(WordDescriptor word) {
     *endStringBuffer = '\0';
 
     printf("%s", _stringBuffer);
+}
+
+bool isPalindrome(WordDescriptor word) {
+    char *left = word.begin;
+    char *right = word.end - 1;
+
+    while (left < right) {
+        if (*left != *right)
+            return false;
+
+        left++;
+        right--;
+    }
+
+    return true;
 }
 
 

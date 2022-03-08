@@ -4,6 +4,10 @@
 libs/data_structures/string/CMakeFiles/string.dir/string_.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.c
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/countWordsPalindromes.c.obj
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.c
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.c
@@ -38,6 +42,7 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.ob
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/turnDigitIntoSpaces.h
 libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h

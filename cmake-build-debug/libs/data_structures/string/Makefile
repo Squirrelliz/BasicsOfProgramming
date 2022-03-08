@@ -153,6 +153,30 @@ string_.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/string_.c.s
 .PHONY : string_.c.s
 
+tasks/countWordsPalindromes.obj: tasks/countWordsPalindromes.c.obj
+.PHONY : tasks/countWordsPalindromes.obj
+
+# target to build an object file
+tasks/countWordsPalindromes.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/countWordsPalindromes.c.obj
+.PHONY : tasks/countWordsPalindromes.c.obj
+
+tasks/countWordsPalindromes.i: tasks/countWordsPalindromes.c.i
+.PHONY : tasks/countWordsPalindromes.i
+
+# target to preprocess a source file
+tasks/countWordsPalindromes.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/countWordsPalindromes.c.i
+.PHONY : tasks/countWordsPalindromes.c.i
+
+tasks/countWordsPalindromes.s: tasks/countWordsPalindromes.c.s
+.PHONY : tasks/countWordsPalindromes.s
+
+# target to generate assembly for a file
+tasks/countWordsPalindromes.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/countWordsPalindromes.c.s
+.PHONY : tasks/countWordsPalindromes.c.s
+
 tasks/digitToStartLetterToEnd.obj: tasks/digitToStartLetterToEnd.c.obj
 .PHONY : tasks/digitToStartLetterToEnd.obj
 
@@ -381,6 +405,9 @@ help:
 	@echo ... string_.obj
 	@echo ... string_.i
 	@echo ... string_.s
+	@echo ... tasks/countWordsPalindromes.obj
+	@echo ... tasks/countWordsPalindromes.i
+	@echo ... tasks/countWordsPalindromes.s
 	@echo ... tasks/digitToStartLetterToEnd.obj
 	@echo ... tasks/digitToStartLetterToEnd.i
 	@echo ... tasks/digitToStartLetterToEnd.s

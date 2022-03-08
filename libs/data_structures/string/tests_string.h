@@ -14,7 +14,7 @@
 #include "tasks/replaceWords.h"
 #include "tasks/isAlphabeticalOrder.h"
 #include "tasks/printWordsOnePerLineInReversedOrder.h"
-
+#include "tasks/countWordsPalindromes.h"
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
 

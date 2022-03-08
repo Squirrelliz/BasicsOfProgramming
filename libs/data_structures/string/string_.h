@@ -67,4 +67,10 @@ void getBagOfWords(BagOfWords *bag, char *s);
 
 void printWord(WordDescriptor word);
 
+char *findIf(char *begin, char *end, int (*f)(int));
+
+int getCommaSeparatedWord(char *beginSearch, WordDescriptor *word);
+
+bool isPalindrome(WordDescriptor word);
+
 #endif //MAIN_C_STRING__H
