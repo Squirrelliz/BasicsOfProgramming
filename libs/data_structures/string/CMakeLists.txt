@@ -3,4 +3,5 @@ add_library(string string_.c
         tests_string.c
         tasks/removeAdjacentEqualLetters.c
       tasks/digitToStartLetterToEnd.c
-        tasks/reverseWords.c)
+        tasks/reverseWords.c
+        tasks/turnDigitIntoSpaces.c)

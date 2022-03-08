@@ -249,6 +249,30 @@ tasks/reverseWords.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/reverseWords.c.s
 .PHONY : tasks/reverseWords.c.s
 
+tasks/turnDigitIntoSpaces.obj: tasks/turnDigitIntoSpaces.c.obj
+.PHONY : tasks/turnDigitIntoSpaces.obj
+
+# target to build an object file
+tasks/turnDigitIntoSpaces.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.obj
+.PHONY : tasks/turnDigitIntoSpaces.c.obj
+
+tasks/turnDigitIntoSpaces.i: tasks/turnDigitIntoSpaces.c.i
+.PHONY : tasks/turnDigitIntoSpaces.i
+
+# target to preprocess a source file
+tasks/turnDigitIntoSpaces.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.i
+.PHONY : tasks/turnDigitIntoSpaces.c.i
+
+tasks/turnDigitIntoSpaces.s: tasks/turnDigitIntoSpaces.c.s
+.PHONY : tasks/turnDigitIntoSpaces.s
+
+# target to generate assembly for a file
+tasks/turnDigitIntoSpaces.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.s
+.PHONY : tasks/turnDigitIntoSpaces.c.s
+
 tests_string.obj: tests_string.c.obj
 .PHONY : tests_string.obj
 
@@ -297,6 +321,9 @@ help:
 	@echo ... tasks/reverseWords.obj
 	@echo ... tasks/reverseWords.i
 	@echo ... tasks/reverseWords.s
+	@echo ... tasks/turnDigitIntoSpaces.obj
+	@echo ... tasks/turnDigitIntoSpaces.i
+	@echo ... tasks/turnDigitIntoSpaces.s
 	@echo ... tests_string.obj
 	@echo ... tests_string.i
 	@echo ... tests_string.s

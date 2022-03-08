@@ -32,6 +32,10 @@ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/ta
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
 
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/turnDigitIntoSpaces.h
+../string_.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tests_string.h
 tasks/removeNonLetters.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeNonLetters.h
@@ -41,6 +45,8 @@ tasks/digitToStartLetterToEnd.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.h
 tasks/reverseWords.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/reverseWords.h
+tasks/turnDigitIntoSpaces.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/turnDigitIntoSpaces.h
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
 stdio.h

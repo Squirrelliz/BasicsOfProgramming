@@ -254,6 +254,12 @@
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/reverseWords.h">
 			<Option target="string"/>
 		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/turnDigitIntoSpaces.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/turnDigitIntoSpaces.h">
+			<Option target="string"/>
+		</Unit>
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tests_string.c">
 			<Option target="string"/>
 		</Unit>

@@ -20,11 +20,16 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/reverseWords.c.obj: \
  ../libs/data_structures/string/string_.h \
  ../libs/data_structures/string/tasks/reverseWords.c \
  ../libs/data_structures/string/tasks/reverseWords.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.obj: \
+ ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/turnDigitIntoSpaces.c \
+ ../libs/data_structures/string/tasks/turnDigitIntoSpaces.h
 libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj: \
  ../libs/data_structures/string/string_.h \
  ../libs/data_structures/string/tasks/digitToStartLetterToEnd.h \
  ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \
  ../libs/data_structures/string/tasks/removeNonLetters.h \
  ../libs/data_structures/string/tasks/reverseWords.h \
+ ../libs/data_structures/string/tasks/turnDigitIntoSpaces.h \
  ../libs/data_structures/string/tests_string.c \
  ../libs/data_structures/string/tests_string.h

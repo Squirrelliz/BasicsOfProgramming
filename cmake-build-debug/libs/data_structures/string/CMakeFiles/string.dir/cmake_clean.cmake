@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/string.dir/tasks/removeAdjacentEqualLetters.c.obj"
   "CMakeFiles/string.dir/tasks/removeNonLetters.c.obj"
   "CMakeFiles/string.dir/tasks/reverseWords.c.obj"
+  "CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.obj"
   "CMakeFiles/string.dir/tests_string.c.obj"
   "libstring.a"
   "libstring.pdb"

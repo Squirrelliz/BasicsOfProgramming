@@ -3,7 +3,8 @@
 //
 
 #include "tests_string.h"
-#define ASSERT_STRING(got,expected) assertString ( expected , got , \
+
+#define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
 
 void assertString(const char *expected, char *got, const char *fileName, const char *funcName, int line) {
@@ -20,17 +21,17 @@ void assertString(const char *expected, char *got, const char *fileName, const c
 
 //_____________________________//
 void test_removeNonLetters_noSpace() {
-    char s1[10]="hello";
+    char s1[10] = "hello";
     removeNonLetters(s1);
-    char s2[10]="hello";
-    ASSERT_STRING(s1,s2);
+    char s2[10] = "hello";
+    ASSERT_STRING(s1, s2);
 }
 
 void test_removeNonLetters_withSpace() {
-    char s1[]="hello, it's me";
+    char s1[] = "hello, it's me";
     removeNonLetters(s1);
-    char s2[]="hello,it'sme";
-    ASSERT_STRING(s1,s2);
+    char s2[] = "hello,it'sme";
+    ASSERT_STRING(s1, s2);
 }
 
 void tests_removeNonLetters() {
@@ -39,93 +40,127 @@ void tests_removeNonLetters() {
 }
 //_____________________________//
 
-void test_removeAdjacentEqualLetters_stringWithSequences(){
-    char s1[]="I wass woooondering    if after all these yearssss";
+void test_removeAdjacentEqualLetters_stringWithSequences() {
+    char s1[] = "I wass woooondering    if after all these yearssss";
     removeAdjacentEqualLetters(s1);
-    char s2[]="I was wondering if after al these years";
-    ASSERT_STRING(s1,s2);
+    char s2[] = "I was wondering if after al these years";
+    ASSERT_STRING(s1, s2);
 }
 
-void test_removeAdjacentEqualLetters_emptyString(){
-    char s1[]="";
+void test_removeAdjacentEqualLetters_emptyString() {
+    char s1[] = "";
     removeAdjacentEqualLetters(s1);
-    char s2[]="";
-    ASSERT_STRING(s1,s2);
+    char s2[] = "";
+    ASSERT_STRING(s1, s2);
 }
 
-void test_removeAdjacentEqualLetters_oneSymbol(){
-    char s1[]=",";
+void test_removeAdjacentEqualLetters_oneSymbol() {
+    char s1[] = ",";
     removeAdjacentEqualLetters(s1);
-    char s2[]=",";
-    ASSERT_STRING(s1,s2);
+    char s2[] = ",";
+    ASSERT_STRING(s1, s2);
 }
 
-void test_removeAdjacentEqualLetters_stringWithoutSequences(){
-    char s1[]="You'd like to me'et";
+void test_removeAdjacentEqualLetters_stringWithoutSequences() {
+    char s1[] = "You'd like to me'et";
     removeAdjacentEqualLetters(s1);
-    char s2[]="You'd like to me'et";
-    ASSERT_STRING(s1,s2);
+    char s2[] = "You'd like to me'et";
+    ASSERT_STRING(s1, s2);
 }
 
-void tests_removeAdjacentEqualLetters(){
+void tests_removeAdjacentEqualLetters() {
     test_removeAdjacentEqualLetters_stringWithSequences();
     test_removeAdjacentEqualLetters_oneSymbol();
     test_removeAdjacentEqualLetters_emptyString();
     test_removeAdjacentEqualLetters_stringWithoutSequences();
 }
+
 //_____________________________//
-void test_digitsToStartLettersToEnd_wordsWithDigits(){
-    char s1[]="T0o g0o o2ver1 eve5rything33";
+void test_digitsToStartLettersToEnd_wordsWithDigits() {
+    char s1[] = "T0o g0o o2ver1 eve5rything33";
     digitsToStartLettersToEnd(s1);
-    char s2[]="0To 0go 12over 335everything";
-    ASSERT_STRING(s1,s2);
+    char s2[] = "0To 0go 12over 335everything";
+    ASSERT_STRING(s1, s2);
 }
 
-void test_digitsToStartLettersToEnd_emptyString(){
-    char s1[]="";
+void test_digitsToStartLettersToEnd_emptyString() {
+    char s1[] = "";
     digitsToStartLettersToEnd(s1);
-    char s2[]="";
-    ASSERT_STRING(s1,s2);
+    char s2[] = "";
+    ASSERT_STRING(s1, s2);
 }
 
 
-void test_digitsToStartLettersToEnd_justLettersInWords(){
-    char s1[]="But I aint done much healing";
+void test_digitsToStartLettersToEnd_justLettersInWords() {
+    char s1[] = "But I aint done much healing";
     digitsToStartLettersToEnd(s1);
-    char s2[]="But I aint done much healing";
-    ASSERT_STRING(s1,s2);
+    char s2[] = "But I aint done much healing";
+    ASSERT_STRING(s1, s2);
 }
 
-void tests_digitsToStartLettersToEnd(){
+void tests_digitsToStartLettersToEnd() {
     test_digitsToStartLettersToEnd_wordsWithDigits();
     test_digitsToStartLettersToEnd_emptyString();
     test_digitsToStartLettersToEnd_justLettersInWords();
 }
+
 //_____________________________//
-void test_reverseWords_notEmptyString(){
-    char s1[]=",olleH nac uoy raeh ?em";
+void test_reverseWords_notEmptyString() {
+    char s1[] = ",olleH nac uoy raeh ?em";
     reverseWords(s1);
-    char s2[]="Hello, can you hear me?";
-    ASSERT_STRING(s1,s2);
+    char s2[] = "Hello, can you hear me?";
+    ASSERT_STRING(s1, s2);
 }
 
-void test_reverseWords_emptyString(){
-    char s1[]="";
+void test_reverseWords_emptyString() {
+    char s1[] = "";
     reverseWords(s1);
-    char s2[]="";
-    ASSERT_STRING(s1,s2);
+    char s2[] = "";
+    ASSERT_STRING(s1, s2);
 }
 
-void tests_reverseWords(){
+void tests_reverseWords() {
     test_reverseWords_notEmptyString();
     test_reverseWords_emptyString();
 }
 
+//_____________________________//
+void test_turnDigitIntoSpaces_stringWithDigits() {
+    char s1[] = "I'm2in3Californi00a1";
+    turnDigitIntoSpaces(s1);
+    char s2[] = "I'm  in   California ";
+    ASSERT_STRING(s1, s2);
+}
+
+void test_turnDigitIntoSpaces_emptyString() {
+    char s1[] = "";
+    turnDigitIntoSpaces(s1);
+    char s2[] = "";
+    ASSERT_STRING(s1, s2);
+}
+
+void test_turnDigitIntoSpaces_stringContainOnlyDigits() {
+    char s1[] = "3";
+    turnDigitIntoSpaces(s1);
+    char s2[] = "   ";
+    ASSERT_STRING(s1, s2);
+}
+
+void tests_turnDigitIntoSpaces() {
+    test_turnDigitIntoSpaces_stringWithDigits();
+    test_turnDigitIntoSpaces_emptyString();
+    test_turnDigitIntoSpaces_stringContainOnlyDigits();
+}
+
+//_____________________________//
+//_____________________________//
+//_____________________________//
 //_____________________________//
 void tests_tasks() {
     tests_removeNonLetters();
     tests_removeAdjacentEqualLetters();
     tests_digitsToStartLettersToEnd();
     tests_reverseWords();
+    tests_turnDigitIntoSpaces();
 }
 
