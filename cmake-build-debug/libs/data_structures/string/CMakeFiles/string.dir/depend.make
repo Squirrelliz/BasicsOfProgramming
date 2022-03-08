@@ -12,6 +12,10 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.ob
  ../libs/data_structures/string/string_.h \
  ../libs/data_structures/string/tasks/isAlphabeticalOrder.c \
  ../libs/data_structures/string/tasks/isAlphabeticalOrder.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj: \
+ ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.c \
+ ../libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/removeAdjacentEqualLetters.c.obj: \
  ../libs/data_structures/string/string_.h \
  ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.c \
@@ -36,6 +40,7 @@ libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj: \
  ../libs/data_structures/string/string_.h \
  ../libs/data_structures/string/tasks/digitToStartLetterToEnd.h \
  ../libs/data_structures/string/tasks/isAlphabeticalOrder.h \
+ ../libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h \
  ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \
  ../libs/data_structures/string/tasks/removeNonLetters.h \
  ../libs/data_structures/string/tasks/replaceWords.h \

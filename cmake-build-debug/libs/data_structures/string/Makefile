@@ -201,6 +201,30 @@ tasks/isAlphabeticalOrder.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.s
 .PHONY : tasks/isAlphabeticalOrder.c.s
 
+tasks/printWordsOnePerLineInReversedOrder.obj: tasks/printWordsOnePerLineInReversedOrder.c.obj
+.PHONY : tasks/printWordsOnePerLineInReversedOrder.obj
+
+# target to build an object file
+tasks/printWordsOnePerLineInReversedOrder.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj
+.PHONY : tasks/printWordsOnePerLineInReversedOrder.c.obj
+
+tasks/printWordsOnePerLineInReversedOrder.i: tasks/printWordsOnePerLineInReversedOrder.c.i
+.PHONY : tasks/printWordsOnePerLineInReversedOrder.i
+
+# target to preprocess a source file
+tasks/printWordsOnePerLineInReversedOrder.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.i
+.PHONY : tasks/printWordsOnePerLineInReversedOrder.c.i
+
+tasks/printWordsOnePerLineInReversedOrder.s: tasks/printWordsOnePerLineInReversedOrder.c.s
+.PHONY : tasks/printWordsOnePerLineInReversedOrder.s
+
+# target to generate assembly for a file
+tasks/printWordsOnePerLineInReversedOrder.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.s
+.PHONY : tasks/printWordsOnePerLineInReversedOrder.c.s
+
 tasks/removeAdjacentEqualLetters.obj: tasks/removeAdjacentEqualLetters.c.obj
 .PHONY : tasks/removeAdjacentEqualLetters.obj
 
@@ -363,6 +387,9 @@ help:
 	@echo ... tasks/isAlphabeticalOrder.obj
 	@echo ... tasks/isAlphabeticalOrder.i
 	@echo ... tasks/isAlphabeticalOrder.s
+	@echo ... tasks/printWordsOnePerLineInReversedOrder.obj
+	@echo ... tasks/printWordsOnePerLineInReversedOrder.i
+	@echo ... tasks/printWordsOnePerLineInReversedOrder.s
 	@echo ... tasks/removeAdjacentEqualLetters.obj
 	@echo ... tasks/removeAdjacentEqualLetters.i
 	@echo ... tasks/removeAdjacentEqualLetters.s

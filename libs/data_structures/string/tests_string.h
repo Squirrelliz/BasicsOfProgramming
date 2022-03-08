@@ -13,6 +13,7 @@
 #include "tasks/turnDigitIntoSpaces.h"
 #include "tasks/replaceWords.h"
 #include "tasks/isAlphabeticalOrder.h"
+#include "tasks/printWordsOnePerLineInReversedOrder.h"
 
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
@@ -83,6 +84,13 @@ void test_isAlphabeticalOrder_notOrdered();
 void tests_isAlphabeticalOrder();
 
 //_____________________________//
+
+void test_printWordsOnePerLineInReversedOrder_notEmptyString();
+
+void test_printWordsOnePerLineInReversedOrder_emptyString();
+
+void tests_printWordsOnePerLineInReversedOrder();
+
 //_____________________________//
 void tests_tasks();
 

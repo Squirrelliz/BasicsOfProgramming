@@ -182,6 +182,19 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.s:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.s"
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\string\tasks\isAlphabeticalOrder.c -o CMakeFiles\string.dir\tasks\isAlphabeticalOrder.c.s
 
+libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj: libs/data_structures/string/CMakeFiles/string.dir/flags.make
+libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj: ../libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj"
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\string.dir\tasks\printWordsOnePerLineInReversedOrder.c.obj -c C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\string\tasks\printWordsOnePerLineInReversedOrder.c
+
+libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.i"
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\string\tasks\printWordsOnePerLineInReversedOrder.c > CMakeFiles\string.dir\tasks\printWordsOnePerLineInReversedOrder.c.i
+
+libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.s"
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\string\tasks\printWordsOnePerLineInReversedOrder.c -o CMakeFiles\string.dir\tasks\printWordsOnePerLineInReversedOrder.c.s
+
 # Object files for target string
 string_OBJECTS = \
 "CMakeFiles/string.dir/string_.c.obj" \
@@ -192,7 +205,8 @@ string_OBJECTS = \
 "CMakeFiles/string.dir/tasks/reverseWords.c.obj" \
 "CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.obj" \
 "CMakeFiles/string.dir/tasks/replaceWords.c.obj" \
-"CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.obj"
+"CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.obj" \
+"CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj"
 
 # External object files for target string
 string_EXTERNAL_OBJECTS =
@@ -206,9 +220,10 @@ libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/
 libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.obj
 libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/tasks/replaceWords.c.obj
 libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.obj
+libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj
 libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/build.make
 libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library libstring.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C static library libstring.a"
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && $(CMAKE_COMMAND) -P CMakeFiles\string.dir\cmake_clean_target.cmake
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\string.dir\link.txt --verbose=$(VERBOSE)
 

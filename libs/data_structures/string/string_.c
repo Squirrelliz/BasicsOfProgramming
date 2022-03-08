@@ -167,4 +167,12 @@ void getBagOfWords(BagOfWords *bag, char *s) {
     }
 }
 
+void printWord(WordDescriptor word) {
+    char *endStringBuffer = copy(word.begin, word.end, _stringBuffer);
+
+    *endStringBuffer = '\0';
+
+    printf("%s", _stringBuffer);
+}
+
 

@@ -24,6 +24,10 @@ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/ta
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
 
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h
+../string_.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
@@ -61,6 +65,8 @@ tasks/replaceWords.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/replaceWords.h
 tasks/isAlphabeticalOrder.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.h
+tasks/printWordsOnePerLineInReversedOrder.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
 stdio.h

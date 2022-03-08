@@ -200,7 +200,23 @@ void tests_isAlphabeticalOrder() {
 }
 
 //_____________________________//
+void test_printWordsOnePerLineInReversedOrder_notEmptyString() {
+    char s[] = "OK - test_printWordsOnePerLineInReversedOrder_notEmptyString";
+    printWordsOnePerLineInReversedOrder(s);
+}
+
+void test_printWordsOnePerLineInReversedOrder_emptyString() {
+    char s[] = "";
+    printWordsOnePerLineInReversedOrder(s);
+}
+
+void tests_printWordsOnePerLineInReversedOrder() {
+    test_printWordsOnePerLineInReversedOrder_notEmptyString();
+    test_printWordsOnePerLineInReversedOrder_emptyString();
+}
+
 //_____________________________//
+
 void tests_tasks() {
     tests_removeNonLetters();
     tests_removeAdjacentEqualLetters();
@@ -209,5 +225,6 @@ void tests_tasks() {
     tests_turnDigitIntoSpaces();
     tests_replaceWordsSpaces();
     tests_isAlphabeticalOrder();
+    tests_printWordsOnePerLineInReversedOrder();
 }
 
