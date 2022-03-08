@@ -225,6 +225,30 @@ tasks/removeNonLetters.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/removeNonLetters.c.s
 .PHONY : tasks/removeNonLetters.c.s
 
+tasks/reverseWords.obj: tasks/reverseWords.c.obj
+.PHONY : tasks/reverseWords.obj
+
+# target to build an object file
+tasks/reverseWords.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/reverseWords.c.obj
+.PHONY : tasks/reverseWords.c.obj
+
+tasks/reverseWords.i: tasks/reverseWords.c.i
+.PHONY : tasks/reverseWords.i
+
+# target to preprocess a source file
+tasks/reverseWords.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/reverseWords.c.i
+.PHONY : tasks/reverseWords.c.i
+
+tasks/reverseWords.s: tasks/reverseWords.c.s
+.PHONY : tasks/reverseWords.s
+
+# target to generate assembly for a file
+tasks/reverseWords.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/reverseWords.c.s
+.PHONY : tasks/reverseWords.c.s
+
 tests_string.obj: tests_string.c.obj
 .PHONY : tests_string.obj
 
@@ -270,6 +294,9 @@ help:
 	@echo ... tasks/removeNonLetters.obj
 	@echo ... tasks/removeNonLetters.i
 	@echo ... tasks/removeNonLetters.s
+	@echo ... tasks/reverseWords.obj
+	@echo ... tasks/reverseWords.i
+	@echo ... tasks/reverseWords.s
 	@echo ... tests_string.obj
 	@echo ... tests_string.i
 	@echo ... tests_string.s

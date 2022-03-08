@@ -102,11 +102,30 @@ void tests_digitsToStartLettersToEnd(){
     test_digitsToStartLettersToEnd_justLettersInWords();
 }
 //_____________________________//
+void test_reverseWords_notEmptyString(){
+    char s1[]=",olleH nac uoy raeh ?em";
+    reverseWords(s1);
+    char s2[]="Hello, can you hear me?";
+    ASSERT_STRING(s1,s2);
+}
+
+void test_reverseWords_emptyString(){
+    char s1[]="";
+    reverseWords(s1);
+    char s2[]="";
+    ASSERT_STRING(s1,s2);
+}
+
+void tests_reverseWords(){
+    test_reverseWords_notEmptyString();
+    test_reverseWords_emptyString();
+}
 
 //_____________________________//
 void tests_tasks() {
     tests_removeNonLetters();
     tests_removeAdjacentEqualLetters();
     tests_digitsToStartLettersToEnd();
+    tests_reverseWords();
 }
 

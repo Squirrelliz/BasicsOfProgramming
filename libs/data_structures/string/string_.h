@@ -5,11 +5,14 @@
 #ifndef MAIN_C_STRING__H
 #define MAIN_C_STRING__H
 #define MAX_STRING_SIZE 100
+#define MAX_N_WORDS_IN_STRING 100
+#define MAX_WORD_SIZE 20
 
 #include <stdio.h>
 #include<ctype.h>
 #include <memory.h>
 #include <stdbool.h>
+
 static char _stringBuffer[MAX_STRING_SIZE + 1];
 
 typedef struct WordDescriptor {
@@ -43,5 +46,8 @@ int getWord(char *beginSearch, WordDescriptor *word);
 
 void digitToStart(WordDescriptor word);
 
+char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestination);
+
+void reverseWord(WordDescriptor word);
 
 #endif //MAIN_C_STRING__H

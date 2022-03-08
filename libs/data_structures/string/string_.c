@@ -83,6 +83,15 @@ char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDesti
     return beginDestination;
 }
 
+char *copyReverse(char *rbeginSource, const char *rendSource, char *beginDestination) {
+    while (rbeginSource > rendSource) {
+        *beginDestination++ = *rbeginSource;
+        rbeginSource--;
+    }
+
+    return beginDestination;
+}
+
 char *getEndOfString(char *begin) {
     while (*begin != '\0')
         begin++;
@@ -108,6 +117,12 @@ void digitToStart(WordDescriptor word) {
                                       _stringBuffer - 1,
                                       word.begin, isdigit);
     copyIf_(_stringBuffer, endStringBuffer, recPosition, isalpha);
+}
+
+void reverseWord(WordDescriptor word) {
+    char *endStringBuffer = copyReverse(word.end-1, word.begin-1,
+                                        _stringBuffer);
+    copy(_stringBuffer,endStringBuffer, word.begin);
 }
 
 

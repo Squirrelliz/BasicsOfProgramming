@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.obj"
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeAdjacentEqualLetters.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/tasks/removeAdjacentEqualLetters.c.obj"
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeNonLetters.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/tasks/removeNonLetters.c.obj"
+  "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/reverseWords.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/tasks/reverseWords.c.obj"
   "C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tests_string.c" "C:/Users/lizka/CLionProjects/basicsOfProgramming2/cmake-build-debug/libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")

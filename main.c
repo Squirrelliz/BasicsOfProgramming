@@ -3,6 +3,5 @@
 
 int main() {
     tests_tasks();
-
     return 0;
 }

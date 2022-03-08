@@ -7,6 +7,7 @@
 #include "tasks/removeNonLetters.h"
 #include "tasks/removeAdjacentEqualLetters.h"
 #include "tasks/digitToStartLetterToEnd.h"
+#include "tasks/reverseWords.h"
 #define ASSERT_STRING(got,expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
 
@@ -40,5 +41,6 @@ void test_digitsToStartLettersToEnd_emptyString();
 void test_digitsToStartLettersToEnd_justLettersInWords();
 
 void tests_digitsToStartLettersToEnd();
+//_____________________________//
 void tests_tasks();
 #endif //MAIN_C_TESTS_STRING_H
