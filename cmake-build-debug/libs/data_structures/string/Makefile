@@ -153,6 +153,30 @@ string_.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/string_.c.s
 .PHONY : string_.c.s
 
+tasks/areAllLettersOfThisWord.obj: tasks/areAllLettersOfThisWord.c.obj
+.PHONY : tasks/areAllLettersOfThisWord.obj
+
+# target to build an object file
+tasks/areAllLettersOfThisWord.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/areAllLettersOfThisWord.c.obj
+.PHONY : tasks/areAllLettersOfThisWord.c.obj
+
+tasks/areAllLettersOfThisWord.i: tasks/areAllLettersOfThisWord.c.i
+.PHONY : tasks/areAllLettersOfThisWord.i
+
+# target to preprocess a source file
+tasks/areAllLettersOfThisWord.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/areAllLettersOfThisWord.c.i
+.PHONY : tasks/areAllLettersOfThisWord.c.i
+
+tasks/areAllLettersOfThisWord.s: tasks/areAllLettersOfThisWord.c.s
+.PHONY : tasks/areAllLettersOfThisWord.s
+
+# target to generate assembly for a file
+tasks/areAllLettersOfThisWord.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/areAllLettersOfThisWord.c.s
+.PHONY : tasks/areAllLettersOfThisWord.c.s
+
 tasks/areIdenticalWordsInString.obj: tasks/areIdenticalWordsInString.c.obj
 .PHONY : tasks/areIdenticalWordsInString.obj
 
@@ -597,6 +621,9 @@ help:
 	@echo ... string_.obj
 	@echo ... string_.i
 	@echo ... string_.s
+	@echo ... tasks/areAllLettersOfThisWord.obj
+	@echo ... tasks/areAllLettersOfThisWord.i
+	@echo ... tasks/areAllLettersOfThisWord.s
 	@echo ... tasks/areIdenticalWordsInString.obj
 	@echo ... tasks/areIdenticalWordsInString.i
 	@echo ... tasks/areIdenticalWordsInString.s

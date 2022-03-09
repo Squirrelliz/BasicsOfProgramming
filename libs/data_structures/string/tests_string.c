@@ -425,7 +425,40 @@ void tests_deletePalindromes() {
     test_deletePalindromes_severalPalindromes();
     test_deletePalindromes_noPalindromes();
 }
+
 //_____________________________//
+void test_areAllLettersOfThisWord_AllLettersOfThisWord() {
+    char s[] = "abs dfd abs hgf hgf ii";
+    char s1[] = "ghda";
+    WordDescriptor word = {s1, s1 + strlen_(s1)};
+    assert(areAllLettersOfThisWord(s, word) == true);
+
+    printf("test_areAllLettersOfThisWord_AllLettersOfThisWord - OK\n");
+}
+
+void test_areAllLettersOfThisWord_notAllLettersOfThisWord() {
+    char s[] = "abs dfd abs hgf hgf ii";
+    char s1[] = "ghdalz";
+    WordDescriptor word = {s1, s1 + strlen_(s1)};
+    assert(areAllLettersOfThisWord(s, word) == false);
+
+    printf("test_areAllLettersOfThisWord_notAllLettersOfThisWord - OK\n");
+}
+
+void test_areAllLettersOfThisWord_emptyWord() {
+    char s[] = "abs dfd abs hgf hgf ii";
+    char s1[] = "";
+    WordDescriptor word = {s1, s1 + strlen_(s1)};
+    assert(areAllLettersOfThisWord(s, word) == true);
+
+    printf("test_areAllLettersOfThisWord_emptyWord - OK\n");
+}
+
+void tests_areAllLettersOfThisWord() {
+    test_areAllLettersOfThisWord_AllLettersOfThisWord();
+    test_areAllLettersOfThisWord_notAllLettersOfThisWord();
+    test_areAllLettersOfThisWord_emptyWord();
+}
 
 void tests_tasks() {
     tests_removeNonLetters();
@@ -445,5 +478,6 @@ void tests_tasks() {
     tests_getStringWithoutLastWord();
     tests_lastMatch();
     tests_deletePalindromes();
+    tests_areAllLettersOfThisWord();
 }
 

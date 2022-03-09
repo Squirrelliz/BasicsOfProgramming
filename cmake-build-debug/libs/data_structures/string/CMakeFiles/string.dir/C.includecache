@@ -30,6 +30,10 @@ stdlib.h
 ../../algorithms/array/array.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
 
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areAllLettersOfThisWord.h
+../string_.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areIdenticalWordsInString.h
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
@@ -143,4 +147,6 @@ tasks/lastMatch.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/lastMatch.h
 tasks/deletePalindromes.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/deletePalindromes.h
+tasks/areAllLettersOfThisWord.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areAllLettersOfThisWord.h
 

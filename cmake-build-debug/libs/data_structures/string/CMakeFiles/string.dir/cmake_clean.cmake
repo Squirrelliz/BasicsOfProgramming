@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/string.dir/string_.c.obj"
+  "CMakeFiles/string.dir/tasks/areAllLettersOfThisWord.c.obj"
   "CMakeFiles/string.dir/tasks/areIdenticalWordsInString.c.obj"
   "CMakeFiles/string.dir/tasks/areWordsConsistFromTheSameLetters.c.obj"
   "CMakeFiles/string.dir/tasks/countWordsPalindromes.c.obj"

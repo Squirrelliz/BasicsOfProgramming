@@ -5,6 +5,11 @@ libs/data_structures/string/CMakeFiles/string.dir/string_.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/string/string_.c \
  ../libs/data_structures/string/string_.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/areAllLettersOfThisWord.c.obj: \
+ ../libs/algorithms/array/array.h \
+ ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/areAllLettersOfThisWord.c \
+ ../libs/data_structures/string/tasks/areAllLettersOfThisWord.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/areIdenticalWordsInString.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/string/string_.h \
@@ -94,6 +99,7 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.ob
 libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/areAllLettersOfThisWord.h \
  ../libs/data_structures/string/tasks/areIdenticalWordsInString.h \
  ../libs/data_structures/string/tasks/areWordsConsistFromTheSameLetters.h \
  ../libs/data_structures/string/tasks/countWordsPalindromes.h \

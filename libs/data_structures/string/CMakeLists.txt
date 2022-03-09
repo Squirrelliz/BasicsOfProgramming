@@ -16,4 +16,5 @@ add_library(string string_.c
         tasks/areWordsConsistFromTheSameLetters.c
         tasks/getStringWithoutLastWord.c
         tasks/lastMatch.c
-        tasks/deletePalindromes.c)
+        tasks/deletePalindromes.c
+        tasks/areAllLettersOfThisWord.c)

@@ -230,6 +230,12 @@
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h">
 			<Option target="string"/>
 		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areAllLettersOfThisWord.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areAllLettersOfThisWord.h">
+			<Option target="string"/>
+		</Unit>
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areIdenticalWordsInString.c">
 			<Option target="string"/>
 		</Unit>
