@@ -293,36 +293,58 @@ void tests_reverseString() {
 }
 
 //_____________________________//
- void testAll_getWordBeforeFirstWordWithA () {
-     WordDescriptor word;
+void testAll_getWordBeforeFirstWordWithA() {
+    WordDescriptor word;
 
-     char s1 [] = "";
-     assert (
-             getWordBeforeFirstWordWithA ( s1 , &word)
-             == EMPTY_STRING
-             ) ;
+    char s1[] = "";
+    assert (
+            getWordBeforeFirstWordWithA(s1, &word)
+            == EMPTY_STRING
+    );
 
-     char s2 [] = " ABC";
-     assert (
-             getWordBeforeFirstWordWithA ( s2 , &word)
-             == FIRST_WORD_WITH_A
-             ) ;
+    char s2[] = " ABC";
+    assert (
+            getWordBeforeFirstWordWithA(s2, &word)
+            == FIRST_WORD_WITH_A
+    );
 
-     char s3 [] = "BC A";
-     assert (
-            getWordBeforeFirstWordWithA ( s3 , &word)
+    char s3[] = "BC A";
+    assert (
+            getWordBeforeFirstWordWithA(s3, &word)
             == WORD_FOUND
-            ) ;
-     char got [ MAX_WORD_SIZE ];
-     copy ( word.begin , word.end , got ) ;
-     got [ word.end - word.begin ] = '\0';
-     ASSERT_STRING ("BC", got ) ;
+    );
+    char got[MAX_WORD_SIZE];
+    copy(word.begin, word.end, got);
+    got[word.end - word.begin] = '\0';
+    ASSERT_STRING ("BC", got);
 
-     char s4 [] = "B Q WE YR OW IUWR ";
-     assert ( getWordBeforeFirstWordWithA ( s4 ,&word) ==
-              NOT_FOUND_A_WORD_WITH_A ) ;
-     }
+    char s4[] = "B Q WE YR OW IUWR ";
+    assert (getWordBeforeFirstWordWithA(s4, &word) ==
+            NOT_FOUND_A_WORD_WITH_A);
+}
+
 //_____________________________//
+void test_areIdenticalWordsInString_severalIdenticalWords() {
+    char s[] = "abs dfd abs hgf hgf ii";
+
+    assert(areIdenticalWordsInString(s) == true);
+
+    printf("test_areIdenticalWordsInString_severalIdenticalWords - OK\n");
+}
+
+void test_areIdenticalWordsInString_noIdenticalWords() {
+    char s[] = "bnkdk akfv frfh sis";
+
+    assert(areIdenticalWordsInString(s) == false);
+
+    printf("test_areIdenticalWordsInString_noIdenticalWords - OK\n");
+}
+
+void tests_areIdenticalWordsInString() {
+    test_areIdenticalWordsInString_severalIdenticalWords();
+    test_areIdenticalWordsInString_noIdenticalWords();
+}
+
 //_____________________________//
 //_____________________________//
 void tests_tasks() {
@@ -338,5 +360,6 @@ void tests_tasks() {
     tests_getStringFromTheOtherTwo();
     tests_reverseString();
     testAll_getWordBeforeFirstWordWithA();
+    tests_areIdenticalWordsInString();
 }
 

@@ -4,6 +4,7 @@
 CMakeFiles/basicsOfProgramming2.dir/main.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/areIdenticalWordsInString.h \
  ../libs/data_structures/string/tasks/countWordsPalindromes.h \
  ../libs/data_structures/string/tasks/digitToStartLetterToEnd.h \
  ../libs/data_structures/string/tasks/getStringFromTheOtherTwo.h \

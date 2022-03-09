@@ -153,6 +153,30 @@ string_.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/string_.c.s
 .PHONY : string_.c.s
 
+tasks/areIdenticalWordsInString.obj: tasks/areIdenticalWordsInString.c.obj
+.PHONY : tasks/areIdenticalWordsInString.obj
+
+# target to build an object file
+tasks/areIdenticalWordsInString.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/areIdenticalWordsInString.c.obj
+.PHONY : tasks/areIdenticalWordsInString.c.obj
+
+tasks/areIdenticalWordsInString.i: tasks/areIdenticalWordsInString.c.i
+.PHONY : tasks/areIdenticalWordsInString.i
+
+# target to preprocess a source file
+tasks/areIdenticalWordsInString.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/areIdenticalWordsInString.c.i
+.PHONY : tasks/areIdenticalWordsInString.c.i
+
+tasks/areIdenticalWordsInString.s: tasks/areIdenticalWordsInString.c.s
+.PHONY : tasks/areIdenticalWordsInString.s
+
+# target to generate assembly for a file
+tasks/areIdenticalWordsInString.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/areIdenticalWordsInString.c.s
+.PHONY : tasks/areIdenticalWordsInString.c.s
+
 tasks/countWordsPalindromes.obj: tasks/countWordsPalindromes.c.obj
 .PHONY : tasks/countWordsPalindromes.obj
 
@@ -477,6 +501,9 @@ help:
 	@echo ... string_.obj
 	@echo ... string_.i
 	@echo ... string_.s
+	@echo ... tasks/areIdenticalWordsInString.obj
+	@echo ... tasks/areIdenticalWordsInString.i
+	@echo ... tasks/areIdenticalWordsInString.s
 	@echo ... tasks/countWordsPalindromes.obj
 	@echo ... tasks/countWordsPalindromes.i
 	@echo ... tasks/countWordsPalindromes.s

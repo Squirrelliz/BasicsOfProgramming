@@ -4,6 +4,10 @@
 libs/data_structures/string/CMakeFiles/string.dir/string_.c.obj: \
  ../libs/data_structures/string/string_.c \
  ../libs/data_structures/string/string_.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/areIdenticalWordsInString.c.obj: \
+ ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/areIdenticalWordsInString.c \
+ ../libs/data_structures/string/tasks/areIdenticalWordsInString.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/countWordsPalindromes.c.obj: \
  ../libs/data_structures/string/string_.h \
  ../libs/data_structures/string/tasks/countWordsPalindromes.c \
@@ -56,6 +60,7 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/turnDigitIntoSpaces.c.ob
 libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/areIdenticalWordsInString.h \
  ../libs/data_structures/string/tasks/countWordsPalindromes.h \
  ../libs/data_structures/string/tasks/digitToStartLetterToEnd.h \
  ../libs/data_structures/string/tasks/getStringFromTheOtherTwo.h \

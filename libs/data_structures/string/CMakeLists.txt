@@ -11,4 +11,5 @@ add_library(string string_.c
         tasks/countWordsPalindromes.c
         tasks/getStringFromTheOtherTwo.c
         tasks/reverseString.c
-        tasks/printWordBeforeFirstWordWithA.c)
+        tasks/printWordBeforeFirstWordWithA.c
+        tasks/areIdenticalWordsInString.c)
