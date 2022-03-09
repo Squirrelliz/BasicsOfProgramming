@@ -21,6 +21,10 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.ob
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.c
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordBeforeFirstWordWithA.c.obj
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.c
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.c
@@ -56,6 +60,7 @@ libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeAdjacentEqualLetters.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/removeNonLetters.h

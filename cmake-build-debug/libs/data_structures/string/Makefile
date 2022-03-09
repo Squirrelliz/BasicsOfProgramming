@@ -249,6 +249,30 @@ tasks/isAlphabeticalOrder.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.s
 .PHONY : tasks/isAlphabeticalOrder.c.s
 
+tasks/printWordBeforeFirstWordWithA.obj: tasks/printWordBeforeFirstWordWithA.c.obj
+.PHONY : tasks/printWordBeforeFirstWordWithA.obj
+
+# target to build an object file
+tasks/printWordBeforeFirstWordWithA.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordBeforeFirstWordWithA.c.obj
+.PHONY : tasks/printWordBeforeFirstWordWithA.c.obj
+
+tasks/printWordBeforeFirstWordWithA.i: tasks/printWordBeforeFirstWordWithA.c.i
+.PHONY : tasks/printWordBeforeFirstWordWithA.i
+
+# target to preprocess a source file
+tasks/printWordBeforeFirstWordWithA.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordBeforeFirstWordWithA.c.i
+.PHONY : tasks/printWordBeforeFirstWordWithA.c.i
+
+tasks/printWordBeforeFirstWordWithA.s: tasks/printWordBeforeFirstWordWithA.c.s
+.PHONY : tasks/printWordBeforeFirstWordWithA.s
+
+# target to generate assembly for a file
+tasks/printWordBeforeFirstWordWithA.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordBeforeFirstWordWithA.c.s
+.PHONY : tasks/printWordBeforeFirstWordWithA.c.s
+
 tasks/printWordsOnePerLineInReversedOrder.obj: tasks/printWordsOnePerLineInReversedOrder.c.obj
 .PHONY : tasks/printWordsOnePerLineInReversedOrder.obj
 
@@ -465,6 +489,9 @@ help:
 	@echo ... tasks/isAlphabeticalOrder.obj
 	@echo ... tasks/isAlphabeticalOrder.i
 	@echo ... tasks/isAlphabeticalOrder.s
+	@echo ... tasks/printWordBeforeFirstWordWithA.obj
+	@echo ... tasks/printWordBeforeFirstWordWithA.i
+	@echo ... tasks/printWordBeforeFirstWordWithA.s
 	@echo ... tasks/printWordsOnePerLineInReversedOrder.obj
 	@echo ... tasks/printWordsOnePerLineInReversedOrder.i
 	@echo ... tasks/printWordsOnePerLineInReversedOrder.s

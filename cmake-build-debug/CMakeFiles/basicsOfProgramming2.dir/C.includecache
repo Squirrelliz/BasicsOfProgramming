@@ -44,6 +44,10 @@ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/ta
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
 
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h
+../string_.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
@@ -97,6 +101,8 @@ tasks/getStringFromTheOtherTwo.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.h
 tasks/reverseString.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/reverseString.h
+tasks/printWordBeforeFirstWordWithA.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/main.c
 stdio.h

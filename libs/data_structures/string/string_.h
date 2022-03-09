@@ -75,4 +75,6 @@ bool isPalindrome(WordDescriptor word);
 
 int rGetWord(char *rBeginSearch, char *rEndSearch, WordDescriptor *word);
 
+bool doesWordContainA(WordDescriptor word);
+
 #endif //MAIN_C_STRING__H

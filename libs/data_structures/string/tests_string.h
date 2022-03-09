@@ -17,6 +17,7 @@
 #include "tasks/countWordsPalindromes.h"
 #include "tasks/getStringFromTheOtherTwo.h"
 #include "tasks/reverseString.h"
+#include "tasks/printWordBeforeFirstWordWithA.h"
 
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )

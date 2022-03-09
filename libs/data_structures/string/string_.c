@@ -221,4 +221,15 @@ bool isPalindrome(WordDescriptor word) {
     return true;
 }
 
+bool doesWordContainA(WordDescriptor word) {
+    char *read = word.begin;
+    while (read != word.end) {
+        if (*read == 'a' || *read == 'A')
+            return true;
+
+        read++;
+    }
+    return false;
+}
+
 
