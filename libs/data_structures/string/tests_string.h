@@ -21,6 +21,7 @@
 #include "tasks/areIdenticalWordsInString.h"
 #include "tasks/areWordsConsistFromTheSameLetters.h"
 #include "tasks/getStringWithoutLastWord.h"
+#include "tasks/lastMatch.h"
 
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )

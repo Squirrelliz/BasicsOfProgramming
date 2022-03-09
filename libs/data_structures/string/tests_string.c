@@ -390,8 +390,33 @@ void tests_getStringWithoutLastWord() {
     test_getStringWithoutLastWord_severalWordsLikeLast();
     test_getStringWithoutLastWord_noWordsLikeLast();
 }
-//_____________________________//
 
+//_____________________________//
+void test_lastMatch_severalMatches() {
+    char s1[] = "Feel the Earth to move to and then to";
+    char s2[] = "Feel then Earth move and then";
+    WordDescriptor word = lastMatch(s1, s2);
+    wordDescriptorToString(word, _stringBuffer);
+    char expected[] = "then";
+    ASSERT_STRING (expected, _stringBuffer);
+}
+
+void test_lastMatch_noMatch() {
+    char s1[] = "Feel the Earth to move to and then to";
+    char s2[] = "hhh ooo ggg";
+    WordDescriptor word = lastMatch(s1, s2);
+    wordDescriptorToString(word, _stringBuffer);
+    char expected[] = "";
+    ASSERT_STRING (expected, _stringBuffer);
+}
+
+
+void tests_lastMatch() {
+    test_lastMatch_severalMatches();
+    test_lastMatch_noMatch();
+}
+
+//_____________________________//
 void tests_tasks() {
     tests_removeNonLetters();
     tests_removeAdjacentEqualLetters();
@@ -408,5 +433,6 @@ void tests_tasks() {
     tests_areIdenticalWordsInString();
     tests_areWordsConsistFromTheSameLetters();
     tests_getStringWithoutLastWord();
+    tests_lastMatch();
 }
 

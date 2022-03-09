@@ -80,4 +80,6 @@ bool doesWordContainA(WordDescriptor word);
 
 void sortLettersInWord(WordDescriptor *word);
 
+void wordDescriptorToString(WordDescriptor word, char *destination);
+
 #endif //MAIN_C_STRING__H

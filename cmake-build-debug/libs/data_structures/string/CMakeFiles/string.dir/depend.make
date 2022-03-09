@@ -41,6 +41,11 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.ob
  ../libs/data_structures/string/string_.h \
  ../libs/data_structures/string/tasks/isAlphabeticalOrder.c \
  ../libs/data_structures/string/tasks/isAlphabeticalOrder.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/lastMatch.c.obj: \
+ ../libs/algorithms/array/array.h \
+ ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/lastMatch.c \
+ ../libs/data_structures/string/tasks/lastMatch.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/printWordBeforeFirstWordWithA.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/string/string_.h \
@@ -91,6 +96,7 @@ libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj: \
  ../libs/data_structures/string/tasks/getStringFromTheOtherTwo.h \
  ../libs/data_structures/string/tasks/getStringWithoutLastWord.h \
  ../libs/data_structures/string/tasks/isAlphabeticalOrder.h \
+ ../libs/data_structures/string/tasks/lastMatch.h \
  ../libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h \
  ../libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h \
  ../libs/data_structures/string/tasks/removeAdjacentEqualLetters.h \

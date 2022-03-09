@@ -239,4 +239,9 @@ void sortLettersInWord(WordDescriptor *word) {
     qsort(word->begin, strlen_((char *) buffer), 1, cmp_char);
 }
 
+void wordDescriptorToString(WordDescriptor word, char *destination) {
+    char *endDest = copy(word.begin, word.end, destination);
+    *endDest = '\0';
+}
+
 

@@ -321,6 +321,30 @@ tasks/isAlphabeticalOrder.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.s
 .PHONY : tasks/isAlphabeticalOrder.c.s
 
+tasks/lastMatch.obj: tasks/lastMatch.c.obj
+.PHONY : tasks/lastMatch.obj
+
+# target to build an object file
+tasks/lastMatch.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/lastMatch.c.obj
+.PHONY : tasks/lastMatch.c.obj
+
+tasks/lastMatch.i: tasks/lastMatch.c.i
+.PHONY : tasks/lastMatch.i
+
+# target to preprocess a source file
+tasks/lastMatch.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/lastMatch.c.i
+.PHONY : tasks/lastMatch.c.i
+
+tasks/lastMatch.s: tasks/lastMatch.c.s
+.PHONY : tasks/lastMatch.s
+
+# target to generate assembly for a file
+tasks/lastMatch.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/lastMatch.c.s
+.PHONY : tasks/lastMatch.c.s
+
 tasks/printWordBeforeFirstWordWithA.obj: tasks/printWordBeforeFirstWordWithA.c.obj
 .PHONY : tasks/printWordBeforeFirstWordWithA.obj
 
@@ -570,6 +594,9 @@ help:
 	@echo ... tasks/isAlphabeticalOrder.obj
 	@echo ... tasks/isAlphabeticalOrder.i
 	@echo ... tasks/isAlphabeticalOrder.s
+	@echo ... tasks/lastMatch.obj
+	@echo ... tasks/lastMatch.i
+	@echo ... tasks/lastMatch.s
 	@echo ... tasks/printWordBeforeFirstWordWithA.obj
 	@echo ... tasks/printWordBeforeFirstWordWithA.i
 	@echo ... tasks/printWordBeforeFirstWordWithA.s

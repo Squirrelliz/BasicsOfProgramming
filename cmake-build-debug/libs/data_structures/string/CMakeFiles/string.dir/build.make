@@ -286,6 +286,19 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringWithoutLastWord
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.s"
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\string\tasks\getStringWithoutLastWord.c -o CMakeFiles\string.dir\tasks\getStringWithoutLastWord.c.s
 
+libs/data_structures/string/CMakeFiles/string.dir/tasks/lastMatch.c.obj: libs/data_structures/string/CMakeFiles/string.dir/flags.make
+libs/data_structures/string/CMakeFiles/string.dir/tasks/lastMatch.c.obj: ../libs/data_structures/string/tasks/lastMatch.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object libs/data_structures/string/CMakeFiles/string.dir/tasks/lastMatch.c.obj"
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\string.dir\tasks\lastMatch.c.obj -c C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\string\tasks\lastMatch.c
+
+libs/data_structures/string/CMakeFiles/string.dir/tasks/lastMatch.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/string.dir/tasks/lastMatch.c.i"
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\string\tasks\lastMatch.c > CMakeFiles\string.dir\tasks\lastMatch.c.i
+
+libs/data_structures/string/CMakeFiles/string.dir/tasks/lastMatch.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/string.dir/tasks/lastMatch.c.s"
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\lizka\CLionProjects\basicsOfProgramming2\libs\data_structures\string\tasks\lastMatch.c -o CMakeFiles\string.dir\tasks\lastMatch.c.s
+
 # Object files for target string
 string_OBJECTS = \
 "CMakeFiles/string.dir/string_.c.obj" \
@@ -304,7 +317,8 @@ string_OBJECTS = \
 "CMakeFiles/string.dir/tasks/printWordBeforeFirstWordWithA.c.obj" \
 "CMakeFiles/string.dir/tasks/areIdenticalWordsInString.c.obj" \
 "CMakeFiles/string.dir/tasks/areWordsConsistFromTheSameLetters.c.obj" \
-"CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.obj"
+"CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.obj" \
+"CMakeFiles/string.dir/tasks/lastMatch.c.obj"
 
 # External object files for target string
 string_EXTERNAL_OBJECTS =
@@ -326,9 +340,10 @@ libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/
 libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/tasks/areIdenticalWordsInString.c.obj
 libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/tasks/areWordsConsistFromTheSameLetters.c.obj
 libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.obj
+libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/tasks/lastMatch.c.obj
 libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/build.make
 libs/data_structures/string/libstring.a: libs/data_structures/string/CMakeFiles/string.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking C static library libstring.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking C static library libstring.a"
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && $(CMAKE_COMMAND) -P CMakeFiles\string.dir\cmake_clean_target.cmake
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug\libs\data_structures\string && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\string.dir\link.txt --verbose=$(VERBOSE)
 
