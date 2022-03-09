@@ -260,6 +260,12 @@
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.h">
 			<Option target="string"/>
 		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringWithoutLastWord.c">
+			<Option target="string"/>
+		</Unit>
+		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringWithoutLastWord.h">
+			<Option target="string"/>
+		</Unit>
 		<Unit filename="C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.c">
 			<Option target="string"/>
 		</Unit>

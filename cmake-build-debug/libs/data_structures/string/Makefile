@@ -273,6 +273,30 @@ tasks/getStringFromTheOtherTwo.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringFromTheOtherTwo.c.s
 .PHONY : tasks/getStringFromTheOtherTwo.c.s
 
+tasks/getStringWithoutLastWord.obj: tasks/getStringWithoutLastWord.c.obj
+.PHONY : tasks/getStringWithoutLastWord.obj
+
+# target to build an object file
+tasks/getStringWithoutLastWord.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.obj
+.PHONY : tasks/getStringWithoutLastWord.c.obj
+
+tasks/getStringWithoutLastWord.i: tasks/getStringWithoutLastWord.c.i
+.PHONY : tasks/getStringWithoutLastWord.i
+
+# target to preprocess a source file
+tasks/getStringWithoutLastWord.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.i
+.PHONY : tasks/getStringWithoutLastWord.c.i
+
+tasks/getStringWithoutLastWord.s: tasks/getStringWithoutLastWord.c.s
+.PHONY : tasks/getStringWithoutLastWord.s
+
+# target to generate assembly for a file
+tasks/getStringWithoutLastWord.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.s
+.PHONY : tasks/getStringWithoutLastWord.c.s
+
 tasks/isAlphabeticalOrder.obj: tasks/isAlphabeticalOrder.c.obj
 .PHONY : tasks/isAlphabeticalOrder.obj
 
@@ -540,6 +564,9 @@ help:
 	@echo ... tasks/getStringFromTheOtherTwo.obj
 	@echo ... tasks/getStringFromTheOtherTwo.i
 	@echo ... tasks/getStringFromTheOtherTwo.s
+	@echo ... tasks/getStringWithoutLastWord.obj
+	@echo ... tasks/getStringWithoutLastWord.i
+	@echo ... tasks/getStringWithoutLastWord.s
 	@echo ... tasks/isAlphabeticalOrder.obj
 	@echo ... tasks/isAlphabeticalOrder.i
 	@echo ... tasks/isAlphabeticalOrder.s

@@ -31,6 +31,11 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringFromTheOtherTwo
  ../libs/data_structures/string/string_.h \
  ../libs/data_structures/string/tasks/getStringFromTheOtherTwo.c \
  ../libs/data_structures/string/tasks/getStringFromTheOtherTwo.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.obj: \
+ ../libs/algorithms/array/array.h \
+ ../libs/data_structures/string/string_.h \
+ ../libs/data_structures/string/tasks/getStringWithoutLastWord.c \
+ ../libs/data_structures/string/tasks/getStringWithoutLastWord.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_structures/string/string_.h \
@@ -84,6 +89,7 @@ libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj: \
  ../libs/data_structures/string/tasks/countWordsPalindromes.h \
  ../libs/data_structures/string/tasks/digitToStartLetterToEnd.h \
  ../libs/data_structures/string/tasks/getStringFromTheOtherTwo.h \
+ ../libs/data_structures/string/tasks/getStringWithoutLastWord.h \
  ../libs/data_structures/string/tasks/isAlphabeticalOrder.h \
  ../libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h \
  ../libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h \

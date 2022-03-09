@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/string.dir/tasks/countWordsPalindromes.c.obj"
   "CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.obj"
   "CMakeFiles/string.dir/tasks/getStringFromTheOtherTwo.c.obj"
+  "CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.obj"
   "CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.obj"
   "CMakeFiles/string.dir/tasks/printWordBeforeFirstWordWithA.c.obj"
   "CMakeFiles/string.dir/tasks/printWordsOnePerLineInReversedOrder.c.obj"

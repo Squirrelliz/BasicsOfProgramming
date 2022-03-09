@@ -9,6 +9,7 @@ CMakeFiles/basicsOfProgramming2.dir/main.c.obj: \
  ../libs/data_structures/string/tasks/countWordsPalindromes.h \
  ../libs/data_structures/string/tasks/digitToStartLetterToEnd.h \
  ../libs/data_structures/string/tasks/getStringFromTheOtherTwo.h \
+ ../libs/data_structures/string/tasks/getStringWithoutLastWord.h \
  ../libs/data_structures/string/tasks/isAlphabeticalOrder.h \
  ../libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h \
  ../libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h \

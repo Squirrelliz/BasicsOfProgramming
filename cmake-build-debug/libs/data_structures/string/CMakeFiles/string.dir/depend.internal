@@ -31,6 +31,11 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringFromTheOtherTwo
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.c
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.obj
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringWithoutLastWord.c
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringWithoutLastWord.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/isAlphabeticalOrder.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
@@ -84,6 +89,7 @@ libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringWithoutLastWord.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordBeforeFirstWordWithA.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/printWordsOnePerLineInReversedOrder.h

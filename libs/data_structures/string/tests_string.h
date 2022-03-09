@@ -20,6 +20,7 @@
 #include "tasks/printWordBeforeFirstWordWithA.h"
 #include "tasks/areIdenticalWordsInString.h"
 #include "tasks/areWordsConsistFromTheSameLetters.h"
+#include "tasks/getStringWithoutLastWord.h"
 
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
@@ -140,6 +141,14 @@ void test_areWordsConsistFromTheSameLetters_severalConsistFromTheSameLetters();
 void test_areWordsConsistFromTheSameLetters_noConsistFromTheSameLetters();
 
 void tests_areWordsConsistFromTheSameLetters();
+
+//_____________________________//
+
+void test_getStringWithoutLastWord_severalWordsLikeLast();
+
+void test_getStringWithoutLastWord_noWordsLikeLast();
+
+void tests_getStringWithoutLastWord();
 
 //_____________________________//
 void tests_tasks();

@@ -369,6 +369,29 @@ void tests_areWordsConsistFromTheSameLetters() {
 }
 
 //_____________________________//
+void test_getStringWithoutLastWord_severalWordsLikeLast() {
+    char s1[] = "Feel the Earth to move to and then to";
+    char s2[MAX_STRING_SIZE];
+    getStringWithoutLastWord(s2, s1);
+    char s3[] = "Feel the Earth move and then";
+    ASSERT_STRING(s2, s3);
+}
+
+void test_getStringWithoutLastWord_noWordsLikeLast() {
+    char s1[] = "Feel the Earth move and then";
+    char s2[MAX_STRING_SIZE];
+    getStringWithoutLastWord(s2, s1);
+    char s3[] = "Feel the Earth move and";
+    ASSERT_STRING(s2, s3);
+}
+
+
+void tests_getStringWithoutLastWord() {
+    test_getStringWithoutLastWord_severalWordsLikeLast();
+    test_getStringWithoutLastWord_noWordsLikeLast();
+}
+//_____________________________//
+
 void tests_tasks() {
     tests_removeNonLetters();
     tests_removeAdjacentEqualLetters();
@@ -384,5 +407,6 @@ void tests_tasks() {
     testAll_getWordBeforeFirstWordWithA();
     tests_areIdenticalWordsInString();
     tests_areWordsConsistFromTheSameLetters();
+    tests_getStringWithoutLastWord();
 }
 

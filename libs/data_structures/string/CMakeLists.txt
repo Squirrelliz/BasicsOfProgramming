@@ -13,4 +13,5 @@ add_library(string string_.c
         tasks/reverseString.c
         tasks/printWordBeforeFirstWordWithA.c
         tasks/areIdenticalWordsInString.c
-        tasks/areWordsConsistFromTheSameLetters.c)
+        tasks/areWordsConsistFromTheSameLetters.c
+        tasks/getStringWithoutLastWord.c)

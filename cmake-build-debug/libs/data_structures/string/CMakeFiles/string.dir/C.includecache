@@ -34,10 +34,6 @@ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/ta
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
 
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areWordsConsistFromTheSameLetters.c
-areWordsConsistFromTheSameLetters.h
-C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areWordsConsistFromTheSameLetters.h
-
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areWordsConsistFromTheSameLetters.h
 ../string_.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
@@ -57,6 +53,10 @@ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/ta
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
 ../../../algorithms/array/array.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
+
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringWithoutLastWord.h
+../string_.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
 
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/isAlphabeticalOrder.h
 ../string_.h
@@ -129,4 +129,6 @@ tasks/areIdenticalWordsInString.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areIdenticalWordsInString.h
 tasks/areWordsConsistFromTheSameLetters.h
 C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areWordsConsistFromTheSameLetters.h
+tasks/getStringWithoutLastWord.h
+C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringWithoutLastWord.h
 
