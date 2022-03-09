@@ -346,6 +346,28 @@ void tests_areIdenticalWordsInString() {
 }
 
 //_____________________________//
+
+void test_areWordsConsistFromTheSameLetters_severalConsistFromTheSameLetters() {
+    char s[] = "bas dfd bsa hgf ghf ii";
+
+    assert(areWordsConsistFromTheSameLetters(s) == true);
+
+    printf("test_areWordsConsistFromTheSameLetters_severalConsistFromTheSameLetters - OK\n");
+}
+
+void test_areWordsConsistFromTheSameLetters_noConsistFromTheSameLetters() {
+    char s[] = "bnkdk akfv frfh sis";
+
+    assert(areWordsConsistFromTheSameLetters(s) == false);
+
+    printf("test_areWordsConsistFromTheSameLetters_noConsistFromTheSameLetters - OK\n");
+}
+
+void tests_areWordsConsistFromTheSameLetters() {
+    test_areWordsConsistFromTheSameLetters_severalConsistFromTheSameLetters();
+    test_areWordsConsistFromTheSameLetters_noConsistFromTheSameLetters();
+}
+
 //_____________________________//
 void tests_tasks() {
     tests_removeNonLetters();
@@ -361,5 +383,6 @@ void tests_tasks() {
     tests_reverseString();
     testAll_getWordBeforeFirstWordWithA();
     tests_areIdenticalWordsInString();
+    tests_areWordsConsistFromTheSameLetters();
 }
 

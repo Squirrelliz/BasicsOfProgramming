@@ -65,4 +65,6 @@ bool isEqualOrMore(const int *a, const size_t n, const int x);
 bool isEqualOrLess(const int *a, const size_t n, const int x);
 
 void inputArray(int *a, const size_t n);
+
+int cmp_char(const void *pa, const void *pb);
 #endif //BASICSOFPROGRAMMING2_ARRAY_H

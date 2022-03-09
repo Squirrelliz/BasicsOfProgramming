@@ -12,7 +12,8 @@
 #include<ctype.h>
 #include <memory.h>
 #include <stdbool.h>
-
+#include <stdlib.h>
+#include "../../algorithms/array/array.h"
 
 typedef struct WordDescriptor {
     char *begin; // позиция начала слова
@@ -76,5 +77,7 @@ bool isPalindrome(WordDescriptor word);
 int rGetWord(char *rBeginSearch, char *rEndSearch, WordDescriptor *word);
 
 bool doesWordContainA(WordDescriptor word);
+
+void sortLettersInWord(WordDescriptor *word);
 
 #endif //MAIN_C_STRING__H

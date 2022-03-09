@@ -4,10 +4,5 @@
 
 int main() {
     tests_tasks();
-    //char s[] = "uuuu";
-    //WordDescriptor w = {s, s+5};
-    //printf("%d", isPalindrome(w));
-    //countWordsPalindromes(s);
-//
-    return 0;
+
 }

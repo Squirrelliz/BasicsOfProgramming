@@ -232,4 +232,11 @@ bool doesWordContainA(WordDescriptor word) {
     return false;
 }
 
+void sortLettersInWord(WordDescriptor *word) {
+    char *buffer[MAX_STRING_SIZE];
+    char *endBuffer = copy(word->begin, word->end, (char *) buffer);
+    *endBuffer = '\0';
+    qsort(word->begin, strlen_((char *) buffer), 1, cmp_char);
+}
+
 

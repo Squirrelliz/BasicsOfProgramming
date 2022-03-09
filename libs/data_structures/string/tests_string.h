@@ -19,6 +19,7 @@
 #include "tasks/reverseString.h"
 #include "tasks/printWordBeforeFirstWordWithA.h"
 #include "tasks/areIdenticalWordsInString.h"
+#include "tasks/areWordsConsistFromTheSameLetters.h"
 
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
@@ -133,6 +134,13 @@ void test_areIdenticalWordsInString_noIdenticalWords();
 void tests_areIdenticalWordsInString();
 
 //_____________________________//
+
+void test_areWordsConsistFromTheSameLetters_severalConsistFromTheSameLetters();
+
+void test_areWordsConsistFromTheSameLetters_noConsistFromTheSameLetters();
+
+void tests_areWordsConsistFromTheSameLetters();
+
 //_____________________________//
 void tests_tasks();
 

@@ -177,6 +177,30 @@ tasks/areIdenticalWordsInString.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/areIdenticalWordsInString.c.s
 .PHONY : tasks/areIdenticalWordsInString.c.s
 
+tasks/areWordsConsistFromTheSameLetters.obj: tasks/areWordsConsistFromTheSameLetters.c.obj
+.PHONY : tasks/areWordsConsistFromTheSameLetters.obj
+
+# target to build an object file
+tasks/areWordsConsistFromTheSameLetters.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/areWordsConsistFromTheSameLetters.c.obj
+.PHONY : tasks/areWordsConsistFromTheSameLetters.c.obj
+
+tasks/areWordsConsistFromTheSameLetters.i: tasks/areWordsConsistFromTheSameLetters.c.i
+.PHONY : tasks/areWordsConsistFromTheSameLetters.i
+
+# target to preprocess a source file
+tasks/areWordsConsistFromTheSameLetters.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/areWordsConsistFromTheSameLetters.c.i
+.PHONY : tasks/areWordsConsistFromTheSameLetters.c.i
+
+tasks/areWordsConsistFromTheSameLetters.s: tasks/areWordsConsistFromTheSameLetters.c.s
+.PHONY : tasks/areWordsConsistFromTheSameLetters.s
+
+# target to generate assembly for a file
+tasks/areWordsConsistFromTheSameLetters.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/areWordsConsistFromTheSameLetters.c.s
+.PHONY : tasks/areWordsConsistFromTheSameLetters.c.s
+
 tasks/countWordsPalindromes.obj: tasks/countWordsPalindromes.c.obj
 .PHONY : tasks/countWordsPalindromes.obj
 
@@ -504,6 +528,9 @@ help:
 	@echo ... tasks/areIdenticalWordsInString.obj
 	@echo ... tasks/areIdenticalWordsInString.i
 	@echo ... tasks/areIdenticalWordsInString.s
+	@echo ... tasks/areWordsConsistFromTheSameLetters.obj
+	@echo ... tasks/areWordsConsistFromTheSameLetters.i
+	@echo ... tasks/areWordsConsistFromTheSameLetters.s
 	@echo ... tasks/countWordsPalindromes.obj
 	@echo ... tasks/countWordsPalindromes.i
 	@echo ... tasks/countWordsPalindromes.s

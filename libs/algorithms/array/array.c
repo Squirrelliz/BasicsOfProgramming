@@ -255,4 +255,12 @@ bool isEqualOrLess(const int *a, const size_t n, const int x) {
     return false;
 }
 
+int cmp_char(const void *pa, const void *pb) {
+    char arg1 = *(const char *) pa;
+    char arg2 = *(const char *) pb;
 
+    if (arg1 < arg2) return -1;
+    if (arg1 > arg2) return 1;
+    return 0;
+
+}
