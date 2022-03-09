@@ -21,6 +21,11 @@ libs/data_structures/string/CMakeFiles/string.dir/tasks/countWordsPalindromes.c.
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.c
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.h
+libs/data_structures/string/CMakeFiles/string.dir/tasks/deletePalindromes.c.obj
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/deletePalindromes.c
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/deletePalindromes.h
 libs/data_structures/string/CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/algorithms/array/array.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/string_.h
@@ -92,6 +97,7 @@ libs/data_structures/string/CMakeFiles/string.dir/tests_string.c.obj
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areIdenticalWordsInString.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/areWordsConsistFromTheSameLetters.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/countWordsPalindromes.h
+ C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/deletePalindromes.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/digitToStartLetterToEnd.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringFromTheOtherTwo.h
  C:/Users/lizka/CLionProjects/basicsOfProgramming2/libs/data_structures/string/tasks/getStringWithoutLastWord.h

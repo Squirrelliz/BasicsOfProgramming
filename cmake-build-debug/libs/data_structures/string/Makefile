@@ -225,6 +225,30 @@ tasks/countWordsPalindromes.c.s:
 	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/countWordsPalindromes.c.s
 .PHONY : tasks/countWordsPalindromes.c.s
 
+tasks/deletePalindromes.obj: tasks/deletePalindromes.c.obj
+.PHONY : tasks/deletePalindromes.obj
+
+# target to build an object file
+tasks/deletePalindromes.c.obj:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/deletePalindromes.c.obj
+.PHONY : tasks/deletePalindromes.c.obj
+
+tasks/deletePalindromes.i: tasks/deletePalindromes.c.i
+.PHONY : tasks/deletePalindromes.i
+
+# target to preprocess a source file
+tasks/deletePalindromes.c.i:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/deletePalindromes.c.i
+.PHONY : tasks/deletePalindromes.c.i
+
+tasks/deletePalindromes.s: tasks/deletePalindromes.c.s
+.PHONY : tasks/deletePalindromes.s
+
+# target to generate assembly for a file
+tasks/deletePalindromes.c.s:
+	cd /d C:\Users\lizka\CLionProjects\basicsOfProgramming2\cmake-build-debug && $(MAKE) $(MAKESILENT) -f libs\data_structures\string\CMakeFiles\string.dir\build.make libs/data_structures/string/CMakeFiles/string.dir/tasks/deletePalindromes.c.s
+.PHONY : tasks/deletePalindromes.c.s
+
 tasks/digitToStartLetterToEnd.obj: tasks/digitToStartLetterToEnd.c.obj
 .PHONY : tasks/digitToStartLetterToEnd.obj
 
@@ -582,6 +606,9 @@ help:
 	@echo ... tasks/countWordsPalindromes.obj
 	@echo ... tasks/countWordsPalindromes.i
 	@echo ... tasks/countWordsPalindromes.s
+	@echo ... tasks/deletePalindromes.obj
+	@echo ... tasks/deletePalindromes.i
+	@echo ... tasks/deletePalindromes.s
 	@echo ... tasks/digitToStartLetterToEnd.obj
 	@echo ... tasks/digitToStartLetterToEnd.i
 	@echo ... tasks/digitToStartLetterToEnd.s

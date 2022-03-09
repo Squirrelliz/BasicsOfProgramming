@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/string.dir/tasks/areIdenticalWordsInString.c.obj"
   "CMakeFiles/string.dir/tasks/areWordsConsistFromTheSameLetters.c.obj"
   "CMakeFiles/string.dir/tasks/countWordsPalindromes.c.obj"
+  "CMakeFiles/string.dir/tasks/deletePalindromes.c.obj"
   "CMakeFiles/string.dir/tasks/digitToStartLetterToEnd.c.obj"
   "CMakeFiles/string.dir/tasks/getStringFromTheOtherTwo.c.obj"
   "CMakeFiles/string.dir/tasks/getStringWithoutLastWord.c.obj"

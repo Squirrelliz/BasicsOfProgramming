@@ -22,6 +22,7 @@
 #include "tasks/areWordsConsistFromTheSameLetters.h"
 #include "tasks/getStringWithoutLastWord.h"
 #include "tasks/lastMatch.h"
+#include "tasks/deletePalindromes.h"
 
 #define ASSERT_STRING(got, expected) assertString ( expected , got , \
 __FILE__ , __FUNCTION__ , __LINE__ )
@@ -156,6 +157,14 @@ void tests_getStringWithoutLastWord();
 void test_lastMatch_severalMatches();
 
 void tests_lastMatch();
+
+//_____________________________//
+
+void test_deletePalindromes_severalPalindromes();
+
+void test_deletePalindromes_noPalindromes();
+
+void tests_deletePalindromes();
 //_____________________________//
 
 void tests_tasks();

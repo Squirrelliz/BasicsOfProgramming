@@ -11,7 +11,7 @@ void assertString(const char *expected, char *got, const char *fileName, const c
     if (strcmp(expected, got)) {
         fprintf(stderr, " File %s\n", fileName);
         fprintf(stderr, "%s - failed on line %d\n", funcName, line);
-        fprintf(stderr, " Expected : \"%s \"\n", expected);
+        fprintf(stderr, "Expected : \"%s\"\n", expected);
         fprintf(stderr, "Got: \"%s\"\n\n", got);
     } else
         fprintf(stderr, "%s - OK\n", funcName);
@@ -406,6 +406,27 @@ void tests_lastMatch() {
 }
 
 //_____________________________//
+void test_deletePalindromes_severalPalindromes() {
+    char s1[] = "abs aaa uiiu ghj";
+    deletePalindromes(s1);
+    char s2[] = "abs ghj";
+    ASSERT_STRING(s1, s2);
+}
+
+void test_deletePalindromes_noPalindromes() {
+    char s1[] = "sdfdgm fjfl ks";
+    deletePalindromes(s1);
+    char s2[] = "sdfdgm fjfl ks";
+    ASSERT_STRING(s2, s1);
+}
+
+
+void tests_deletePalindromes() {
+    test_deletePalindromes_severalPalindromes();
+    test_deletePalindromes_noPalindromes();
+}
+//_____________________________//
+
 void tests_tasks() {
     tests_removeNonLetters();
     tests_removeAdjacentEqualLetters();
@@ -423,5 +444,6 @@ void tests_tasks() {
     tests_areWordsConsistFromTheSameLetters();
     tests_getStringWithoutLastWord();
     tests_lastMatch();
+    tests_deletePalindromes();
 }
 

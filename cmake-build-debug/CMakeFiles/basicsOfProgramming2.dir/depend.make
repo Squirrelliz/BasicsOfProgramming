@@ -7,6 +7,7 @@ CMakeFiles/basicsOfProgramming2.dir/main.c.obj: \
  ../libs/data_structures/string/tasks/areIdenticalWordsInString.h \
  ../libs/data_structures/string/tasks/areWordsConsistFromTheSameLetters.h \
  ../libs/data_structures/string/tasks/countWordsPalindromes.h \
+ ../libs/data_structures/string/tasks/deletePalindromes.h \
  ../libs/data_structures/string/tasks/digitToStartLetterToEnd.h \
  ../libs/data_structures/string/tasks/getStringFromTheOtherTwo.h \
  ../libs/data_structures/string/tasks/getStringWithoutLastWord.h \
