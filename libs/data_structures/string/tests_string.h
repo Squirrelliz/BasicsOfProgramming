@@ -155,8 +155,6 @@ void tests_getStringWithoutLastWord();
 
 void test_lastMatch_severalMatches();
 
-void test_lastMatch_noMatch();
-
 void tests_lastMatch();
 //_____________________________//
 
