@@ -20,6 +20,7 @@ void reverseString(char *beginString) {
 
         endStringBuffer = word.begin;
     }
+
     beginString--;
     *beginString = '\0';
 }

@@ -4,7 +4,9 @@
 
 #ifndef MAIN_C_DIGITTOSTARTLETTERTOEND_H
 #define MAIN_C_DIGITTOSTARTLETTERTOEND_H
+
 #include "../string_.h"
+
 void digitsToStartLettersToEnd(char *beginString);
 
 #endif //MAIN_C_DIGITTOSTARTLETTERTOEND_H

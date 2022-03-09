@@ -7,5 +7,5 @@
 void removeNonLetters(char *s) {
     char *endSource = getEndOfString(s);
     char *destination = copyIf_(s, endSource, s, isgraph);
-    *destination = '\0' ;
+    *destination = '\0';
 }

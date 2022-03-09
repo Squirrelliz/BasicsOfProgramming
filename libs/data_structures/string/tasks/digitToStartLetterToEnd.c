@@ -5,12 +5,12 @@
 #include "digitToStartLetterToEnd.h"
 
 void digitsToStartLettersToEnd(char *beginString) {
-    char * beginSearch = beginString ;
-    WordDescriptor word ;
+    char *beginSearch = beginString;
+    WordDescriptor word;
 
-    while ( getWord ( beginSearch , & word ) ) {
+    while (getWord(beginSearch, &word)) {
         digitToStart(word);
-        beginSearch = word.end ;
+        beginSearch = word.end;
     }
 
 }

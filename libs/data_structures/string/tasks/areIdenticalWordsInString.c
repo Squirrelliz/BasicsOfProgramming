@@ -12,5 +12,6 @@ bool areIdenticalWordsInString(char *s) {
                 return true;
         }
     }
+
     return false;
 }

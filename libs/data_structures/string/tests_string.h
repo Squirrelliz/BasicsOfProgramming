@@ -152,6 +152,14 @@ void test_getStringWithoutLastWord_noWordsLikeLast();
 void tests_getStringWithoutLastWord();
 
 //_____________________________//
+
+void test_lastMatch_severalMatches();
+
+void test_lastMatch_noMatch();
+
+void tests_lastMatch();
+//_____________________________//
+
 void tests_tasks();
 
 #endif //MAIN_C_TESTS_STRING_H

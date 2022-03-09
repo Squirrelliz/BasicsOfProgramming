@@ -11,8 +11,10 @@ int countWordsPalindromes(char *beginString) {
         if (isPalindrome(word)) {
             count++;
         }
+
         if (*beginString != '\0')
             beginString = word.end + 1;
     }
+
     return count;
 }
